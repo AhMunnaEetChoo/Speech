@@ -8,6 +8,7 @@ public class SpeechManager : MonoBehaviour
 {
     public Speech m_currentSpeech = new Speech();
     public GameObject m_phrasePrefab;
+    public FMODUnity.StudioEventEmitter m_musicEmitter;
 
     [System.Serializable]
     public class Speech
@@ -57,6 +58,14 @@ public class SpeechManager : MonoBehaviour
 
     private ActiveBar m_activebar = new ActiveBar();
 
+    private enum eTrackState
+    {
+        None,
+        Bad,
+        Good,
+    }
+    private eTrackState m_trackSTate = eTrackState.Good;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,6 +81,8 @@ public class SpeechManager : MonoBehaviour
             startY += 10.0f;
         }
         m_activebar.m_currentTime = - m_currentSpeech.m_visableTime;
+
+        m_musicEmitter.Play();
     }
 
     private void AdvanceBar()
@@ -123,5 +134,21 @@ public class SpeechManager : MonoBehaviour
     void Update()
     {
         AdvanceBar();
+    }
+
+    void SetTrackState(eTrackState _state)
+    {
+        if(m_trackSTate == _state)
+            return;
+        m_trackSTate = _state;
+
+        FMOD.Studio.EventDescription eventDesc = FMODUnity.RuntimeManager.GetEventDescription(m_musicEmitter.EventReference);
+        if (eventDesc.isValid())
+        {
+            FMOD.Studio.PARAMETER_DESCRIPTION param;
+            string paramNane = "DialogGoodBad";
+            eventDesc.getParameterDescriptionByName(paramNane, out param);
+            m_musicEmitter.EventInstance.setParameterByID(param.id, (int)m_trackSTate);
+        }
     }
 }

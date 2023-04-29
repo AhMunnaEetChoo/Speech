@@ -1,5 +1,4 @@
 TODO Speech
 
-- read from json array
-- left justify
+- parse a fmod music file, pull out all the marker names with associated timings
 - destroy / animate on bar hit
