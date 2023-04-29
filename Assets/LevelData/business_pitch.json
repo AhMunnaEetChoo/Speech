@@ -1,0 +1,31 @@
+{
+	"Streams" :
+	[
+		[
+			{
+				"time" : 5.1,
+				"text" : "sup",
+				"points" : 50
+			}
+		],
+		[
+			{
+				"time" : 10.1,
+				"text" : "burp",
+				"points" : -50
+			}	
+		]
+	],
+	"Sprites" :
+	[
+		{
+			"spriteID" : "dave",
+			"time" : 3.0,
+			"duration" : 1,
+			"position" : {
+		        "x": 800.0,
+		        "y": 0.0
+	        },
+		}
+	]
+}

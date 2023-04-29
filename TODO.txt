@@ -1,0 +1,6 @@
+TODO Speech
+
+- setup new project, use git ignore, statemachine, copy json data from QTE.
+- traveling text
+- activation line, animation?
+- 
