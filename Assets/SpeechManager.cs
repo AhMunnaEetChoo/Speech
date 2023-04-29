@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class SpeechManager : MonoBehaviour
 {
@@ -109,7 +110,8 @@ public class SpeechManager : MonoBehaviour
         int timelinePosition;
         m_musicEmitter.EventInstance.getTimelinePosition(out timelinePosition);
         float musicTime = (float)timelinePosition / 1000.0f;
-        m_activebar.m_currentTime = musicTime;
+        float diff = musicTime - m_activebar.m_currentTime;
+        m_activebar.m_currentTime += diff * 0.2f;
 
         float barEndTime = m_activebar.m_currentTime + m_currentSpeech.m_visableTime;
 
