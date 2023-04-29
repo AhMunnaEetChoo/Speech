@@ -13,7 +13,7 @@ public class DestroyAfterDelay : MonoBehaviour
     public void Commence()
     {
         m_isPlaying = true;
-        float m_time = 0f;
+        m_time = 0f;
         m_startingScale = transform.localScale;
     }
 

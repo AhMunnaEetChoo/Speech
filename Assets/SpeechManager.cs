@@ -11,6 +11,7 @@ public class SpeechManager : MonoBehaviour
 
     public GameObject m_phrasePrefab;
     public FMODUnity.StudioEventEmitter m_musicEmitter;
+    public FMODUnity.StudioEventEmitter m_eughEmitter;
     public GameObject m_arrowThing;
     public GameObject m_scoreText;
     public GameObject m_canvas;
@@ -222,7 +223,12 @@ public class SpeechManager : MonoBehaviour
 
     void SetTrackState(eTrackState _state)
     {
-        if(m_trackSTate == _state)
+        if(_state == eTrackState.None)
+        {
+            m_eughEmitter.Play();
+        }
+
+        if (m_trackSTate == _state)
             return;
         m_trackSTate = _state;
 
