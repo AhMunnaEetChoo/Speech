@@ -10,11 +10,20 @@ public class SpeechManager : MonoBehaviour
     public Speech m_debugSpeech = new Speech();
 
     public GameObject m_phrasePrefab;
+
     public FMODUnity.StudioEventEmitter m_musicEmitter;
     public FMODUnity.StudioEventEmitter m_eughEmitter;
-    public GameObject m_arrowThing;
+
+    public GameObject m_pointHigh;
+    public GameObject m_pointLow;
+    public GameObject m_highBar;
+    public GameObject m_lowBar;
+
     public GameObject m_scoreText;
     public GameObject m_canvas;
+
+    public Animator m_manEffects;
+    public Animator m_manBobber;
 
     [System.Serializable]
     public class Speech
@@ -93,6 +102,7 @@ public class SpeechManager : MonoBehaviour
         }
         m_activebar.m_currentTime = 0;
 
+        SetActiveStream(0);
     }
 
     private void AdvanceBar()
@@ -194,6 +204,30 @@ public class SpeechManager : MonoBehaviour
         }
     }
 
+    void SetActiveStream(int _activeStream)
+    {
+        m_selectedStream = _activeStream;
+        Color transparentWhite = Color.white;
+        transparentWhite.a = 0.2f;
+
+        if (_activeStream == 0)
+        {
+            m_lowBar.GetComponent<SpriteRenderer>().color = Color.white;
+            m_highBar.GetComponent<SpriteRenderer>().color = transparentWhite;
+
+            m_pointLow.SetActive(true);
+            m_pointHigh.SetActive(false);
+        }
+        else
+        {
+            m_lowBar.GetComponent<SpriteRenderer>().color = transparentWhite;
+            m_highBar.GetComponent<SpriteRenderer>().color = Color.white;
+
+            m_pointLow.SetActive(false);
+            m_pointHigh.SetActive(true);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -203,34 +237,46 @@ public class SpeechManager : MonoBehaviour
         {
             if(m_selectedStream > 0)
             {
-                m_selectedStream--;
+                SetActiveStream(0);
             }
         }
         else if(vertical > 0)
         {
             if (m_selectedStream < m_currentSpeech.m_streams.Count - 1)
             {
-                m_selectedStream++;
+                SetActiveStream(1);
             }
         }
-
-        // set arrow position
-        float arrowY = m_activebar.activeStreams[m_selectedStream].m_yPosition;
-        m_arrowThing.transform.localPosition = new Vector3(m_arrowThing.transform.localPosition.x, arrowY);
 
         AdvanceBar();
     }
 
     void SetTrackState(eTrackState _state)
     {
-        if(_state == eTrackState.None)
+        switch(_state)
         {
-            m_eughEmitter.Play();
+            case eTrackState.None:
+            {
+                m_eughEmitter.Play();
+                m_manEffects.SetTrigger("Sweat");
+                break;
+            }
+            case eTrackState.Good:
+            {
+                break;
+            }
+            case eTrackState.Bad:
+            {
+                m_manEffects.SetTrigger("Impact");
+                break;
+            }
         }
 
+        // don't change audio if state is the same
         if (m_trackSTate == _state)
             return;
         m_trackSTate = _state;
+
 
         FMOD.Studio.EventDescription eventDesc = FMODUnity.RuntimeManager.GetEventDescription(m_musicEmitter.EventReference);
         if (eventDesc.isValid())
