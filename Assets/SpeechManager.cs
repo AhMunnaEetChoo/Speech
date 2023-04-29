@@ -13,6 +13,7 @@ public class SpeechManager : MonoBehaviour
     public FMODUnity.StudioEventEmitter m_musicEmitter;
     public GameObject m_arrowThing;
     public GameObject m_scoreText;
+    public GameObject m_canvas;
 
     [System.Serializable]
     public class Speech
@@ -49,13 +50,13 @@ public class SpeechManager : MonoBehaviour
     };
     private class ActiveStream
     {
-        public float m_yPosition = 50.0f;
+        public float m_yPosition = 150.0f;
         public List<ActivePhrase> m_activePhrases = new List<ActivePhrase>();
     };
 
     private class ActiveBar // name?
     {
-        public Vector2 m_xRange = new Vector2(-50, 250);
+        public Vector2 m_xRange = new Vector2(-475, 500);
         public float m_currentTime = 0;
         public List <ActiveStream> activeStreams = new List<ActiveStream>();
     };
@@ -79,7 +80,7 @@ public class SpeechManager : MonoBehaviour
         m_musicEmitter.Play();
 
         // initialise the active bar
-        float startY = 50.0f;
+        float startY = 150.0f;
         for (int i = 0; i < m_currentSpeech.m_streams.Count; ++i)
         {
             Stream stream = m_currentSpeech.m_streams[i];
@@ -87,7 +88,7 @@ public class SpeechManager : MonoBehaviour
             activeStream.m_yPosition = startY;
             m_activebar.activeStreams.Add(activeStream);
 
-            startY += 30.0f;
+            startY += 70.0f;
         }
         m_activebar.m_currentTime = 0;
 
@@ -117,7 +118,7 @@ public class SpeechManager : MonoBehaviour
                     // create a new phrase
                     ActivePhrase activePhrase = new ActivePhrase();
                     activePhrase.m_phrase = phrase;
-                    activePhrase.m_gameObject = GameObject.Instantiate(m_phrasePrefab, new Vector3(m_activebar.m_xRange.y, activeStream.m_yPosition), Quaternion.identity);
+                    activePhrase.m_gameObject = GameObject.Instantiate(m_phrasePrefab, new Vector3(m_activebar.m_xRange.y, activeStream.m_yPosition), Quaternion.identity, m_canvas.transform);
                     TMP_Text newText = activePhrase.m_gameObject.GetComponent<TMP_Text>();
                     newText.text = phrase.m_text;
 
@@ -177,7 +178,7 @@ public class SpeechManager : MonoBehaviour
                 {
                     float x = Mathf.Lerp(m_activebar.m_xRange.x, m_activebar.m_xRange.y, timeDiff / m_currentSpeech.m_visableTime);
 
-                    activePhrase.m_gameObject.transform.position = new Vector3(x, activeStream.m_yPosition);
+                    activePhrase.m_gameObject.transform.localPosition = new Vector3(x, activeStream.m_yPosition, -1);
                 }
             }
         }
@@ -205,7 +206,7 @@ public class SpeechManager : MonoBehaviour
 
         // set arrow position
         float arrowY = m_activebar.activeStreams[m_selectedStream].m_yPosition;
-        m_arrowThing.transform.position = new Vector3(m_arrowThing.transform.position.x, arrowY);
+        m_arrowThing.transform.localPosition = new Vector3(m_arrowThing.transform.localPosition.x, arrowY);
 
         AdvanceBar();
     }
