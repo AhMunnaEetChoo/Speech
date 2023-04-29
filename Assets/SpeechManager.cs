@@ -99,7 +99,16 @@ public class SpeechManager : MonoBehaviour
         float lastTime = m_activebar.m_currentTime;
         float lastEndTime = lastTime + m_currentSpeech.m_visableTime;
 
-        m_activebar.m_currentTime += Time.deltaTime; // TODO do we want to use absolute start and end times?
+        // since FMOD only works in milliseconds use the deltatime to estimate fractional time but keep us in sync with the music
+        m_activebar.m_currentTime += Time.deltaTime;
+        int timelinePosition;
+        m_musicEmitter.EventInstance.getTimelinePosition(out timelinePosition);
+        float estMillisecs = m_activebar.m_currentTime * 1000.0f;
+        float estMillisecsFlr = Mathf.Floor(estMillisecs);
+        if(estMillisecsFlr > (float)timelinePosition)
+        {
+            m_activebar.m_currentTime = (float)timelinePosition / 1000.0f;
+        }
 
         float barEndTime = m_activebar.m_currentTime + m_currentSpeech.m_visableTime;
 
