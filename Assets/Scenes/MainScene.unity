@@ -614,83 +614,110 @@ MonoBehaviour:
       - m_time: 5.86
         m_text: Allow me to deliver
         m_points: 5
+        m_sprite: 
       - m_time: 7.405
         m_text: a business pitch
         m_points: 5
+        m_sprite: 
       - m_time: 8.803
         m_text: "I\u2019m purrfectly certain"
         m_points: 5
+        m_sprite: 
       - m_time: 10.187
         m_text: "it\u2019ll make you rich"
         m_points: 5
+        m_sprite: 
       - m_time: 11.772
         m_text: "Er, sorry if I\u2019m nervous"
         m_points: 5
+        m_sprite: 
       - m_time: 13.481
         m_text: "I\u2019m low on cash"
         m_points: 5
+        m_sprite: 
       - m_time: 14.81
         m_text: So please invest
         m_points: 5
+        m_sprite: 
       - m_time: 16.139
         m_text: in Sunglasses For Cats
         m_points: 5
+        m_sprite: 
       - m_time: 20.977
         m_text: Imagine your kitty
         m_points: 5
+        m_sprite: 
       - m_time: 22.491
         m_text: all
         m_points: 5
+        m_sprite: 
       - m_time: 22.698
         m_text: cool
         m_points: 5
+        m_sprite: 
       - m_time: 23.069
         m_text: and
         m_points: 5
+        m_sprite: 
       - m_time: 23.259
         m_text: chic
         m_points: 5
+        m_sprite: 
       - m_time: 23.876
         m_text: Wearing these pretty shades
         m_points: 5
+        m_sprite: 
       - m_time: 25.395
         m_text: she'll look
         m_points: 5
+        m_sprite: 
       - m_time: 26.012
         m_text: unique
         m_points: 5
+        m_sprite: 
       - m_time: 27.009
         m_text: All sorts of styles
         m_points: 5
+        m_sprite: 
       - m_time: 28.481
         m_text: from
         m_points: 5
+        m_sprite: 
       - m_time: 28.765
         m_text: classic
         m_points: 5
+        m_sprite: 
       - m_time: 29.287
         m_text: to
         m_points: 5
+        m_sprite: 
       - m_time: 29.382
         m_text: bold
         m_points: 5
+        m_sprite: 
       - m_time: 29.952
         m_text: And we do prescriptions
         m_points: 5
+        m_sprite: 
       - m_time: 31.424
         m_text: if your cat
         m_points: 5
+        m_sprite: 
       - m_time: 32.136
         m_text: is old
         m_points: 5
+        m_sprite: 
     - m_phrases:
       - m_time: 26.012
         m_text: like a freak
         m_points: -5
+        m_sprite: 
       - m_time: 32.136
         m_text: has mold
         m_points: -5
-    m_sprites: []
+        m_sprite: 
+    m_sprites:
+    - {fileID: 0}
   m_debugSpeech:
     m_visableTime: 5
     m_streams: []
