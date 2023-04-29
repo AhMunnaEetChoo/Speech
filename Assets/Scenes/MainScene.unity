@@ -446,7 +446,7 @@ RectTransform:
   - {fileID: 1039888669}
   - {fileID: 1546341627}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -483,34 +483,96 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_currentSpeech:
-    m_visableTime: 7
+    m_visableTime: 2
     m_streams:
     - m_phrases:
-      - m_time: 1
-        m_text: Hello
-        m_points: 5
-      - m_time: 3
-        m_text: sorry
-        m_points: 5
-      - m_time: 7
-        m_text: Nervous
-        m_points: 5
+      - m_time: 5.86
+        m_text: Allow me to deliver
+        m_points: 0
+      - m_time: 7.405
+        m_text: a business pitch
+        m_points: 0
+      - m_time: 8.803
+        m_text: "I\u2019m purrfectly certain"
+        m_points: 0
+      - m_time: 10.187
+        m_text: "it\u2019ll make you rich"
+        m_points: 0
+      - m_time: 11.772
+        m_text: "Er, sorry if I\u2019m nervous"
+        m_points: 0
+      - m_time: 13.481
+        m_text: "I\u2019m low on cash"
+        m_points: 0
+      - m_time: 14.81
+        m_text: So please invest
+        m_points: 0
+      - m_time: 16.139
+        m_text: in Sunglasses For Cats
+        m_points: 0
+      - m_time: 20.977
+        m_text: Imagine your kitty
+        m_points: 0
+      - m_time: 22.491
+        m_text: all
+        m_points: 0
+      - m_time: 22.698
+        m_text: cool
+        m_points: 0
+      - m_time: 23.069
+        m_text: and
+        m_points: 0
+      - m_time: 23.259
+        m_text: chic
+        m_points: 0
+      - m_time: 23.876
+        m_text: Wearing these pretty shades
+        m_points: 0
+      - m_time: 25.395
+        m_text: she'll look
+        m_points: 0
+      - m_time: 26.012
+        m_text: unique
+        m_points: 0
+      - m_time: 27.009
+        m_text: All sorts of styles
+        m_points: 0
+      - m_time: 28.481
+        m_text: from
+        m_points: 0
+      - m_time: 28.765
+        m_text: classic
+        m_points: 0
+      - m_time: 29.287
+        m_text: to
+        m_points: 0
+      - m_time: 29.382
+        m_text: bold
+        m_points: 0
+      - m_time: 29.952
+        m_text: And we do prescriptions
+        m_points: 0
+      - m_time: 31.424
+        m_text: if your cat
+        m_points: 0
+      - m_time: 32.136
+        m_text: is old
+        m_points: 0
     - m_phrases:
-      - m_time: 2
-        m_text: I'm
-        m_points: 5
-      - m_time: 4
-        m_text: if
-        m_points: 5
-      - m_time: 5
-        m_text: I
-        m_points: 5
-      - m_time: 6
-        m_text: Seem
-        m_points: 5
+      - m_time: 26.012
+        m_text: like a freak
+        m_points: 0
+      - m_time: 32.136
+        m_text: has mold
+        m_points: 0
+    m_sprites: []
+  m_debugSpeech:
+    m_visableTime: 5
+    m_streams: []
     m_sprites: []
   m_phrasePrefab: {fileID: 53485659254808310, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
   m_musicEmitter: {fileID: 1483888786}
+  m_trackSTate: 2
 --- !u!4 &567764209
 Transform:
   m_ObjectHideFlags: 0
@@ -592,7 +654,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &794325134
 GameObject:
@@ -759,11 +821,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: 10}
+  m_AnchoredPosition: {x: -50, y: 50}
   m_SizeDelta: {x: 0, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &877775369
@@ -1058,7 +1120,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: 20}
+  m_AnchoredPosition: {x: -50, y: 80}
   m_SizeDelta: {x: 0, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1483888785
@@ -1086,7 +1148,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483888785}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
@@ -1125,7 +1187,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1483888788
 MonoBehaviour:
@@ -1134,7 +1196,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483888785}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c4c7ce30a411ff4a84a55de1b68a27c, type: 3}
   m_Name: 
@@ -1480,100 +1542,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1001 &53485658650548867
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 53485659254808310, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_Name
-      value: Scrollyboy
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 9.0275
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 4.8533
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -113.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 4.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53485659254808315, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}

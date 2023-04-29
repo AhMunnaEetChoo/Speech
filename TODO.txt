@@ -1,4 +1,5 @@
 TODO Speech
 
-- parse a fmod music file, pull out all the marker names with associated timings
+- rescale the UI to the new projection
+- use the exported data to setup proper tracks
 - destroy / animate on bar hit

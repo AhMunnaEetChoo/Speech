@@ -47,14 +47,14 @@ public class SpeechManager : MonoBehaviour
     };
     private class ActiveStream
     {
-        public float m_yPosition = 10.0f;
+        public float m_yPosition = 50.0f;
         public List<ActivePhrase> m_activePhrases = new List<ActivePhrase>();
     };
 
     private class ActiveBar // name?
     {
-        public Vector2 m_xRange = new Vector2(-50, 50);
-        public float m_currentTime = -100;
+        public Vector2 m_xRange = new Vector2(-50, 250);
+        public float m_currentTime = 0;
         public List <ActiveStream> activeStreams = new List<ActiveStream>();
     };
 
@@ -71,12 +71,11 @@ public class SpeechManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_musicEmitter.Play();
         m_debugSpeech.m_streams.Add(new Stream());
-
+        m_musicEmitter.Play();
 
         // initialise the active bar
-        float startY = 10.0f;
+        float startY = 50.0f;
         for (int i = 0; i < m_currentSpeech.m_streams.Count; ++i)
         {
             Stream stream = m_currentSpeech.m_streams[i];
@@ -84,9 +83,9 @@ public class SpeechManager : MonoBehaviour
             activeStream.m_yPosition = startY;
             m_activebar.activeStreams.Add(activeStream);
 
-            startY += 10.0f;
+            startY += 30.0f;
         }
-        m_activebar.m_currentTime = - m_currentSpeech.m_visableTime;
+        m_activebar.m_currentTime = 0;
 
     }
 
@@ -96,6 +95,7 @@ public class SpeechManager : MonoBehaviour
         float lastEndTime = lastTime + m_currentSpeech.m_visableTime;
 
         m_activebar.m_currentTime += Time.deltaTime; // TODO do we want to use absolute start and end times?
+
         float barEndTime = m_activebar.m_currentTime + m_currentSpeech.m_visableTime;
 
         Vector2 startPosition = new Vector2(0, 0);
@@ -127,10 +127,22 @@ public class SpeechManager : MonoBehaviour
         {
             Stream stream = m_currentSpeech.m_streams[i];
             ActiveStream activeStream = m_activebar.activeStreams[i];
-            foreach (ActivePhrase activePhrase in activeStream.m_activePhrases)
+
+            for (int j = activeStream.m_activePhrases.Count - 1; j >= 0; j--)
             {
-                float x = Mathf.Lerp(m_activebar.m_xRange.x, m_activebar.m_xRange.y, (activePhrase.m_phrase.m_time - m_activebar.m_currentTime) / m_currentSpeech.m_visableTime);
-                activePhrase.m_gameObject.transform.position = new Vector3(x, activeStream.m_yPosition);
+                ActivePhrase activePhrase = activeStream.m_activePhrases[j];
+                float timeDiff = activePhrase.m_phrase.m_time - m_activebar.m_currentTime;
+                if(timeDiff < 0.0f)
+                {
+                    GameObject.Destroy(activePhrase.m_gameObject);
+                    activeStream.m_activePhrases.RemoveAt(j);
+                }
+                else
+                {
+                    float x = Mathf.Lerp(m_activebar.m_xRange.x, m_activebar.m_xRange.y, timeDiff / m_currentSpeech.m_visableTime);
+
+                    activePhrase.m_gameObject.transform.position = new Vector3(x, activeStream.m_yPosition);
+                }
             }
         }
     }
