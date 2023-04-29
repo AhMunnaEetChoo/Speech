@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class SpeechManager : MonoBehaviour
 {
@@ -30,7 +31,6 @@ public class SpeechManager : MonoBehaviour
     {
         public float m_visableTime = 5.0f;
         public List<Stream> m_streams;
-        public List<Sprite> m_sprites;
     };
 
     [System.Serializable]
@@ -39,18 +39,13 @@ public class SpeechManager : MonoBehaviour
         public float m_time;
         public string m_text;
         public int m_points;
+        public string m_sprite;
     };
 
     [System.Serializable]
     public class Stream
     {
         public List<Phrase> m_phrases = new List<Phrase>();
-    };
-
-    [System.Serializable]
-    public class Sprite
-    {
-
     };
 
     private class ActivePhrase
@@ -114,12 +109,9 @@ public class SpeechManager : MonoBehaviour
         m_activebar.m_currentTime += Time.deltaTime;
         int timelinePosition;
         m_musicEmitter.EventInstance.getTimelinePosition(out timelinePosition);
-        float estMillisecs = m_activebar.m_currentTime * 1000.0f;
-        float estMillisecsFlr = Mathf.Floor(estMillisecs);
-        if(estMillisecsFlr > (float)timelinePosition)
-        {
-            m_activebar.m_currentTime = (float)timelinePosition / 1000.0f;
-        }
+        float musicTime = (float)timelinePosition / 1000.0f;
+        float diff = musicTime - m_activebar.m_currentTime;
+        m_activebar.m_currentTime += diff * 0.2f;
 
         float barEndTime = m_activebar.m_currentTime + m_currentSpeech.m_visableTime;
 
