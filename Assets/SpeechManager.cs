@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 
 public class SpeechManager : MonoBehaviour
 {
     public Speech m_currentSpeech = new Speech();
+    public GameObject m_phrasePrefab;
 
     [System.Serializable]
     public class Speech
@@ -49,7 +51,7 @@ public class SpeechManager : MonoBehaviour
     private class ActiveBar // name?
     {
         public Vector2 m_xRange = new Vector2(-50, 50);
-        public float m_currentTime = 0;
+        public float m_currentTime = -100;
         public List <ActiveStream> activeStreams = new List<ActiveStream>();
     };
 
@@ -69,6 +71,7 @@ public class SpeechManager : MonoBehaviour
 
             startY += 10.0f;
         }
+        m_activebar.m_currentTime = - m_currentSpeech.m_visableTime;
     }
 
     private void AdvanceBar()
@@ -94,10 +97,10 @@ public class SpeechManager : MonoBehaviour
                     // create a new phrase
                     ActivePhrase activePhrase = new ActivePhrase();
                     activePhrase.m_phrase = phrase;
-                    activePhrase.m_gameObject = new GameObject();
-                    
-                    // fixing the exact x position comes later
-                    activePhrase.m_gameObject.transform.position = new Vector3(m_activebar.m_xRange.y, activeStream.m_yPosition);
+                    activePhrase.m_gameObject = GameObject.Instantiate(m_phrasePrefab, new Vector3(m_activebar.m_xRange.y, activeStream.m_yPosition), Quaternion.identity);
+                    TMP_Text newText = activePhrase.m_gameObject.GetComponent<TMP_Text>();
+                    newText.text = phrase.m_text;
+
                     activeStream.m_activePhrases.Add(activePhrase);
                 }
             }
