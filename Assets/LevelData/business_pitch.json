@@ -1,141 +1,299 @@
 {
-    "m_visableTime": 5.0,
+    "m_visableTime": 3.0,
     "m_streams": [
         {
             "m_phrases": [
                 {
-                    "m_time": 5.860000133514404,
-                    "m_text": "Allow me to deliver",
-                    "m_points": 5
+                    "m_time": 5.9730000495910648,
+                    "m_text": "Allow",
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 7.40500020980835,
-                    "m_text": "a business pitch",
-                    "m_points": 5
+                    "m_time": 6.380000114440918,
+                    "m_text": "me",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 6.519999980926514,
+                    "m_text": "to",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 6.659999847412109,
+                    "m_text": "deliver",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 7.4730000495910648,
+                    "m_text": "a",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 7.639999866485596,
+                    "m_text": "business",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 8.239999771118164,
+                    "m_text": "pitch",
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
                     "m_time": 8.803000450134278,
-                    "m_text": "I’m purrfectly certain",
-                    "m_points": 5
+                    "m_text": "I’m",
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 10.187000274658204,
-                    "m_text": "it’ll make you rich",
-                    "m_points": 5
+                    "m_time": 9.100000381469727,
+                    "m_text": "purrfectly",
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 11.772000312805176,
-                    "m_text": "Er, sorry if I’m nervous",
-                    "m_points": 5
+                    "m_time": 9.819999694824219,
+                    "m_text": "certain",
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 13.480999946594239,
-                    "m_text": "I’m low on cash",
-                    "m_points": 5
+                    "m_time": 10.239999771118164,
+                    "m_text": "it’ll",
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 14.8100004196167,
-                    "m_text": "So please invest",
-                    "m_points": 5
+                    "m_time": 10.699999809265137,
+                    "m_text": "make",
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 16.138999938964845,
-                    "m_text": "in Sunglasses For Cats",
-                    "m_points": 5
+                    "m_time": 10.960000038146973,
+                    "m_text": "you",
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 20.976999282836915,
+                    "m_time": 11.260000228881836,
+                    "m_text": "rich",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 11.87399959564209,
+                    "m_text": "Er",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 12.15999984741211,
+                    "m_text": "sorry",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 12.5600004196167,
+                    "m_text": "if",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 12.800000190734864,
+                    "m_text": "i'm",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 13.0,
+                    "m_text": "nervous",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 13.600000381469727,
+                    "m_text": "I’m",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 13.760000228881836,
+                    "m_text": "low",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 14.0,
+                    "m_text": "on",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 14.279999732971192,
+                    "m_text": "cash",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 14.850000381469727,
+                    "m_text": "So",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 15.180000305175782,
+                    "m_text": "please",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 15.539999961853028,
+                    "m_text": "invest",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 16.200000762939454,
+                    "m_text": "in",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 16.360000610351564,
+                    "m_text": "Sunglasses",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 17.219999313354493,
+                    "m_text": "For",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 17.479999542236329,
+                    "m_text": "Cats",
+                    "m_points": 5,
+                    "m_sprite": ""
+                },
+                {
+                    "m_time": 21.149999618530275,
                     "m_text": "Imagine your kitty",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
                     "m_time": 22.490999221801759,
                     "m_text": "all",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 22.697999954223634,
+                    "m_time": 22.799999237060548,
                     "m_text": "cool",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 23.069000244140626,
+                    "m_time": 23.100000381469728,
                     "m_text": "and",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 23.259000778198243,
+                    "m_time": 23.299999237060548,
                     "m_text": "chic",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
                     "m_time": 23.875999450683595,
                     "m_text": "Wearing these pretty shades",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 25.395000457763673,
+                    "m_time": 25.450000762939454,
                     "m_text": "she'll look",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 26.011999130249025,
+                    "m_time": 26.149999618530275,
                     "m_text": "unique",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 27.009000778198243,
+                    "m_time": 27.049999237060548,
                     "m_text": "All sorts of styles",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
                     "m_time": 28.481000900268556,
                     "m_text": "from",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 28.764999389648439,
+                    "m_time": 28.850000381469728,
                     "m_text": "classic",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 29.28700065612793,
+                    "m_time": 29.350000381469728,
                     "m_text": "to",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 29.381999969482423,
+                    "m_time": 29.621000289916993,
                     "m_text": "bold",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 29.95199966430664,
+                    "m_time": 30.025999069213868,
                     "m_text": "And we do prescriptions",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 31.423999786376954,
+                    "m_time": 31.549999237060548,
                     "m_text": "if your cat",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 32.13600158691406,
+                    "m_time": 32.349998474121097,
                     "m_text": "is old",
-                    "m_points": 5
+                    "m_points": 5,
+                    "m_sprite": ""
                 }
             ]
         },
         {
-            "m_phrases": [
+            "m_phrases" : [
                 {
-                    "m_time": 26.011999130249025,
+                    "m_time": 26.149999618530275,
                     "m_text": "like a freak",
-                    "m_points": -5
+                    "m_points": -5,
+                    "m_sprite": ""
                 },
                 {
-                    "m_time": 32.13600158691406,
+                    "m_time": 32.349998474121097,
                     "m_text": "has mold",
-                    "m_points": -5
+                    "m_points": -5,
+                    "m_sprite": ""
                 }
             ]
         }
