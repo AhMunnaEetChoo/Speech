@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 53485659254808315}
   - component: {fileID: 53485659254808308}
   - component: {fileID: 53485659254808309}
+  - component: {fileID: 6411698537452063888}
   m_Layer: 10
   m_Name: Scrollyboy
   m_TagString: Untagged
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 30
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -172,3 +173,17 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 53485659254808308}
   m_maskType: 0
+--- !u!114 &6411698537452063888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53485659254808310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2a2b23b5bbfe044bbfb1090ac9573fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 0.1
+  maxSize: 2
