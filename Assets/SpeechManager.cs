@@ -11,6 +11,8 @@ public class SpeechManager : MonoBehaviour
 
     public GameObject m_phrasePrefab;
     public FMODUnity.StudioEventEmitter m_musicEmitter;
+    public GameObject m_arrowThing;
+    public GameObject m_scoreText;
 
     [System.Serializable]
     public class Speech
@@ -67,6 +69,8 @@ public class SpeechManager : MonoBehaviour
         Good,
     }
     public eTrackState m_trackSTate = eTrackState.Good;
+    public int m_selectedStream = 0;
+    public int m_score = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -134,8 +138,43 @@ public class SpeechManager : MonoBehaviour
                 float timeDiff = activePhrase.m_phrase.m_time - m_activebar.m_currentTime;
                 if(timeDiff < 0.0f)
                 {
+                    // scoring
+                    bool thisStreamSelected = i == m_selectedStream;
+                    if (thisStreamSelected)
+                    {
+                        m_score += activePhrase.m_phrase.m_points;
+                        m_scoreText.GetComponent<TextMeshPro>().text = m_score.ToString();
+                    }
+
+                    if(activePhrase.m_phrase.m_points > 0)
+                    {
+                        if(thisStreamSelected)
+                        {
+                            SetTrackState(eTrackState.Good);
+                        }
+                        else
+                        {
+                            SetTrackState(eTrackState.None);
+                        }
+                    }
+                    else
+                    {
+                        if (thisStreamSelected)
+                        {
+                            SetTrackState(eTrackState.Bad);
+                        }
+                        else
+                        {
+                            SetTrackState(eTrackState.Good);
+                        }
+                    }
+                    
+                    
+                    // TODO something sad if we missed the above
+
                     GameObject.Destroy(activePhrase.m_gameObject);
                     activeStream.m_activePhrases.RemoveAt(j);
+
                 }
                 else
                 {
@@ -150,6 +189,27 @@ public class SpeechManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // read input
+        float vertical = Input.GetAxis("Vertical");
+        if(vertical < 0)
+        {
+            if(m_selectedStream > 0)
+            {
+                m_selectedStream--;
+            }
+        }
+        else if(vertical > 0)
+        {
+            if (m_selectedStream < m_currentSpeech.m_streams.Count - 1)
+            {
+                m_selectedStream++;
+            }
+        }
+
+        // set arrow position
+        float arrowY = m_activebar.activeStreams[m_selectedStream].m_yPosition;
+        m_arrowThing.transform.position = new Vector3(m_arrowThing.transform.position.x, arrowY);
+
         AdvanceBar();
     }
 
