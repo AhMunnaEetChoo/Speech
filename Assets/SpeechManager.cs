@@ -7,6 +7,8 @@ using UnityEngine;
 public class SpeechManager : MonoBehaviour
 {
     public Speech m_currentSpeech = new Speech();
+    public Speech m_debugSpeech = new Speech();
+
     public GameObject m_phrasePrefab;
     public FMODUnity.StudioEventEmitter m_musicEmitter;
 
@@ -29,7 +31,7 @@ public class SpeechManager : MonoBehaviour
     [System.Serializable]
     public class Stream
     {
-        public List<Phrase> m_phrases;
+        public List<Phrase> m_phrases = new List<Phrase>();
     };
 
     [System.Serializable]
@@ -58,17 +60,21 @@ public class SpeechManager : MonoBehaviour
 
     private ActiveBar m_activebar = new ActiveBar();
 
-    private enum eTrackState
+    public enum eTrackState
     {
         None,
         Bad,
         Good,
     }
-    private eTrackState m_trackSTate = eTrackState.Good;
+    public eTrackState m_trackSTate = eTrackState.Good;
 
     // Start is called before the first frame update
     void Start()
     {
+        m_musicEmitter.Play();
+        m_debugSpeech.m_streams.Add(new Stream());
+
+
         // initialise the active bar
         float startY = 10.0f;
         for (int i = 0; i < m_currentSpeech.m_streams.Count; ++i)
@@ -82,7 +88,6 @@ public class SpeechManager : MonoBehaviour
         }
         m_activebar.m_currentTime = - m_currentSpeech.m_visableTime;
 
-        m_musicEmitter.Play();
     }
 
     private void AdvanceBar()

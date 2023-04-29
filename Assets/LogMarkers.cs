@@ -15,6 +15,9 @@ public class LogMarkers : MonoBehaviour
         {
             var parameter = (FMOD.Studio.TIMELINE_MARKER_PROPERTIES)System.Runtime.InteropServices.Marshal.PtrToStructure(parameterPtr, typeof(FMOD.Studio.TIMELINE_MARKER_PROPERTIES));
             UnityEngine.Debug.LogFormat("Marker: {0}", (string)parameter.name);
+            SpeechManager man = GameObject.Find("SpeechManager").GetComponent<SpeechManager>();
+
+            man.m_debugSpeech.m_streams[0].m_phrases.Add(new SpeechManager.Phrase { m_time = ((float)parameter.position)/1000f, m_text = (string)parameter.name, m_points = 0 });
         }
 
         return FMOD.RESULT.OK;
