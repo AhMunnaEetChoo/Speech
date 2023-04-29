@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f1b6d4bc-8747-456d-bf30-b6e68e4ccae0}">
+		<property name="assetPath">
+			<value>Game Jam Delivery Good 2.aif</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>139.74683333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1dc67aa9-dfa2-4a16-86a5-226bd2798c2c}</destination>
+		</relationship>
+	</object>
+</objects>
