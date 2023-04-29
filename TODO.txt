@@ -1,5 +1,3 @@
 TODO Speech
 
-- rescale the UI to the new projection
-- use the exported data to setup proper tracks
 - destroy / animate on bar hit
