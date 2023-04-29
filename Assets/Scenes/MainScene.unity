@@ -237,20 +237,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_currentSpeech:
-    m_visableTime: 5
+    m_visableTime: 7
     m_streams:
     - m_phrases:
       - m_time: 1
         m_text: Hello
         m_points: 5
-      - m_time: 2
-        m_text: I'm
-        m_points: 5
-      - m_time: 2
-        m_text: I'm
-        m_points: 5
       - m_time: 3
         m_text: sorry
+        m_points: 5
+      - m_time: 7
+        m_text: Nervous
+        m_points: 5
+    - m_phrases:
+      - m_time: 2
+        m_text: I'm
         m_points: 5
       - m_time: 4
         m_text: if
@@ -261,10 +262,6 @@ MonoBehaviour:
       - m_time: 6
         m_text: Seem
         m_points: 5
-      - m_time: 7
-        m_text: Nervous
-        m_points: 5
-    - m_phrases: []
     m_sprites: []
   m_phrasePrefab: {fileID: 53485659254808310, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
 --- !u!4 &567764209
