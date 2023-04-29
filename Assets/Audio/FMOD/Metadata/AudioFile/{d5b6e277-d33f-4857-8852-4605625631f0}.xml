@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d5b6e277-d33f-4857-8852-4605625631f0}">
+		<property name="assetPath">
+			<value>Game Jam Delivery Drum Beat 1.aif</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>6.0759583333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1dc67aa9-dfa2-4a16-86a5-226bd2798c2c}</destination>
+		</relationship>
+	</object>
+</objects>
