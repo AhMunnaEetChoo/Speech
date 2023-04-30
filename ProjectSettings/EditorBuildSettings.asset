@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LoadFMODSoundBanks.unity
     guid: 00508451759c45e4fb0a2cfc124d232f
   - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 4cc3020b85b7c414286b7b7d3fdb1bd2
+  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

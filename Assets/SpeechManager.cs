@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Networking;
+using UnityEngine.Playables;
 using UnityEngine.Video;
 
 public class SpeechManager : MonoBehaviour
 {
+    public string m_jsonURL = "";
+    public string m_jsonData = "";
     public Speech m_currentSpeech = new Speech();
     public Speech m_debugSpeech = new Speech();
 
@@ -91,6 +95,8 @@ public class SpeechManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(GetRequest(m_jsonURL, false));
+
         // initialise the active bar
         int maxStreamNo = 0;
         foreach(Phrase phrase in m_currentSpeech.m_phrases)
@@ -268,8 +274,12 @@ public class SpeechManager : MonoBehaviour
         // wait for the streamed video to be ready
         if(!m_hasStarted)
         {
-            if (m_videoPlayer.isPrepared && m_videoPlayerBad.isPrepared && m_videoPlayerBlank.isPrepared)
+            if (m_videoPlayer.isPrepared && m_videoPlayerBad.isPrepared && m_videoPlayerBlank.isPrepared
+                && m_jsonData.Length > 0)
             {
+#if !UNITY_EDITOR
+                m_currentSpeech = JsonUtility.FromJson<Speech>(m_jsonData);
+#endif
                 m_hasStarted = true;
                 m_musicEmitter.Play();
             }
@@ -351,6 +361,33 @@ public class SpeechManager : MonoBehaviour
             string paramNane = "DialogGoodBad";
             eventDesc.getParameterDescriptionByName(paramNane, out param);
             m_musicEmitter.EventInstance.setParameterByID(param.id, (int)m_trackState);
+        }
+    }
+
+
+    IEnumerator GetRequest(string uri, bool _extraGame)
+    {
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
+        {
+            // Request and wait for the desired page.
+            yield return webRequest.SendWebRequest();
+
+            string[] pages = uri.Split('/');
+            int page = pages.Length - 1;
+
+            switch (webRequest.result)
+            {
+                case UnityWebRequest.Result.ConnectionError:
+                case UnityWebRequest.Result.DataProcessingError:
+                    Debug.LogError(pages[page] + ": Error: " + webRequest.error);
+                    break;
+                case UnityWebRequest.Result.ProtocolError:
+                    Debug.LogError(pages[page] + ": HTTP Error: " + webRequest.error);
+                    break;
+                case UnityWebRequest.Result.Success:
+                    m_jsonData = webRequest.downloadHandler.text;
+                    break;
+            }
         }
     }
 }
