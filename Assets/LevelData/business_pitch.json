@@ -1,341 +1,1636 @@
 {
-    "m_visableTime": 3.0,
+    "m_visableTime": 5.0,
     "m_phrases": [
         {
-            "m_time": 5.9730000495910648,
+            "m_time": 7.502999782562256,
             "m_text": "Allow",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 6.380000114440918,
+            "m_time": 7.908999919891357,
             "m_text": "me",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 6.519999980926514,
+            "m_time": 8.048999786376954,
             "m_text": "to",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 6.659999847412109,
+            "m_time": 8.189000129699707,
             "m_text": "deliver",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 7.4730000495910648,
+            "m_time": 9.003000259399414,
             "m_text": "a",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 7.639999866485596,
+            "m_time": 9.168999671936036,
             "m_text": "business",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 8.239999771118164,
+            "m_time": 9.769000053405762,
             "m_text": "pitch",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 8.803000450134278,
+            "m_time": 10.333000183105469,
             "m_text": "I’m",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 9.100000381469727,
+            "m_time": 10.628999710083008,
             "m_text": "purrfectly",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 9.819999694824219,
+            "m_time": 11.348999977111817,
             "m_text": "certain",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 10.239999771118164,
+            "m_time": 11.769000053405762,
             "m_text": "it’ll",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 10.699999809265137,
+            "m_time": 12.229000091552735,
             "m_text": "make",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 10.960000038146973,
+            "m_time": 12.48900032043457,
             "m_text": "you",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 11.260000228881836,
+            "m_time": 12.788999557495118,
             "m_text": "rich",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 11.87399959564209,
+            "m_time": 13.404000282287598,
             "m_text": "Er",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 12.15999984741211,
+            "m_time": 13.689000129699707,
             "m_text": "sorry",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 12.5600004196167,
+            "m_time": 14.08899974822998,
             "m_text": "if",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 12.800000190734864,
+            "m_time": 14.329000473022461,
             "m_text": "i'm",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 13.0,
+            "m_time": 14.529000282287598,
             "m_text": "nervous",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 13.600000381469727,
+            "m_time": 15.128999710083008,
             "m_text": "I’m",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 13.760000228881836,
+            "m_time": 15.288999557495118,
             "m_text": "low",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 14.0,
+            "m_time": 15.529000282287598,
             "m_text": "on",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 14.279999732971192,
+            "m_time": 15.809000015258789,
             "m_text": "cash",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 14.850000381469727,
+            "m_time": 16.378999710083009,
             "m_text": "So",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 15.180000305175782,
+            "m_time": 16.708999633789064,
             "m_text": "please",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 15.539999961853028,
+            "m_time": 17.069000244140626,
             "m_text": "invest",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 16.200000762939454,
+            "m_time": 17.729000091552736,
             "m_text": "in",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 16.360000610351564,
+            "m_time": 17.888999938964845,
             "m_text": "Sunglasses",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 17.219999313354493,
+            "m_time": 18.749000549316408,
             "m_text": "For",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 17.479999542236329,
+            "m_time": 19.009000778198243,
             "m_text": "Cats",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 21.149999618530275,
-            "m_text": "Imagine your kitty",
+            "m_time": 25.72599983215332,
+            "m_text": "Imagine",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 22.490999221801759,
+            "m_time": 26.215999603271486,
+            "m_text": "your",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 26.615999221801759,
+            "m_text": "kitty",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 27.066999435424806,
             "m_text": "all",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 22.799999237060548,
+            "m_time": 27.375999450683595,
             "m_text": "cool",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 23.100000381469728,
+            "m_time": 27.676000595092775,
             "m_text": "and",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 23.299999237060548,
+            "m_time": 27.875999450683595,
             "m_text": "chic",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 23.875999450683595,
-            "m_text": "Wearing these pretty shades",
+            "m_time": 28.47599983215332,
+            "m_text": "Wearing",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 25.450000762939454,
-            "m_text": "she'll look",
+            "m_time": 28.97599983215332,
+            "m_text": "these",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 26.149999618530275,
-            "m_text": "unique",
+            "m_time": 29.275999069213868,
+            "m_text": "pretty",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 27.049999237060548,
-            "m_text": "All sorts of styles",
-            "m_points": 5,
-            "m_sprite": "",
-            "m_stream": 1
-        },
-        {
-            "m_time": 28.481000900268556,
-            "m_text": "from",
-            "m_points": 5,
-            "m_sprite": "",
-            "m_stream": 1
-        },
-        {
-            "m_time": 28.850000381469728,
-            "m_text": "classic",
-            "m_points": 5,
-            "m_sprite": "",
-            "m_stream": 1
-        },
-        {
-            "m_time": 29.350000381469728,
-            "m_text": "to",
-            "m_points": 5,
-            "m_sprite": "",
-            "m_stream": 1
-        },
-        {
-            "m_time": 29.621000289916993,
-            "m_text": "bold",
+            "m_time": 29.63599967956543,
+            "m_text": "shades",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
             "m_time": 30.025999069213868,
-            "m_text": "And we do prescriptions",
+            "m_text": "she'll",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 31.549999237060548,
-            "m_text": "if your cat",
+            "m_time": 30.215999603271486,
+            "m_text": "look",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 32.349998474121097,
-            "m_text": "is old",
+            "m_time": 30.72599983215332,
+            "m_text": "like",
+            "m_points": -50,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
+            "m_time": 30.72599983215332,
+            "m_text": "unique",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
-            "m_time": 26.149999618530275,
-            "m_text": "like a freak",
-            "m_points": -5,
+            "m_time": 30.916000366210939,
+            "m_text": "a",
+            "m_points": -50,
             "m_sprite": "",
-            "m_stream" : 2
+            "m_stream": 2
         },
         {
-            "m_time": 32.349998474121097,
-            "m_text": "has mold",
-            "m_points": -5,
+            "m_time": 31.115999221801759,
+            "m_text": "freak",
+            "m_points": -50,
             "m_sprite": "",
-            "m_stream" : 2
+            "m_stream": 2
+        },
+        {
+            "m_time": 31.625999450683595,
+            "m_text": "All",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 31.836000442504884,
+            "m_text": "sorts",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 32.26100158691406,
+            "m_text": "of",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 32.59600067138672,
+            "m_text": "styles",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 33.05699920654297,
+            "m_text": "from",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 33.42599868774414,
+            "m_text": "classic",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 33.92599868774414,
+            "m_text": "to",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 34.198001861572269,
+            "m_text": "bold",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 34.60300064086914,
+            "m_text": "And",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 34.816001892089847,
+            "m_text": "we",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 35.01599884033203,
+            "m_text": "do",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 35.316001892089847,
+            "m_text": "prescriptions",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 36.125999450683597,
+            "m_text": "if",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 36.33599853515625,
+            "m_text": "your",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 36.5359992980957,
+            "m_text": "cat",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 36.92599868774414,
+            "m_text": "is",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 36.92599868774414,
+            "m_text": "has",
+            "m_points": -50,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
+            "m_time": 37.29600143432617,
+            "m_text": "old",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 37.29600143432617,
+            "m_text": "mould",
+            "m_points": -50,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
+            "m_time": 40.92599868774414,
+            "m_text": "Allow",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 41.332000732421878,
+            "m_text": "me",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 41.47200012207031,
+            "m_text": "to",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 41.61199951171875,
+            "m_text": "deliver",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 42.42599868774414,
+            "m_text": "a",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 42.59199905395508,
+            "m_text": "business",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 43.19200134277344,
+            "m_text": "pitch",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 43.75600051879883,
+            "m_text": "I’m",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 44.051998138427737,
+            "m_text": "purrfectly",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 44.77199935913086,
+            "m_text": "certain",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 45.19200134277344,
+            "m_text": "it’ll",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 45.652000427246097,
+            "m_text": "make",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 45.9119987487793,
+            "m_text": "you",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 46.21200180053711,
+            "m_text": "rich",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 46.82699966430664,
+            "m_text": "Er",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 47.11199951171875,
+            "m_text": "sorry",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 47.512001037597659,
+            "m_text": "if",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 47.75199890136719,
+            "m_text": "i'm",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 47.95199966430664,
+            "m_text": "nervous",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 48.551998138427737,
+            "m_text": "I’m",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 48.71200180053711,
+            "m_text": "low",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 48.95199966430664,
+            "m_text": "on",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 49.231998443603519,
+            "m_text": "cash",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 49.801998138427737,
+            "m_text": "So",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 50.13199996948242,
+            "m_text": "please",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 50.492000579833987,
+            "m_text": "invest",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 51.152000427246097,
+            "m_text": "in",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 51.3120002746582,
+            "m_text": "Sunglasses",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 52.172000885009769,
+            "m_text": "For",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 52.43199920654297,
+            "m_text": "Cats",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 59.17599868774414,
+            "m_text": "Imagine",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 59.66600036621094,
+            "m_text": "your",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 60.0,
+            "m_text": "kitty",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 60.516998291015628,
+            "m_text": "all",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 60.82600021362305,
+            "m_text": "cool",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 61.125999450683597,
+            "m_text": "and",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 61.32600021362305,
+            "m_text": "chic",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 61.92599868774414,
+            "m_text": "Wearing",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 62.42599868774414,
+            "m_text": "these",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 62.72600173950195,
+            "m_text": "pretty",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 63.08599853515625,
+            "m_text": "shades",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 63.47600173950195,
+            "m_text": "she'll",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 63.66600036621094,
+            "m_text": "look",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 64.1760025024414,
+            "m_text": "like",
+            "m_points": -50,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
+            "m_time": 64.1760025024414,
+            "m_text": "unique",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 64.36599731445313,
+            "m_text": "a",
+            "m_points": -50,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
+            "m_time": 64.56600189208985,
+            "m_text": "freak",
+            "m_points": -50,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
+            "m_time": 65.07599639892578,
+            "m_text": "All",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 65.28600311279297,
+            "m_text": "sorts",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 65.71099853515625,
+            "m_text": "of",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 66.0459976196289,
+            "m_text": "styles",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 66.50700378417969,
+            "m_text": "from",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 66.8759994506836,
+            "m_text": "classic",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 67.3759994506836,
+            "m_text": "to",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 67.64800262451172,
+            "m_text": "bold",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 68.0530014038086,
+            "m_text": "And",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 68.26599884033203,
+            "m_text": "we",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 68.46600341796875,
+            "m_text": "do",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 68.76599884033203,
+            "m_text": "prescriptions",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 69.57599639892578,
+            "m_text": "if",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 69.78600311279297,
+            "m_text": "your",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 69.98600006103516,
+            "m_text": "cat",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 70.3759994506836,
+            "m_text": "is",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 70.3759994506836,
+            "m_text": "has",
+            "m_points": -50,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
+            "m_time": 70.74600219726563,
+            "m_text": "old",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 70.74600219726563,
+            "m_text": "mould",
+            "m_points": -50,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
+            "m_time": 76.06900024414063,
+            "m_text": "said",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 77.1259994506836,
+            "m_text": "Ninety",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 77.5260009765625,
+            "m_text": "one",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 77.7760009765625,
+            "m_text": "percent",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 78.1259994506836,
+            "m_text": "of",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 78.2760009765625,
+            "m_text": "cat",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 78.55599975585938,
+            "m_text": "owners",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 79.35600280761719,
+            "m_text": "they'd",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 79.69599914550781,
+            "m_text": "buy",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 80.25599670410156,
+            "m_text": "this",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 80.55599975585938,
+            "m_text": "awesome",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 81.15599822998047,
+            "m_text": "product",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 81.71600341796875,
+            "m_text": "to",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 81.97599792480469,
+            "m_text": "protect",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 82.31600189208985,
+            "m_text": "their",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 82.47599792480469,
+            "m_text": "cat's",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 82.8759994506836,
+            "m_text": "eyes",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 83.33599853515625,
+            "m_text": "we've",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 83.63600158691406,
+            "m_text": "done",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 83.99600219726563,
+            "m_text": "the",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 84.23600006103516,
+            "m_text": "research",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 84.6760025024414,
+            "m_text": "and",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 84.95600128173828,
+            "m_text": "the",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 85.13600158691406,
+            "m_text": "numbers",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 85.53600311279297,
+            "m_text": "don't",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 85.7959976196289,
+            "m_text": "lie",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 86.43599700927735,
+            "m_text": "it's",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 86.55599975585938,
+            "m_text": "the",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 86.71600341796875,
+            "m_text": "healthy",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 87.19599914550781,
+            "m_text": "choice",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 87.65599822998047,
+            "m_text": "that",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 87.7959976196289,
+            "m_text": "makes",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 87.93599700927735,
+            "m_text": "your",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 88.1760025024414,
+            "m_text": "feeline",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 88.63600158691406,
+            "m_text": "look",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 88.93599700927735,
+            "m_text": "fly",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 95.60600280761719,
+            "m_text": "Imagine",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 96.09600067138672,
+            "m_text": "your",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 96.49600219726563,
+            "m_text": "kitty",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 96.9469985961914,
+            "m_text": "all",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 97.25599670410156,
+            "m_text": "cool",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 97.55599975585938,
+            "m_text": "and",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 97.75599670410156,
+            "m_text": "chic",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 98.35600280761719,
+            "m_text": "Wearing",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 98.85600280761719,
+            "m_text": "these",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 99.15599822998047,
+            "m_text": "pretty",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 99.51599884033203,
+            "m_text": "shades",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 99.90599822998047,
+            "m_text": "she'll",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 100.09600067138672,
+            "m_text": "look",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 100.60600280761719,
+            "m_text": "like",
+            "m_points": -50,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
+            "m_time": 100.60600280761719,
+            "m_text": "unique",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 100.7959976196289,
+            "m_text": "a",
+            "m_points": -50,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
+            "m_time": 100.99600219726563,
+            "m_text": "freak",
+            "m_points": -50,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
+            "m_time": 101.50599670410156,
+            "m_text": "All",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 101.71600341796875,
+            "m_text": "sorts",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 102.14099884033203,
+            "m_text": "of",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 102.47599792480469,
+            "m_text": "styles",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 102.93699645996094,
+            "m_text": "from",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 103.30599975585938,
+            "m_text": "classic",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 103.80599975585938,
+            "m_text": "to",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 104.0780029296875,
+            "m_text": "bold",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 104.48300170898438,
+            "m_text": "And",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 104.69599914550781,
+            "m_text": "we",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 104.89600372314453,
+            "m_text": "do",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 105.19599914550781,
+            "m_text": "prescriptions",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 106.00599670410156,
+            "m_text": "if",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 106.21600341796875,
+            "m_text": "your",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 106.41600036621094,
+            "m_text": "cat",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 106.80599975585938,
+            "m_text": "is",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 106.80599975585938,
+            "m_text": "has",
+            "m_points": -50,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
+            "m_time": 107.1760025024414,
+            "m_text": "old",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 107.1760025024414,
+            "m_text": "mould",
+            "m_points": -50,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
+            "m_time": 113.94400024414063,
+            "m_text": "Don't",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 114.3759994506836,
+            "m_text": "be",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 114.6259994506836,
+            "m_text": "sad",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 115.1259994506836,
+            "m_text": "but",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 115.32599639892578,
+            "m_text": "my",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 115.6259994506836,
+            "m_text": "speech",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 115.82599639892578,
+            "m_text": "is",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 116.0260009765625,
+            "m_text": "ending",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 116.57599639892578,
+            "m_text": "sunglasses",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 117.4260025024414,
+            "m_text": "for",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 117.72599792480469,
+            "m_text": "cats",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 118.47599792480469,
+            "m_text": "patent",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 119.07599639892578,
+            "m_text": "pending",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 119.8759994506836,
+            "m_text": "I",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 120.0260009765625,
+            "m_text": "hope",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 120.22599792480469,
+            "m_text": "you'll",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 120.47599792480469,
+            "m_text": "invest",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 121.32599639892578,
+            "m_text": "against",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 121.6760025024414,
+            "m_text": "all",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 122.0260009765625,
+            "m_text": "the",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 122.22599792480469,
+            "m_text": "odds",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 122.57599639892578,
+            "m_text": "sunglasses",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 123.6259994506836,
+            "m_text": "for",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 123.7760009765625,
+            "m_text": "cats",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 124.1760025024414,
+            "m_text": "and",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 124.3759994506836,
+            "m_text": "we",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 124.5260009765625,
+            "m_text": "also",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 124.97599792480469,
+            "m_text": "do",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
+        },
+        {
+            "m_time": 125.32599639892578,
+            "m_text": "dogs",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 1
         }
     ]
 }

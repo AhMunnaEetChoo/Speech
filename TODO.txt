@@ -1,5 +1,4 @@
 TODO Speech
 
-- web build that loads FMOD sound banks
 - extract new markers into json
 - trigger high score section

@@ -952,248 +952,1173 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_currentSpeech:
-    m_visableTime: 3
+    m_visableTime: 2.5
     m_phrases:
-    - m_time: 5.973
+    - m_time: 7.503
       m_text: Allow
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 6.38
+    - m_time: 7.909
       m_text: me
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 6.52
+    - m_time: 8.049
       m_text: to
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 6.66
+    - m_time: 8.189
       m_text: deliver
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 7.473
+    - m_time: 9.003
       m_text: a
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 7.64
+    - m_time: 9.169
       m_text: business
       m_points: 5
-      m_sprite: P2_ABusinessPitch
+      m_sprite: 
       m_stream: 1
-    - m_time: 8.24
+    - m_time: 9.769
       m_text: pitch
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 8.803
+    - m_time: 10.333
       m_text: "I\u2019m"
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 9.1
+    - m_time: 10.629
       m_text: purrfectly
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 9.82
+    - m_time: 11.349
       m_text: certain
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 10.24
+    - m_time: 11.769
       m_text: "it\u2019ll"
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 10.7
+    - m_time: 12.229
       m_text: make
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 10.96
+    - m_time: 12.489
       m_text: you
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 11.26
+    - m_time: 12.789
       m_text: rich
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 11.874
+    - m_time: 13.404
       m_text: Er
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 12.16
+    - m_time: 13.689
       m_text: sorry
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 12.56
+    - m_time: 14.089
       m_text: if
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 12.8
+    - m_time: 14.329
       m_text: i'm
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 13
+    - m_time: 14.529
       m_text: nervous
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 13.6
+    - m_time: 15.129
       m_text: "I\u2019m"
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 13.76
+    - m_time: 15.289
       m_text: low
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 14
+    - m_time: 15.529
       m_text: on
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 14.28
+    - m_time: 15.809
       m_text: cash
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 14.85
+    - m_time: 16.379
       m_text: So
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 15.18
+    - m_time: 16.709
       m_text: please
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 15.54
+    - m_time: 17.069
       m_text: invest
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 16.2
+    - m_time: 17.729
       m_text: in
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 16.36
+    - m_time: 17.889
       m_text: Sunglasses
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 17.22
+    - m_time: 18.749
       m_text: For
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 17.48
+    - m_time: 19.009
       m_text: Cats
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 21.15
-      m_text: Imagine your kitty
+    - m_time: 25.726
+      m_text: Imagine
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 22.491
+    - m_time: 26.216
+      m_text: your
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 26.616
+      m_text: kitty
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 27.067
       m_text: all
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 22.8
+    - m_time: 27.376
       m_text: cool
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 23.1
+    - m_time: 27.676
       m_text: and
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 23.3
+    - m_time: 27.876
       m_text: chic
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 23.876
-      m_text: Wearing these pretty shades
+    - m_time: 28.476
+      m_text: Wearing
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 25.45
-      m_text: she'll look
+    - m_time: 28.976
+      m_text: these
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 26.15
-      m_text: unique
+    - m_time: 29.276
+      m_text: pretty
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 27.05
-      m_text: All sorts of styles
-      m_points: 5
-      m_sprite: 
-      m_stream: 1
-    - m_time: 28.481
-      m_text: from
-      m_points: 5
-      m_sprite: 
-      m_stream: 1
-    - m_time: 28.85
-      m_text: classic
-      m_points: 5
-      m_sprite: 
-      m_stream: 1
-    - m_time: 29.35
-      m_text: to
-      m_points: 5
-      m_sprite: 
-      m_stream: 1
-    - m_time: 29.621
-      m_text: bold
+    - m_time: 29.636
+      m_text: shades
       m_points: 5
       m_sprite: 
       m_stream: 1
     - m_time: 30.026
-      m_text: And we do prescriptions
+      m_text: she'll
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 31.55
-      m_text: if your cat
+    - m_time: 30.216
+      m_text: look
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 32.35
-      m_text: is old
-      m_points: 5
-      m_sprite: 
-      m_stream: 1
-    - m_time: 26.15
-      m_text: like a freak
-      m_points: -5
+    - m_time: 30.726
+      m_text: like
+      m_points: -50
       m_sprite: 
       m_stream: 2
-    - m_time: 32.35
-      m_text: has mold
-      m_points: -5
+    - m_time: 30.726
+      m_text: unique
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 30.916
+      m_text: a
+      m_points: -50
       m_sprite: 
       m_stream: 2
+    - m_time: 31.116
+      m_text: freak
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
+    - m_time: 31.626
+      m_text: All
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 31.836
+      m_text: sorts
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 32.261
+      m_text: of
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 32.596
+      m_text: styles
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 33.057
+      m_text: from
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 33.426
+      m_text: classic
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 33.926
+      m_text: to
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 34.198
+      m_text: bold
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 34.603
+      m_text: And
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 34.816
+      m_text: we
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 35.016
+      m_text: do
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 35.316
+      m_text: prescriptions
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 36.126
+      m_text: if
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 36.336
+      m_text: your
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 36.536
+      m_text: cat
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 36.926
+      m_text: is
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 36.926
+      m_text: has
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
+    - m_time: 37.296
+      m_text: old
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 37.296
+      m_text: mould
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
+    - m_time: 40.926
+      m_text: Allow
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 41.332
+      m_text: me
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 41.472
+      m_text: to
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 41.612
+      m_text: deliver
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 42.426
+      m_text: a
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 42.592
+      m_text: business
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 43.192
+      m_text: pitch
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 43.756
+      m_text: "I\u2019m"
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 44.052
+      m_text: purrfectly
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 44.772
+      m_text: certain
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 45.192
+      m_text: "it\u2019ll"
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 45.652
+      m_text: make
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 45.912
+      m_text: you
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 46.212
+      m_text: rich
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 46.827
+      m_text: Er
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 47.112
+      m_text: sorry
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 47.512
+      m_text: if
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 47.752
+      m_text: i'm
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 47.952
+      m_text: nervous
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 48.552
+      m_text: "I\u2019m"
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 48.712
+      m_text: low
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 48.952
+      m_text: on
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 49.232
+      m_text: cash
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 49.802
+      m_text: So
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 50.132
+      m_text: please
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 50.492
+      m_text: invest
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 51.152
+      m_text: in
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 51.312
+      m_text: Sunglasses
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 52.172
+      m_text: For
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 52.432
+      m_text: Cats
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 59.176
+      m_text: Imagine
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 59.666
+      m_text: your
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 60
+      m_text: kitty
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 60.517
+      m_text: all
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 60.826
+      m_text: cool
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 61.126
+      m_text: and
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 61.326
+      m_text: chic
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 61.926
+      m_text: Wearing
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 62.426
+      m_text: these
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 62.726
+      m_text: pretty
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 63.086
+      m_text: shades
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 63.476
+      m_text: she'll
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 63.666
+      m_text: look
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 64.176
+      m_text: like
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
+    - m_time: 64.176
+      m_text: unique
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 64.366
+      m_text: a
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
+    - m_time: 64.566
+      m_text: freak
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
+    - m_time: 65.076
+      m_text: All
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 65.286
+      m_text: sorts
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 65.711
+      m_text: of
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 66.046
+      m_text: styles
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 66.507
+      m_text: from
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 66.876
+      m_text: classic
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 67.376
+      m_text: to
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 67.648
+      m_text: bold
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 68.053
+      m_text: And
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 68.266
+      m_text: we
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 68.466
+      m_text: do
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 68.766
+      m_text: prescriptions
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 69.576
+      m_text: if
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 69.786
+      m_text: your
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 69.986
+      m_text: cat
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 70.376
+      m_text: is
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 70.376
+      m_text: has
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
+    - m_time: 70.746
+      m_text: old
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 70.746
+      m_text: mould
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
+    - m_time: 76.069
+      m_text: said
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 77.126
+      m_text: Ninety
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 77.526
+      m_text: one
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 77.776
+      m_text: percent
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 78.126
+      m_text: of
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 78.276
+      m_text: cat
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 78.556
+      m_text: owners
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 79.356
+      m_text: they'd
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 79.696
+      m_text: buy
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 80.256
+      m_text: this
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 80.556
+      m_text: awesome
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 81.156
+      m_text: product
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 81.716
+      m_text: to
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 81.976
+      m_text: protect
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 82.316
+      m_text: their
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 82.476
+      m_text: cat's
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 82.876
+      m_text: eyes
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 83.336
+      m_text: we've
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 83.636
+      m_text: done
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 83.996
+      m_text: the
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 84.236
+      m_text: research
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 84.676
+      m_text: and
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 84.956
+      m_text: the
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 85.136
+      m_text: numbers
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 85.536
+      m_text: don't
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 85.796
+      m_text: lie
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 86.436
+      m_text: it's
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 86.556
+      m_text: the
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 86.716
+      m_text: healthy
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 87.196
+      m_text: choice
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 87.656
+      m_text: that
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 87.796
+      m_text: makes
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 87.936
+      m_text: your
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 88.176
+      m_text: feeline
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 88.636
+      m_text: look
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 88.936
+      m_text: fly
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 95.606
+      m_text: Imagine
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 96.096
+      m_text: your
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 96.496
+      m_text: kitty
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 96.947
+      m_text: all
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 97.256
+      m_text: cool
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 97.556
+      m_text: and
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 97.756
+      m_text: chic
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 98.356
+      m_text: Wearing
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 98.856
+      m_text: these
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 99.156
+      m_text: pretty
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 99.516
+      m_text: shades
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 99.906
+      m_text: she'll
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 100.096
+      m_text: look
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 100.606
+      m_text: like
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
+    - m_time: 100.606
+      m_text: unique
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 100.796
+      m_text: a
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
+    - m_time: 100.996
+      m_text: freak
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
+    - m_time: 101.506
+      m_text: All
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 101.716
+      m_text: sorts
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 102.141
+      m_text: of
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 102.476
+      m_text: styles
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 102.937
+      m_text: from
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 103.306
+      m_text: classic
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 103.806
+      m_text: to
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 104.078
+      m_text: bold
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 104.483
+      m_text: And
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 104.696
+      m_text: we
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 104.896
+      m_text: do
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 105.196
+      m_text: prescriptions
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 106.006
+      m_text: if
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 106.216
+      m_text: your
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 106.416
+      m_text: cat
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 106.806
+      m_text: is
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 106.806
+      m_text: has
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
+    - m_time: 107.176
+      m_text: old
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 107.176
+      m_text: mould
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
+    - m_time: 113.944
+      m_text: Don't
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 114.376
+      m_text: be
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 114.626
+      m_text: sad
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 115.126
+      m_text: but
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 115.326
+      m_text: my
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 115.626
+      m_text: speech
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 115.826
+      m_text: is
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 116.026
+      m_text: ending
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 116.576
+      m_text: sunglasses
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 117.426
+      m_text: for
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 117.726
+      m_text: cats
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 118.476
+      m_text: patent
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 119.076
+      m_text: pending
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 119.876
+      m_text: I
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 120.026
+      m_text: hope
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 120.226
+      m_text: you'll
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 120.476
+      m_text: invest
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 121.326
+      m_text: against
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 121.676
+      m_text: all
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 122.026
+      m_text: the
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 122.226
+      m_text: odds
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 122.576
+      m_text: sunglasses
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 123.626
+      m_text: for
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 123.776
+      m_text: cats
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 124.176
+      m_text: and
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 124.376
+      m_text: we
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 124.526
+      m_text: also
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 124.976
+      m_text: do
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 125.326
+      m_text: dogs
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
   m_debugSpeech:
     m_visableTime: 5
     m_phrases: []
@@ -1770,7 +2695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 0.83
+  m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
