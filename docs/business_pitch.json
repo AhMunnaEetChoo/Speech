@@ -33,7 +33,7 @@
             "m_time": 9.003000259399414,
             "m_text": "a",
             "m_points": 5,
-            "m_sprite": "P2_ABusinessPitch",
+            "m_sprite": "",
             "m_stream": 1
         },
         {
@@ -215,7 +215,7 @@
             "m_time": 25.72599983215332,
             "m_text": "Imagine",
             "m_points": 5,
-            "m_sprite": "P6_ImagineYourKitty",
+            "m_sprite": "P7_Cool",
             "m_stream": 1
         },
         {
@@ -243,7 +243,7 @@
             "m_time": 27.375999450683595,
             "m_text": "cool",
             "m_points": 5,
-            "m_sprite": "P7_Cool",
+            "m_sprite": "",
             "m_stream": 2
         },
         {
@@ -432,7 +432,7 @@
             "m_time": 40.92599868774414,
             "m_text": "Allow",
             "m_points": 5,
-            "m_sprite": "P1_P17_AllowMe",
+            "m_sprite": "P2_ABusinessPitch",
             "m_stream": 2
         },
         {
@@ -467,7 +467,7 @@
             "m_time": 42.59199905395508,
             "m_text": "business",
             "m_points": 5,
-            "m_sprite": "P2_ABusinessPitch",
+            "m_sprite": "",
             "m_stream": 1
         },
         {
@@ -621,7 +621,7 @@
             "m_time": 51.3120002746582,
             "m_text": "SUNGLASSES",
             "m_points": 5,
-            "m_sprite": "P5_SunglassesForCats",
+            "m_sprite": "PAlt_CatBike",
             "m_stream": 2
         },
         {
@@ -642,7 +642,7 @@
             "m_time": 59.17599868774414,
             "m_text": "Imagine",
             "m_points": 5,
-            "m_sprite": "P6_ImagineYourKitty",
+            "m_sprite": "P16_SunglassesForCats",
             "m_stream": 2
         },
         {
@@ -670,7 +670,7 @@
             "m_time": 60.82600021362305,
             "m_text": "cool",
             "m_points": 5,
-            "m_sprite": "P7_Cool",
+            "m_sprite": "",
             "m_stream": 1
         },
         {
@@ -691,7 +691,7 @@
             "m_time": 61.92599868774414,
             "m_text": "Wearing",
             "m_points": 5,
-            "m_sprite": "P8_WithThese",
+            "m_sprite": "PAlt_CatThumbsUp",
             "m_stream": 1
         },
         {
@@ -803,7 +803,7 @@
             "m_time": 68.0530014038086,
             "m_text": "And",
             "m_points": 5,
-            "m_sprite": "",
+            "m_sprite": "P18_SunglassesForCats",
             "m_stream": 1
         },
         {
@@ -824,7 +824,7 @@
             "m_time": 68.76599884033203,
             "m_text": "prescriptions",
             "m_points": 5,
-            "m_sprite": "P10_Prescriptions",
+            "m_sprite": "",
             "m_stream": 1
         },
         {
@@ -863,7 +863,7 @@
             "m_stream": 2
         },
         {
-            "m_time": 77.1259994506836,
+            "m_time": 77.1059994506836,
             "m_text": "Ninety",
             "m_points": 5,
             "m_sprite": "P11_P13_91Percent",
@@ -929,27 +929,20 @@
             "m_time": 80.25599670410156,
             "m_text": "this",
             "m_points": 5,
-            "m_sprite": "",
+            "m_sprite": "P12_TheseAwesome",
             "m_stream": 2
         },
         {
             "m_time": 80.55599975585938,
-            "m_text": "awesome",
+            "m_text": "awesome product",
             "m_points": 5,
-            "m_sprite": "P12_TheseAwesome",
+            "m_sprite": "",
             "m_stream": 1
         },
         {
             "m_time": 80.55599975585938,
-            "m_text": "awful",
+            "m_text": "awful product",
             "m_points": -50,
-            "m_sprite": "P12_TheseAwesome",
-            "m_stream": 2
-        },
-        {
-            "m_time": 81.15599822998047,
-            "m_text": "product",
-            "m_points": 5,
             "m_sprite": "",
             "m_stream": 2
         },
@@ -1039,23 +1032,23 @@
         },
         {
             "m_time": 85.53600311279297,
-            "m_text": "don't lie",
-            "m_points": 5,
-            "m_sprite": "",
-            "m_stream": 2
-        },
-        {
-            "m_time": 85.53600311279297,
             "m_text": "do lie",
             "m_points": -50,
             "m_sprite": "",
             "m_stream": 1
         },
         {
+            "m_time": 85.53600311279297,
+            "m_text": "don't lie",
+            "m_points": 5,
+            "m_sprite": "",
+            "m_stream": 2
+        },
+        {
             "m_time": 86.43599700927735,
             "m_text": "It's",
             "m_points": 5,
-            "m_sprite": "",
+            "m_sprite": "P14_HealthyChoice",
             "m_stream": 2
         },
         {
@@ -1069,7 +1062,7 @@
             "m_time": 86.71600341796875,
             "m_text": "healthy",
             "m_points": 5,
-            "m_sprite": "P14_HealthyChoice",
+            "m_sprite": "",
             "m_stream": 2
         },
         {
@@ -1258,7 +1251,7 @@
             "m_time": 104.48300170898438,
             "m_text": "And",
             "m_points": 5,
-            "m_sprite": "",
+            "m_sprite": "P10_Prescriptions",
             "m_stream": 1
         },
         {
@@ -1279,7 +1272,7 @@
             "m_time": 105.19599914550781,
             "m_text": "prescriptions",
             "m_points": 5,
-            "m_sprite": "P10_Prescriptions",
+            "m_sprite": "",
             "m_stream": 1
         },
         {
