@@ -290,6 +290,7 @@ public class SpeechManager : MonoBehaviour
         FMOD.Studio.EventDescription desc = FMODUnity.RuntimeManager.GetEventDescription(m_currentSpeech.m_trackName);
         desc.createInstance(out m_musicEventInstance);
         m_musicEventInstance.start();
+        SetTrackState(eTrackState.Good);
     }
 
     // Update is called once per frame
@@ -386,10 +387,6 @@ public class SpeechManager : MonoBehaviour
                 break;
             }
         }
-
-        // don't change audio if state is the same
-        if (m_trackState == _state)
-            return;
         m_trackState = _state;
 
         FMOD.Studio.EventDescription eventDesc;
