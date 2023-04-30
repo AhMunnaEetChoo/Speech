@@ -4,9 +4,6 @@
 		<property name="assetPath">
 			<value>Game Jam Delivery Bad 5.aif</value>
 		</property>
-		<property name="isStreaming">
-			<value>true</value>
-		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>
