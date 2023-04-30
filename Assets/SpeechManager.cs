@@ -74,7 +74,7 @@ public class SpeechManager : MonoBehaviour
         Bad,
         Good,
     }
-    public eTrackState m_trackSTate = eTrackState.Good;
+    public eTrackState m_trackState = eTrackState.Good;
     public int m_selectedStream = 0;
     public int m_score = 0;
 
@@ -265,9 +265,9 @@ public class SpeechManager : MonoBehaviour
         }
 
         // don't change audio if state is the same
-        if (m_trackSTate == _state)
+        if (m_trackState == _state)
             return;
-        m_trackSTate = _state;
+        m_trackState = _state;
 
 
         FMOD.Studio.EventDescription eventDesc = FMODUnity.RuntimeManager.GetEventDescription(m_musicEmitter.EventReference);
@@ -276,7 +276,7 @@ public class SpeechManager : MonoBehaviour
             FMOD.Studio.PARAMETER_DESCRIPTION param;
             string paramNane = "DialogGoodBad";
             eventDesc.getParameterDescriptionByName(paramNane, out param);
-            m_musicEmitter.EventInstance.setParameterByID(param.id, (int)m_trackSTate);
+            m_musicEmitter.EventInstance.setParameterByID(param.id, (int)m_trackState);
         }
     }
 }
