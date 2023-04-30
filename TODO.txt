@@ -1,6 +1,5 @@
 TODO Speech
 
-- add intro scene
 - fix explosion bug
 - json from url
 - trigger high score section
