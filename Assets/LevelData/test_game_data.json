@@ -1,0 +1,30 @@
+{
+    "m_speechs": [
+        {
+            "m_visableTime": 0.0,
+            "m_trackName": "asdf",
+            "m_phrases": [
+                {
+                    "m_time": 0.0,
+                    "m_text": "weg",
+                    "m_points": 0,
+                    "m_sprite": "",
+                    "m_stream": 0
+                }
+            ]
+        },
+        {
+            "m_visableTime": 0.0,
+            "m_trackName": "fgwerag",
+            "m_phrases": [
+                {
+                    "m_time": 0.0,
+                    "m_text": "asdf",
+                    "m_points": 0,
+                    "m_sprite": "",
+                    "m_stream": 0
+                }
+            ]
+        }
+    ]
+}

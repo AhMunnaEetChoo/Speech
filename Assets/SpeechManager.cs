@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,13 +10,16 @@ using UnityEngine.Video;
 public class SpeechManager : MonoBehaviour
 {
     public string m_jsonURL = "";
-    public string m_jsonData = "";
+    private string m_jsonData = "";
+
+    public int m_startingLevel = 0;
+    public GameData m_gameData = new GameData();
     public Speech m_currentSpeech = new Speech();
     public Speech m_debugSpeech = new Speech();
 
     public GameObject m_phrasePrefab;
 
-    public FMODUnity.StudioEventEmitter m_musicEmitter;
+    private FMOD.Studio.EventInstance m_musicEventInstance;
     public FMODUnity.StudioEventEmitter m_eughEmitter;
 
     public GameObject m_pointHigh;
@@ -24,6 +28,7 @@ public class SpeechManager : MonoBehaviour
     public GameObject m_lowBar;
     public GameObject m_powerPoint;
     public GameObject m_canvas;
+    public GameObject m_scoreObject;
 
     public Animator m_scoreAnimator;
     public Animator m_manEffects;
@@ -39,10 +44,18 @@ public class SpeechManager : MonoBehaviour
 
     public static float s_bufferTime = 0.15f;
 
+
+    [System.Serializable]
+    public class GameData
+    {
+        public List<Speech> m_speechs = new List<Speech>();
+    };
+
     [System.Serializable]
     public class Speech
     {
         public float m_visableTime = 5.0f;
+        public string m_trackName = "event:/Music Stage 1";
         public List<Phrase> m_phrases = new List<Phrase>();
     };
 
@@ -91,6 +104,7 @@ public class SpeechManager : MonoBehaviour
     public int m_score = 0;
     public bool m_hasStarted = false;
     private float m_lastResyncTime = 0.0f;
+    private bool m_showingScore = false;
 
     // Start is called before the first frame update
     void Start()
@@ -129,7 +143,7 @@ public class SpeechManager : MonoBehaviour
         // since FMOD only works in milliseconds use the deltatime to estimate fractional time but keep us in sync with the music
         m_activebar.m_currentTime += Time.deltaTime;
         int timelinePosition;
-        m_musicEmitter.EventInstance.getTimelinePosition(out timelinePosition);
+        m_musicEventInstance.getTimelinePosition(out timelinePosition);
         float musicTime = (float)timelinePosition / 1000.0f;
         float diff = musicTime - m_activebar.m_currentTime;
         m_activebar.m_currentTime += diff * 0.2f;
@@ -268,9 +282,25 @@ public class SpeechManager : MonoBehaviour
         }
     }
 
+
+    void SetSpeech(Speech _speech)
+    {
+        m_currentSpeech = _speech;
+
+        FMOD.Studio.EventDescription desc = FMODUnity.RuntimeManager.GetEventDescription(m_currentSpeech.m_trackName);
+        desc.createInstance(out m_musicEventInstance);
+        m_musicEventInstance.start();
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if(m_showingScore)
+        {
+            // wait for score to be shown
+            return;
+        }
+
         // wait for the streamed video to be ready
         if(!m_hasStarted)
         {
@@ -278,10 +308,10 @@ public class SpeechManager : MonoBehaviour
                 && m_jsonData.Length > 0)
             {
 #if !UNITY_EDITOR
-                m_currentSpeech = JsonUtility.FromJson<Speech>(m_jsonData);
+                m_gameData = JsonUtility.FromJson<GameData>(m_jsonData);
 #endif
+                SetSpeech(m_gameData.m_speechs[m_startingLevel]);
                 m_hasStarted = true;
-                m_musicEmitter.Play();
             }
             else
             {
@@ -291,7 +321,7 @@ public class SpeechManager : MonoBehaviour
 
         // keep video in sync with music
         int timelinePosition;
-        m_musicEmitter.EventInstance.getTimelinePosition(out timelinePosition);
+        m_musicEventInstance.getTimelinePosition(out timelinePosition);
         float musicTime = (float)timelinePosition / 1000.0f;
         if(m_lastResyncTime > 3f && Mathf.Abs((float)m_videoPlayer.time - musicTime) > 0.2f)
         {
@@ -321,6 +351,15 @@ public class SpeechManager : MonoBehaviour
         }
 
         AdvanceBar();
+
+        PLAYBACK_STATE state;
+        m_musicEventInstance.getPlaybackState(out state);
+        if(state == PLAYBACK_STATE.STOPPED)
+        {
+            // we have reached the end of the song
+            m_scoreObject.GetComponent<ScoreModule>().m_gameEnd = true;
+            m_showingScore = true;
+        }
     }
 
     void SetTrackState(eTrackState _state)
@@ -353,21 +392,21 @@ public class SpeechManager : MonoBehaviour
             return;
         m_trackState = _state;
 
-
-        FMOD.Studio.EventDescription eventDesc = FMODUnity.RuntimeManager.GetEventDescription(m_musicEmitter.EventReference);
+        FMOD.Studio.EventDescription eventDesc;
+        m_musicEventInstance.getDescription(out eventDesc);
         if (eventDesc.isValid())
         {
             FMOD.Studio.PARAMETER_DESCRIPTION param;
             string paramNane = "DialogGoodBad";
             eventDesc.getParameterDescriptionByName(paramNane, out param);
-            m_musicEmitter.EventInstance.setParameterByID(param.id, (int)m_trackState);
+            m_musicEventInstance.setParameterByID(param.id, (int)m_trackState);
         }
     }
 
     public void SetTime(float _newTime)
     {
         int timelinePosition = (int)(_newTime * 1000.0f);
-        m_musicEmitter.EventInstance.setTimelinePosition(timelinePosition);
+        m_musicEventInstance.setTimelinePosition(timelinePosition);
     }
 
     IEnumerator GetRequest(string uri, bool _extraGame)

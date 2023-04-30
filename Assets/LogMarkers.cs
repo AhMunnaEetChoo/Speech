@@ -26,7 +26,7 @@ public class LogMarkers : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        FMOD.Studio.EventDescription desc = FMODUnity.RuntimeManager.GetEventDescription("event:/Music Stage 1");
+        FMOD.Studio.EventDescription desc = FMODUnity.RuntimeManager.GetEventDescription("event:/Music Stage 2");
         desc.createInstance(out _musicEventInstance);
 
         _musicFmodCallback = new FMOD.Studio.EVENT_CALLBACK(FMODEventCallback);
