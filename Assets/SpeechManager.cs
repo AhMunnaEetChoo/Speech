@@ -364,6 +364,11 @@ public class SpeechManager : MonoBehaviour
         }
     }
 
+    public void SetTime(float _newTime)
+    {
+        int timelinePosition = (int)(_newTime * 1000.0f);
+        m_musicEmitter.EventInstance.setTimelinePosition(timelinePosition);
+    }
 
     IEnumerator GetRequest(string uri, bool _extraGame)
     {
