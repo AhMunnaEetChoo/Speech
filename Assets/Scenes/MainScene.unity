@@ -937,7 +937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_jsonURL: https://ahmunnaeetchoo.github.io/Speech/game_data.json
-  m_startingLevel: 0
+  m_startingLevel: 1
   m_gameData:
     m_speechs:
     - m_visableTime: 2.3
@@ -1244,7 +1244,7 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 2
       - m_time: 36.926
-        m_text: has mould
+        m_text: has mold
         m_points: -50
         m_sprite: 
         m_stream: 1
@@ -1554,7 +1554,7 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 70.376
-        m_text: has mould
+        m_text: has mold
         m_points: -50
         m_sprite: 
         m_stream: 2
@@ -1874,7 +1874,7 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 106.806
-        m_text: has mould
+        m_text: has mold
         m_points: -50
         m_sprite: 
         m_stream: 2
@@ -2034,7 +2034,7 @@ MonoBehaviour:
       - m_time: 5.886
         m_text: Your
         m_points: 5
-        m_sprite: 
+        m_sprite: P21_ExcuseMe
         m_stream: 1
       - m_time: 6.123
         m_text: honour
@@ -2072,9 +2072,9 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 8.781
-        m_text: when
+        m_text: When
         m_points: 5
-        m_sprite: 
+        m_sprite: P22_WhenItComes
         m_stream: 1
       - m_time: 8.924
         m_text: it
@@ -2104,7 +2104,7 @@ MonoBehaviour:
       - m_time: 10.348
         m_text: I'm
         m_points: 5
-        m_sprite: 
+        m_sprite: P27_WouldntEnjoy
         m_stream: 1
       - m_time: 10.68
         m_text: at
@@ -2164,7 +2164,7 @@ MonoBehaviour:
       - m_time: 15.075
         m_text: I
         m_points: 5
-        m_sprite: 
+        m_sprite: P23_DidntDo
         m_stream: 1
       - m_time: 15.237
         m_text: absolutely
@@ -2199,7 +2199,7 @@ MonoBehaviour:
       - m_time: 20.743
         m_text: I
         m_points: 5
-        m_sprite: 
+        m_sprite: P24_Knife
         m_stream: 1
       - m_time: 20.906
         m_text: didn't
@@ -2234,7 +2234,7 @@ MonoBehaviour:
       - m_time: 22.642
         m_text: a
         m_points: 5
-        m_sprite: 
+        m_sprite: P25_Sword
         m_stream: 1
       - m_time: 22.784
         m_text: sword
@@ -2249,7 +2249,7 @@ MonoBehaviour:
       - m_time: 23.212
         m_text: a
         m_points: 5
-        m_sprite: 
+        m_sprite: P26_Gun
         m_stream: 1
       - m_time: 23.401
         m_text: gun
@@ -2257,15 +2257,15 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 23.971
-        m_text: And I wouldn;t enjoy it
+        m_text: And I wouldn't enjoy it
         m_points: 5
-        m_sprite: 
+        m_sprite: P27_WouldntEnjoy
         m_stream: 1
       - m_time: 23.971
         m_text: Though I would've enjoyed it
-        m_points: 5
+        m_points: -50
         m_sprite: 
-        m_stream: 1
+        m_stream: 2
       - m_time: 25.727
         m_text: if
         m_points: 5
@@ -2289,7 +2289,7 @@ MonoBehaviour:
       - m_time: 27.246
         m_text: I'm
         m_points: 5
-        m_sprite: 
+        m_sprite: P27b_JustLittle
         m_stream: 1
       - m_time: 27.389
         m_text: just
@@ -2308,9 +2308,9 @@ MonoBehaviour:
         m_stream: 1
       - m_time: 27.768
         m_text: creepy
-        m_points: 5
+        m_points: 50
         m_sprite: 
-        m_stream: 1
+        m_stream: 2
       - m_time: 28.169
         m_text: guy,
         m_points: 5
@@ -2344,7 +2344,7 @@ MonoBehaviour:
       - m_time: 30.189
         m_text: I
         m_points: 5
-        m_sprite: 
+        m_sprite: P28_Truck
         m_stream: 1
       - m_time: 30.332
         m_text: don't
@@ -2362,59 +2362,19 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 30.973
-        m_text: that
+        m_text: that blood got on my truck
         m_points: 5
         m_sprite: 
         m_stream: 1
       - m_time: 30.973
-        m_text: I
-        m_points: 5
-        m_sprite: 
-        m_stream: 1
-      - m_time: 31.165
-        m_text: blood
-        m_points: 5
-        m_sprite: 
-        m_stream: 1
-      - m_time: 31.165
-        m_text: cleaned
-        m_points: 5
-        m_sprite: 
-        m_stream: 1
-      - m_time: 31.485
-        m_text: got
-        m_points: 5
-        m_sprite: 
-        m_stream: 1
-      - m_time: 31.485
-        m_text: blood
-        m_points: 5
-        m_sprite: 
-        m_stream: 1
-      - m_time: 31.877
-        m_text: on
-        m_points: 5
-        m_sprite: 
-        m_stream: 1
-      - m_time: 31.877
-        m_text: off
-        m_points: 5
-        m_sprite: 
-        m_stream: 1
-      - m_time: 32.136
-        m_text: my
-        m_points: 5
-        m_sprite: 
-        m_stream: 1
-      - m_time: 32.409
-        m_text: truck
+        m_text: I cleaned blood off my truck
         m_points: 5
         m_sprite: 
         m_stream: 1
       - m_time: 39.351
-        m_text: the
+        m_text: The
         m_points: 5
-        m_sprite: 
+        m_sprite: P29_Monster
         m_stream: 1
       - m_time: 39.493
         m_text: prosecution
@@ -2463,9 +2423,9 @@ MonoBehaviour:
         m_stream: 1
       - m_time: 42.531
         m_text: right
-        m_points: 5
+        m_points: -50
         m_sprite: 
-        m_stream: 1
+        m_stream: 2
       - m_time: 42.721
         m_text: about
         m_points: 5
@@ -2477,9 +2437,9 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 43.528
-        m_text: this
+        m_text: This
         m_points: 5
-        m_sprite: 
+        m_sprite: P30_TrueCrime
         m_stream: 1
       - m_time: 43.67
         m_text: ain't
@@ -2488,9 +2448,9 @@ MonoBehaviour:
         m_stream: 1
       - m_time: 43.67
         m_text: is
-        m_points: 5
+        m_points: -50
         m_sprite: 
-        m_stream: 1
+        m_stream: 2
       - m_time: 43.896
         m_text: a
         m_points: 5
@@ -2514,7 +2474,7 @@ MonoBehaviour:
       - m_time: 45.094
         m_text: I'm
         m_points: 5
-        m_sprite: 
+        m_sprite: P2_ABusinessPitch
         m_stream: 1
       - m_time: 45.237
         m_text: just
@@ -2538,9 +2498,9 @@ MonoBehaviour:
         m_stream: 1
       - m_time: 46.091
         m_text: psycho,
-        m_points: 5
+        m_points: -50
         m_sprite: 
-        m_stream: 1
+        m_stream: 2
       - m_time: 46.708
         m_text: with
         m_points: 5
@@ -2558,13 +2518,13 @@ MonoBehaviour:
         m_stream: 1
       - m_time: 47.061
         m_text: thirst for blood
-        m_points: 5
+        m_points: -50
         m_sprite: 
-        m_stream: 1
+        m_stream: 2
       - m_time: 48.227
         m_text: Did
         m_points: 5
-        m_sprite: 
+        m_sprite: P3_PurrfectlyCertain
         m_stream: 1
       - m_time: 48.37
         m_text: I
@@ -2598,21 +2558,21 @@ MonoBehaviour:
         m_stream: 1
       - m_time: 50.031
         m_text: dump you in a ditch?
-        m_points: 5
+        m_points: -50
         m_sprite: 
-        m_stream: 1
+        m_stream: 2
       - m_time: 57.484
-        m_text: Sunglasses
+        m_text: SUNGLASSES
         m_points: 5
-        m_sprite: 
+        m_sprite: P16_SunglassesForCats
         m_stream: 1
       - m_time: 58.338
-        m_text: For
+        m_text: FOR
         m_points: 5
         m_sprite: 
         m_stream: 1
       - m_time: 58.481
-        m_text: Cats,
+        m_text: CATS
         m_points: 5
         m_sprite: 
         m_stream: 1
@@ -2642,9 +2602,9 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 60.332
-        m_text: if
+        m_text: If
         m_points: 5
-        m_sprite: 
+        m_sprite: PAlt_CatThumbsUp
         m_stream: 1
       - m_time: 60.492
         m_text: I'm
@@ -2697,9 +2657,9 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 63.844
-        m_text: all
+        m_text: All
         m_points: 5
-        m_sprite: 
+        m_sprite: PAlt_CatBike
         m_stream: 1
       - m_time: 64.034
         m_text: sorts
@@ -2739,7 +2699,7 @@ MonoBehaviour:
       - m_time: 66.525
         m_text: And
         m_points: 5
-        m_sprite: 
+        m_sprite: P10_Prescriptions
         m_stream: 1
       - m_time: 66.74
         m_text: we
@@ -2777,14 +2737,14 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 68.781
-        m_text: has mould
+        m_text: has mold
         m_points: 5
         m_sprite: 
         m_stream: 1
       - m_time: 75.522
         m_text: Ladies
         m_points: 5
-        m_sprite: 
+        m_sprite: P31_Jury1
         m_stream: 1
       - m_time: 75.901
         m_text: and
@@ -2792,7 +2752,7 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 76.044
-        m_text: Gentleman
+        m_text: Gentlemen
         m_points: 5
         m_sprite: 
         m_stream: 1
@@ -2839,7 +2799,7 @@ MonoBehaviour:
       - m_time: 78.677
         m_text: With
         m_points: 5
-        m_sprite: 
+        m_sprite: P32_WithShades
         m_stream: 1
       - m_time: 78.767
         m_text: some
@@ -2892,9 +2852,9 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 81.763
-        m_text: some
+        m_text: Some
         m_points: 5
-        m_sprite: 
+        m_sprite: P33_Niche
         m_stream: 1
       - m_time: 81.93
         m_text: say
@@ -2938,13 +2898,13 @@ MonoBehaviour:
         m_stream: 1
       - m_time: 83.844
         m_text: agree
-        m_points: 5
+        m_points: -50
         m_sprite: 
-        m_stream: 1
+        m_stream: 2
       - m_time: 84.493
         m_text: If
         m_points: 5
-        m_sprite: 
+        m_sprite: P34_Complimentary
         m_stream: 1
       - m_time: 84.603
         m_text: you'd
@@ -2997,9 +2957,9 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 94.052
-        m_text: by
+        m_text: By
         m_points: 5
-        m_sprite: 
+        m_sprite: P35_BadGuy
         m_stream: 1
       - m_time: 94.224
         m_text: now
@@ -3022,7 +2982,7 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 94.954
-        m_text: clear,
+        m_text: clear
         m_points: 5
         m_sprite: 
         m_stream: 1
@@ -3048,13 +3008,13 @@ MonoBehaviour:
         m_stream: 1
       - m_time: 96.093
         m_text: good guy
-        m_points: 5
+        m_points: -50
         m_sprite: 
-        m_stream: 1
+        m_stream: 2
       - m_time: 96.93
         m_text: And
         m_points: 5
-        m_sprite: 
+        m_sprite: P36_MakesUpFor
         m_stream: 1
       - m_time: 97.072
         m_text: I
@@ -3114,7 +3074,7 @@ MonoBehaviour:
       - m_time: 100.158
         m_text: I
         m_points: 5
-        m_sprite: 
+        m_sprite: PAlt_CatSunny
         m_stream: 1
       - m_time: 100.316
         m_text: don't
@@ -3138,9 +3098,9 @@ MonoBehaviour:
         m_stream: 1
       - m_time: 101.06
         m_text: conscience
-        m_points: 5
+        m_points: -50
         m_sprite: 
-        m_stream: 1
+        m_stream: 2
       - m_time: 101.629
         m_text: or
         m_points: 5
@@ -3167,14 +3127,14 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 102.507
-        m_text: name,
+        m_text: name
         m_points: 5
         m_sprite: 
         m_stream: 1
       - m_time: 103.088
-        m_text: if
+        m_text: If
         m_points: 5
-        m_sprite: 
+        m_sprite: P37_AskMe
         m_stream: 1
       - m_time: 103.196
         m_text: you'd
@@ -3182,7 +3142,7 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 103.322
-        m_text: asked
+        m_text: ask
         m_points: 5
         m_sprite: 
         m_stream: 1
@@ -3197,7 +3157,7 @@ MonoBehaviour:
         m_sprite: 
         m_stream: 1
       - m_time: 104.05
-        m_text: murder,
+        m_text: murder
         m_points: 5
         m_sprite: 
         m_stream: 1
@@ -3218,19 +3178,19 @@ MonoBehaviour:
         m_stream: 1
       - m_time: 105.227
         m_text: '"I''m game"'
-        m_points: 5
+        m_points: -50
         m_sprite: 
-        m_stream: 1
+        m_stream: 2
       - m_time: 107.515
         m_text: Thank you
         m_points: 5
-        m_sprite: 
+        m_sprite: P23_DidntDo
         m_stream: 1
       - m_time: 107.515
         m_text: Fuck you
-        m_points: 5
+        m_points: -50
         m_sprite: 
-        m_stream: 1
+        m_stream: 2
   m_currentSpeech:
     m_visableTime: 2.3
     m_trackName: Music Stage 1
