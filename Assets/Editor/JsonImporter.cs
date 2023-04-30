@@ -36,6 +36,19 @@ public class LevelScriptEditor : Editor
             myTarget.m_currentSpeech = JsonUtility.FromJson<SpeechManager.Speech>(jsonString);
         }
 
+        if (GUILayout.Button("Import GameData from JSON"))
+        {
+            string jsonString = System.IO.File.ReadAllText(EditorUtility.OpenFilePanel("select JSON file", Application.dataPath, "json"));
+            myTarget.m_gameData = JsonUtility.FromJson<SpeechManager.GameData>(jsonString);
+        }
+
+        if (GUILayout.Button("Export GameData to JSON"))
+        {
+            string jsonString = JsonUtility.ToJson(myTarget.m_gameData, true);
+            System.IO.File.WriteAllText(EditorUtility.OpenFilePanel("select JSON file", Application.dataPath, "json"), jsonString);
+            Debug.Log(jsonString);
+        }
+
         newTime = EditorGUILayout.FloatField("Set Time To:", newTime);
 
         if (GUILayout.Button("Go!"))

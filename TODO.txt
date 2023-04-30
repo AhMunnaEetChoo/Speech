@@ -1,6 +1,8 @@
 TODO Speech
 
-- janky video load
+- be able to set song 2
+- pull out markers from song 2 track
 - audio track phrase trigger separation
+- janky video load
 - fix explosion bug
 - revist text judder
