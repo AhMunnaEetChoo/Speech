@@ -24,7 +24,14 @@ public class SpeechManager : MonoBehaviour
     public Animator m_scoreAnimator;
     public Animator m_manEffects;
     public Animator m_manBobber;
+
     public VideoPlayer m_videoPlayer;
+    public VideoPlayer m_videoPlayerBad;
+    public VideoPlayer m_videoPlayerBlank;
+
+    public Material m_manMaterialGood;
+    public Material m_manMaterialBad;
+    public Material m_manMaterialBlank;
 
     [System.Serializable]
     public class Speech
@@ -224,7 +231,7 @@ public class SpeechManager : MonoBehaviour
         // wait for the streamed video to be ready
         if(!m_hasStarted)
         {
-            if (m_videoPlayer.isPrepared)
+            if (m_videoPlayer.isPrepared && m_videoPlayerBad.isPrepared && m_videoPlayerBlank.isPrepared)
             {
                 m_hasStarted = true;
                 m_musicEmitter.Play();
@@ -243,6 +250,8 @@ public class SpeechManager : MonoBehaviour
         {
             Debug.Log("music / vid desync");
             m_videoPlayer.time = (double)musicTime;
+            m_videoPlayerBad.time = (double)musicTime;
+            m_videoPlayerBlank.time = (double)musicTime;
             m_lastResyncTime = 0f;
         }
         m_lastResyncTime += Time.deltaTime;
@@ -275,16 +284,19 @@ public class SpeechManager : MonoBehaviour
             {
                 m_eughEmitter.Play();
                 m_manEffects.SetTrigger("Sweat");
+                m_videoPlayer.gameObject.GetComponent<MeshRenderer>().material = m_manMaterialBlank;
                 break;
             }
             case eTrackState.Good:
             {
                 m_scoreAnimator.SetTrigger("ScoreUp");
+                m_videoPlayer.gameObject.GetComponent<MeshRenderer>().material = m_manMaterialGood;
                 break;
             }
             case eTrackState.Bad:
             {
                 m_manEffects.SetTrigger("Impact");
+                m_videoPlayer.gameObject.GetComponent<MeshRenderer>().material = m_manMaterialBad;
                 break;
             }
         }
