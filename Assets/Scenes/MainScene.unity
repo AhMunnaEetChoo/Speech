@@ -949,7 +949,7 @@ MonoBehaviour:
     - m_time: 7.909
       m_text: me
       m_points: 5
-      m_sprite: 
+      m_sprite: PAlt_CatBike
       m_stream: 1
     - m_time: 8.049
       m_text: to
@@ -965,32 +965,32 @@ MonoBehaviour:
       m_text: a
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 9.169
       m_text: business
       m_points: 5
-      m_sprite: P2_ABusinessPitch
-      m_stream: 2
+      m_sprite: 
+      m_stream: 1
     - m_time: 9.769
       m_text: pitch
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 10.333
       m_text: "I\u2019m"
       m_points: 5
-      m_sprite: 
-      m_stream: 1
+      m_sprite: P3_PurrfectlyCertain
+      m_stream: 2
     - m_time: 10.629
       m_text: purrfectly
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 11.349
       m_text: certain
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 11.769
       m_text: "it\u2019ll"
       m_points: 5
@@ -1005,89 +1005,89 @@ MonoBehaviour:
       m_text: you
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 12.789
       m_text: rich
       m_points: 5
-      m_sprite: P3_PurrfectlyCertain
-      m_stream: 1
+      m_sprite: 
+      m_stream: 2
     - m_time: 13.404
       m_text: Er
       m_points: 5
-      m_sprite: 
-      m_stream: 2
+      m_sprite: P4_Sorry
+      m_stream: 1
     - m_time: 13.689
       m_text: sorry
       m_points: 5
-      m_sprite: P4_Sorry
-      m_stream: 2
+      m_sprite: 
+      m_stream: 1
     - m_time: 14.089
       m_text: if
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 14.329
       m_text: i'm
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 14.529
       m_text: nervous
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 15.129
       m_text: "I\u2019m"
       m_points: 5
-      m_sprite: 
+      m_sprite: P4b_LowOnCash
       m_stream: 1
     - m_time: 15.289
       m_text: low
       m_points: 5
-      m_sprite: P4b_LowOnCash
+      m_sprite: 
       m_stream: 1
     - m_time: 15.529
       m_text: on
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 15.809
       m_text: cash
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 16.379
       m_text: So
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 16.709
       m_text: please
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 17.069
       m_text: invest
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 17.729
       m_text: in
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 17.889
-      m_text: Sunglasses
+      m_text: SUNGLASSES
       m_points: 5
       m_sprite: P5_SunglassesForCats
       m_stream: 2
     - m_time: 18.749
-      m_text: For
+      m_text: FOR
       m_points: 5
       m_sprite: 
       m_stream: 2
     - m_time: 19.009
-      m_text: Cats
+      m_text: CATS
       m_points: 5
       m_sprite: 
       m_stream: 2
@@ -1110,7 +1110,7 @@ MonoBehaviour:
       m_text: all
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 27.376
       m_text: cool
       m_points: 5
@@ -1125,34 +1125,29 @@ MonoBehaviour:
       m_text: chic
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 28.476
       m_text: Wearing
       m_points: 5
-      m_sprite: 
+      m_sprite: P8_WithThese
       m_stream: 1
     - m_time: 28.976
       m_text: these
       m_points: 5
-      m_sprite: P8_WithThese
+      m_sprite: 
       m_stream: 1
     - m_time: 29.276
       m_text: pretty
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 29.636
       m_text: shades
       m_points: 5
       m_sprite: 
-      m_stream: 2
-    - m_time: 30.026
-      m_text: she'll
-      m_points: 5
-      m_sprite: 
       m_stream: 1
-    - m_time: 30.216
-      m_text: look
+    - m_time: 30.026
+      m_text: she'll look
       m_points: 5
       m_sprite: 
       m_stream: 1
@@ -1160,22 +1155,22 @@ MonoBehaviour:
       m_text: like a freak
       m_points: -50
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 30.726
       m_text: unique
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 31.626
       m_text: All
       m_points: 5
-      m_sprite: 
-      m_stream: 2
+      m_sprite: P9_AllSorts
+      m_stream: 1
     - m_time: 31.836
       m_text: sorts
       m_points: 5
-      m_sprite: P9_AllSorts
-      m_stream: 2
+      m_sprite: 
+      m_stream: 1
     - m_time: 32.261
       m_text: of
       m_points: 5
@@ -1190,7 +1185,7 @@ MonoBehaviour:
       m_text: from
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 33.426
       m_text: classic
       m_points: 5
@@ -1205,67 +1200,67 @@ MonoBehaviour:
       m_text: bold
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 34.603
       m_text: And
       m_points: 5
-      m_sprite: 
-      m_stream: 2
+      m_sprite: P10_Prescriptions
+      m_stream: 1
     - m_time: 34.816
       m_text: we
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 35.016
       m_text: do
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 35.316
       m_text: prescriptions
       m_points: 5
-      m_sprite: P10_Prescriptions
+      m_sprite: 
       m_stream: 1
     - m_time: 36.126
       m_text: if
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 36.336
       m_text: your
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 36.536
       m_text: cat
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 36.926
       m_text: is old
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 36.926
       m_text: has mould
       m_points: -50
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 40.926
       m_text: Allow
       m_points: 5
-      m_sprite: P1_P17_AllowMe
-      m_stream: 1
+      m_sprite: P2_ABusinessPitch
+      m_stream: 2
     - m_time: 41.332
       m_text: me
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 41.472
       m_text: to
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 41.612
       m_text: deliver
       m_points: 5
@@ -1275,22 +1270,22 @@ MonoBehaviour:
       m_text: a
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 42.592
       m_text: business
       m_points: 5
-      m_sprite: P2_ABusinessPitch
+      m_sprite: 
       m_stream: 1
     - m_time: 43.192
       m_text: pitch
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 43.756
       m_text: "I\u2019m"
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 44.052
       m_text: purrfectly
       m_points: 5
@@ -1310,32 +1305,32 @@ MonoBehaviour:
       m_text: make
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 45.912
       m_text: you
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 46.212
       m_text: rich
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 46.827
       m_text: Er
       m_points: 5
-      m_sprite: 
+      m_sprite: P4_Sorry
       m_stream: 1
     - m_time: 47.112
       m_text: sorry
       m_points: 5
-      m_sprite: P4_Sorry
-      m_stream: 1
+      m_sprite: 
+      m_stream: 2
     - m_time: 47.512
       m_text: if
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 47.752
       m_text: i'm
       m_points: 5
@@ -1349,23 +1344,23 @@ MonoBehaviour:
     - m_time: 48.552
       m_text: "I\u2019m"
       m_points: 5
-      m_sprite: 
+      m_sprite: P4b_LowOnCash
       m_stream: 1
     - m_time: 48.712
       m_text: low
       m_points: 5
-      m_sprite: P4b_LowOnCash
+      m_sprite: 
       m_stream: 1
     - m_time: 48.952
       m_text: on
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 49.232
       m_text: cash
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 49.802
       m_text: So
       m_points: 5
@@ -1375,7 +1370,7 @@ MonoBehaviour:
       m_text: please
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 50.492
       m_text: invest
       m_points: 5
@@ -1387,24 +1382,24 @@ MonoBehaviour:
       m_sprite: 
       m_stream: 1
     - m_time: 51.312
-      m_text: Sunglasses
+      m_text: SUNGLASSES
       m_points: 5
-      m_sprite: P5_SunglassesForCats
+      m_sprite: PAlt_CatBike
       m_stream: 2
     - m_time: 52.172
-      m_text: For
+      m_text: FOR
       m_points: 5
       m_sprite: 
       m_stream: 1
     - m_time: 52.432
-      m_text: Cats
+      m_text: CATS
       m_points: 5
       m_sprite: 
       m_stream: 2
     - m_time: 59.176
       m_text: Imagine
       m_points: 5
-      m_sprite: P6_ImagineYourKitty
+      m_sprite: PAlt_CatThumbsUp
       m_stream: 2
     - m_time: 59.666
       m_text: your
@@ -1424,7 +1419,7 @@ MonoBehaviour:
     - m_time: 60.826
       m_text: cool
       m_points: 5
-      m_sprite: P7_Cool
+      m_sprite: 
       m_stream: 1
     - m_time: 61.126
       m_text: and
@@ -1470,12 +1465,12 @@ MonoBehaviour:
       m_text: like a freak
       m_points: -50
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 64.176
       m_text: unique
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 65.076
       m_text: All
       m_points: 5
@@ -1515,7 +1510,7 @@ MonoBehaviour:
       m_text: bold
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 68.053
       m_text: And
       m_points: 5
@@ -1525,7 +1520,7 @@ MonoBehaviour:
       m_text: we
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 68.466
       m_text: do
       m_points: 5
@@ -1535,7 +1530,7 @@ MonoBehaviour:
       m_text: prescriptions
       m_points: 5
       m_sprite: P10_Prescriptions
-      m_stream: 2
+      m_stream: 1
     - m_time: 69.576
       m_text: if
       m_points: 5
@@ -1545,7 +1540,7 @@ MonoBehaviour:
       m_text: your
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 69.986
       m_text: cat
       m_points: 5
@@ -1580,12 +1575,12 @@ MonoBehaviour:
       m_text: of
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 78.276
       m_text: cat
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 78.556
       m_text: owners
       m_points: 5
@@ -1595,7 +1590,7 @@ MonoBehaviour:
       m_text: said
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 79.356
       m_text: they'd
       m_points: 5
@@ -1605,49 +1600,49 @@ MonoBehaviour:
       m_text: buy
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 80.256
       m_text: this
+      m_points: 5
+      m_sprite: P12_TheseAwesome
+      m_stream: 2
+    - m_time: 80.556
+      m_text: awesome product
       m_points: 5
       m_sprite: 
       m_stream: 1
     - m_time: 80.556
-      m_text: awesome
-      m_points: 5
-      m_sprite: P12_TheseAwesome
-      m_stream: 2
-    - m_time: 81.156
-      m_text: product
-      m_points: 5
+      m_text: awful product
+      m_points: -50
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 81.716
       m_text: to
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 81.976
       m_text: protect
       m_points: 5
       m_sprite: 
       m_stream: 1
     - m_time: 82.316
-      m_text: their
+      m_text: their cat's
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 82.476
-      m_text: cat's
-      m_points: 5
-      m_sprite: 
-      m_stream: 2
     - m_time: 82.876
       m_text: eyes
       m_points: 5
       m_sprite: 
       m_stream: 2
+    - m_time: 82.876
+      m_text: thighs
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
     - m_time: 83.336
-      m_text: we've
+      m_text: We've
       m_points: 5
       m_sprite: 
       m_stream: 1
@@ -1655,12 +1650,12 @@ MonoBehaviour:
       m_text: done
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 83.996
       m_text: the
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 84.236
       m_text: research
       m_points: 5
@@ -1675,26 +1670,26 @@ MonoBehaviour:
       m_text: the
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 85.136
       m_text: numbers
       m_points: 5
       m_sprite: 
       m_stream: 1
     - m_time: 85.536
-      m_text: don't
+      m_text: don't lie
       m_points: 5
       m_sprite: 
       m_stream: 2
-    - m_time: 85.796
-      m_text: lie
-      m_points: 5
+    - m_time: 85.536
+      m_text: do lie
+      m_points: -50
       m_sprite: 
       m_stream: 1
     - m_time: 86.436
-      m_text: it's
+      m_text: It's
       m_points: 5
-      m_sprite: 
+      m_sprite: P14_HealthyChoice
       m_stream: 2
     - m_time: 86.556
       m_text: the
@@ -1704,43 +1699,28 @@ MonoBehaviour:
     - m_time: 86.716
       m_text: healthy
       m_points: 5
-      m_sprite: P14_HealthyChoice
-      m_stream: 1
+      m_sprite: 
+      m_stream: 2
     - m_time: 87.196
       m_text: choice
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 87.656
-      m_text: that
-      m_points: 5
-      m_sprite: 
-      m_stream: 2
-    - m_time: 87.796
-      m_text: makes
-      m_points: 5
-      m_sprite: 
-      m_stream: 1
-    - m_time: 87.936
-      m_text: your
-      m_points: 5
-      m_sprite: 
-      m_stream: 2
-    - m_time: 88.176
-      m_text: feline
+      m_text: that makes your feline
       m_points: 5
       m_sprite: 
       m_stream: 2
     - m_time: 88.636
-      m_text: look
+      m_text: look fly
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 88.936
-      m_text: fly
-      m_points: 5
+    - m_time: 88.636
+      m_text: die
+      m_points: -50
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 95.606
       m_text: Imagine
       m_points: 5
@@ -1750,7 +1730,7 @@ MonoBehaviour:
       m_text: your
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 96.496
       m_text: kitty
       m_points: 5
@@ -1760,7 +1740,7 @@ MonoBehaviour:
       m_text: all
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 97.256
       m_text: cool
       m_points: 5
@@ -1775,34 +1755,29 @@ MonoBehaviour:
       m_text: chic
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 98.356
       m_text: Wearing
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 98.856
       m_text: these
       m_points: 5
       m_sprite: P8_WithThese
-      m_stream: 1
+      m_stream: 2
     - m_time: 99.156
       m_text: pretty
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 99.516
       m_text: shades
       m_points: 5
       m_sprite: 
-      m_stream: 2
-    - m_time: 99.906
-      m_text: she'll
-      m_points: 5
-      m_sprite: 
       m_stream: 1
-    - m_time: 100.096
-      m_text: look
+    - m_time: 99.906
+      m_text: she'll look
       m_points: 5
       m_sprite: 
       m_stream: 2
@@ -1810,7 +1785,7 @@ MonoBehaviour:
       m_text: like a freak
       m_points: -50
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 100.606
       m_text: unique
       m_points: 5
@@ -1825,7 +1800,7 @@ MonoBehaviour:
       m_text: sorts
       m_points: 5
       m_sprite: P9_AllSorts
-      m_stream: 2
+      m_stream: 1
     - m_time: 102.141
       m_text: of
       m_points: 5
@@ -1840,22 +1815,22 @@ MonoBehaviour:
       m_text: from
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 103.306
       m_text: classic
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 103.806
       m_text: to
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 104.078
       m_text: bold
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 104.483
       m_text: And
       m_points: 5
@@ -1865,7 +1840,7 @@ MonoBehaviour:
       m_text: we
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 104.896
       m_text: do
       m_points: 5
@@ -1875,7 +1850,7 @@ MonoBehaviour:
       m_text: prescriptions
       m_points: 5
       m_sprite: P10_Prescriptions
-      m_stream: 2
+      m_stream: 1
     - m_time: 106.006
       m_text: if
       m_points: 5
@@ -1890,7 +1865,7 @@ MonoBehaviour:
       m_text: cat
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 106.806
       m_text: is old
       m_points: 5
@@ -1915,54 +1890,54 @@ MonoBehaviour:
       m_text: sad
       m_points: 5
       m_sprite: 
+      m_stream: 2
+    - m_time: 114.626
+      m_text: glad
+      m_points: -50
+      m_sprite: 
       m_stream: 1
     - m_time: 115.126
       m_text: but
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 115.326
-      m_text: my
-      m_points: 5
-      m_sprite: 
-      m_stream: 2
-    - m_time: 115.626
-      m_text: speech
-      m_points: 5
-      m_sprite: 
-      m_stream: 2
-    - m_time: 115.826
-      m_text: is
+      m_text: my speech
       m_points: 5
       m_sprite: 
       m_stream: 1
-    - m_time: 116.026
-      m_text: ending
+    - m_time: 115.826
+      m_text: is ending
       m_points: 5
       m_sprite: 
       m_stream: 1
     - m_time: 116.576
-      m_text: sunglasses
+      m_text: SUNGLASSES
       m_points: 5
       m_sprite: P16_SunglassesForCats
       m_stream: 2
+    - m_time: 116.576
+      m_text: SOME GLASSES
+      m_points: -50
+      m_sprite: 
+      m_stream: 1
     - m_time: 117.426
-      m_text: for
+      m_text: FOR
       m_points: 5
       m_sprite: 
       m_stream: 1
     - m_time: 117.726
-      m_text: cats
+      m_text: 'CATS:'
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 118.476
       m_text: patent
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 119.076
-      m_text: pending
+      m_text: pending.
       m_points: 5
       m_sprite: 
       m_stream: 2
@@ -1980,17 +1955,17 @@ MonoBehaviour:
       m_text: you'll
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 120.476
       m_text: invest
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 121.326
       m_text: against
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 121.676
       m_text: all
       m_points: 5
@@ -2000,51 +1975,56 @@ MonoBehaviour:
       m_text: the
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 122.226
       m_text: odds
       m_points: 5
       m_sprite: 
       m_stream: 2
     - m_time: 122.576
-      m_text: sunglasses
+      m_text: SUNGLASSES
       m_points: 5
       m_sprite: P18_SunglassesForCats
       m_stream: 1
+    - m_time: 122.576
+      m_text: NUN GLASSES
+      m_points: -50
+      m_sprite: 
+      m_stream: 2
     - m_time: 123.626
-      m_text: for
+      m_text: FOR
       m_points: 5
       m_sprite: 
       m_stream: 1
     - m_time: 123.776
-      m_text: cats
+      m_text: CATS
       m_points: 5
       m_sprite: 
-      m_stream: 1
+      m_stream: 2
     - m_time: 124.176
       m_text: and
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 124.376
       m_text: we
       m_points: 5
       m_sprite: 
-      m_stream: 2
+      m_stream: 1
     - m_time: 124.526
       m_text: also
       m_points: 5
-      m_sprite: 
-      m_stream: 2
+      m_sprite: P19_AlsoDoDogs
+      m_stream: 1
     - m_time: 124.976
       m_text: do
       m_points: 5
       m_sprite: 
       m_stream: 1
     - m_time: 125.326
-      m_text: dogs
+      m_text: dogs.
       m_points: 5
-      m_sprite: P19_AlsoDoDogs
+      m_sprite: 
       m_stream: 1
   m_debugSpeech:
     m_visableTime: 5
