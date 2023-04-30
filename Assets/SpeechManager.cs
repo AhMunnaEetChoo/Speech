@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.Video;
 
 public class SpeechManager : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class SpeechManager : MonoBehaviour
     public Animator m_scoreAnimator;
     public Animator m_manEffects;
     public Animator m_manBobber;
+    public VideoPlayer m_videoPlayer;
 
     [System.Serializable]
     public class Speech
@@ -73,12 +75,11 @@ public class SpeechManager : MonoBehaviour
     public eTrackState m_trackState = eTrackState.Good;
     public int m_selectedStream = 0;
     public int m_score = 0;
+    public bool m_hasStarted = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        m_musicEmitter.Play();
-
         // initialise the active bar
         int maxStreamNo = 0;
         foreach(Phrase phrase in m_currentSpeech.m_phrases)
@@ -222,6 +223,20 @@ public class SpeechManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // wait for the streamed video to be ready
+        if(!m_hasStarted)
+        {
+            if (m_videoPlayer.isPrepared)
+            {
+                m_hasStarted = true;
+                m_musicEmitter.Play();
+            }
+            else
+            {
+                return;
+            }
+        }
+
         // read input
         float vertical = Input.GetAxis("Vertical");
         if(vertical < 0)
