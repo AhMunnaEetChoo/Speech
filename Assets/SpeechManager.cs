@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -24,6 +25,7 @@ public class SpeechManager : MonoBehaviour
     public GameObject m_lowBar;
     public GameObject m_powerPoint;
     public GameObject m_canvas;
+    public GameObject m_scoreObject;
 
     public Animator m_scoreAnimator;
     public Animator m_manEffects;
@@ -321,6 +323,14 @@ public class SpeechManager : MonoBehaviour
         }
 
         AdvanceBar();
+
+        PLAYBACK_STATE state;
+        m_musicEmitter.EventInstance.getPlaybackState(out state);
+        if(state == PLAYBACK_STATE.STOPPED)
+        {
+            // we have reached the end of the song
+            m_scoreObject.GetComponent<ScoreModule>().m_gameEnd = true;
+        }
     }
 
     void SetTrackState(eTrackState _state)

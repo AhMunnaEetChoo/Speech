@@ -3,5 +3,4 @@ TODO Speech
 - janky video load
 - audio track phrase trigger separation
 - fix explosion bug
-- trigger high score section
 - revist text judder
