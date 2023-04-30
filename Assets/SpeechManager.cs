@@ -277,7 +277,9 @@ public class SpeechManager : MonoBehaviour
             if (m_videoPlayer.isPrepared && m_videoPlayerBad.isPrepared && m_videoPlayerBlank.isPrepared
                 && m_jsonData.Length > 0)
             {
+#if !UNITY_EDITOR
                 m_currentSpeech = JsonUtility.FromJson<Speech>(m_jsonData);
+#endif
                 m_hasStarted = true;
                 m_musicEmitter.Play();
             }
