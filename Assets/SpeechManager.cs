@@ -149,7 +149,9 @@ public class SpeechManager : MonoBehaviour
             }
         }
 
+
         // Move all the phrases
+        List<ActivePhrase> toTriggerThisFrame = new List<ActivePhrase>();
         for (int i = 0; i < m_activebar.activeStreams.Count; ++i)
         {
             ActiveStream activeStream = m_activebar.activeStreams[i];
@@ -160,42 +162,7 @@ public class SpeechManager : MonoBehaviour
                 float timeDiff = activePhrase.m_phrase.GetTime() - m_activebar.m_currentTime;
                 if(timeDiff < 0.0f)
                 {
-                    // scoring
-                    bool thisStreamSelected = i == m_selectedStream;
-                    if (thisStreamSelected)
-                    {
-                        m_score += activePhrase.m_phrase.m_points;
-                    }
-
-                    if(activePhrase.m_phrase.m_points > 0)
-                    {
-                        if(thisStreamSelected)
-                        {
-                            SetTrackState(eTrackState.Good);
-                        }
-                        else
-                        {
-                            SetTrackState(eTrackState.None);
-                        }
-                    }
-                    else
-                    {
-                        if (thisStreamSelected)
-                        {
-                            SetTrackState(eTrackState.Bad);
-                        }
-                        else
-                        {
-                            SetTrackState(eTrackState.Good);
-                        }
-                    }
-                    activePhrase.m_gameObject.GetComponent<DestroyAfterDelay>().Commence();
-                    activeStream.m_activePhrases.RemoveAt(j);
-
-                    if(activePhrase.m_phrase.m_sprite.Length > 0)
-                    {
-                        m_powerPoint.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/" + activePhrase.m_phrase.m_sprite);
-                    }
+                    toTriggerThisFrame.Add(activePhrase);
                 }
                 else
                 {
@@ -205,7 +172,71 @@ public class SpeechManager : MonoBehaviour
                 }
             }
         }
+
+        bool hitBad = false;
+        bool hitGood = false;
+        bool missedBad = false;
+        bool missedGood = false; 
+        foreach (ActivePhrase activePhrase in toTriggerThisFrame)
+        {
+            // scoring
+            bool thisStreamSelected = activePhrase.m_phrase.m_stream-1 == m_selectedStream;
+            if (thisStreamSelected)
+            {
+                m_score += activePhrase.m_phrase.m_points;
+            }
+
+
+            if (activePhrase.m_phrase.m_points > 0)
+            {
+                if (thisStreamSelected)
+                {
+                    hitGood = true;
+                }
+                else
+                {
+                    missedGood = true;
+                }
+            }
+            else
+            {
+                if (thisStreamSelected)
+                {
+                    hitBad = true;
+                }
+                else
+                {
+                    missedBad = true;
+                }
+            }
+
+            activePhrase.m_gameObject.GetComponent<DestroyAfterDelay>().Commence();
+            m_activebar.activeStreams[activePhrase.m_phrase.m_stream - 1].m_activePhrases.Remove(activePhrase);
+
+            if (activePhrase.m_phrase.m_sprite.Length > 0)
+            {
+                m_powerPoint.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/" + activePhrase.m_phrase.m_sprite);
+            }
+        }
+
+        if(toTriggerThisFrame.Count > 0)
+        {
+            if (hitGood || missedBad)
+            {
+                SetTrackState(eTrackState.Good);
+            }
+            else if (hitBad)
+            {
+                SetTrackState(eTrackState.Bad);
+            }
+            else if (missedGood)
+            {
+                SetTrackState(eTrackState.None);
+            }
+        }
+
     }
+
 
     void SetActiveStream(int _activeStream)
     {
