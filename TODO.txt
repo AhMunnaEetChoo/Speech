@@ -1,6 +1,5 @@
 TODO Speech
 
-
-- hook up video transitions
 - try and build a game from the current phrase list
+- more generous with the word timings
 - trigger high score section

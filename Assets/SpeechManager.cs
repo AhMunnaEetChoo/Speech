@@ -33,6 +33,8 @@ public class SpeechManager : MonoBehaviour
     public Material m_manMaterialBad;
     public Material m_manMaterialBlank;
 
+    public static float s_bufferTime = 0.15f;
+
     [System.Serializable]
     public class Speech
     {
@@ -43,6 +45,10 @@ public class SpeechManager : MonoBehaviour
     [System.Serializable]
     public class Phrase
     {
+        public float GetTime()
+        {
+            return m_time + s_bufferTime;
+        }
         public float m_time;
         public string m_text;
         public int m_points;
@@ -130,7 +136,7 @@ public class SpeechManager : MonoBehaviour
         foreach (Phrase phrase in m_currentSpeech.m_phrases)
         {
             ActiveStream activeStream = m_activebar.activeStreams[phrase.m_stream-1];
-            if (phrase.m_time >= lastEndTime && phrase.m_time < barEndTime)
+            if (phrase.GetTime() >= lastEndTime && phrase.GetTime() < barEndTime)
             {
                 // create a new phrase
                 ActivePhrase activePhrase = new ActivePhrase();
@@ -151,7 +157,7 @@ public class SpeechManager : MonoBehaviour
             for (int j = activeStream.m_activePhrases.Count - 1; j >= 0; j--)
             {
                 ActivePhrase activePhrase = activeStream.m_activePhrases[j];
-                float timeDiff = activePhrase.m_phrase.m_time - m_activebar.m_currentTime;
+                float timeDiff = activePhrase.m_phrase.GetTime() - m_activebar.m_currentTime;
                 if(timeDiff < 0.0f)
                 {
                     // scoring
