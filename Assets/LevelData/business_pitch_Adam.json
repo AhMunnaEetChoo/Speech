@@ -951,7 +951,7 @@
             "m_text": "product",
             "m_points": 5,
             "m_sprite": "",
-            "m_stream": 1
+            "m_stream": 2
         },
         {
             "m_time": 81.71600341796875,
@@ -969,14 +969,7 @@
         },
         {
             "m_time": 82.31600189208985,
-            "m_text": "their",
-            "m_points": 5,
-            "m_sprite": "",
-            "m_stream": 1
-        },
-        {
-            "m_time": 82.47599792480469,
-            "m_text": "cat's",
+            "m_text": "their cat's",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
@@ -1088,28 +1081,7 @@
         },
         {
             "m_time": 87.65599822998047,
-            "m_text": "that",
-            "m_points": 5,
-            "m_sprite": "",
-            "m_stream": 2
-        },
-        {
-            "m_time": 87.7959976196289,
-            "m_text": "makes",
-            "m_points": 5,
-            "m_sprite": "",
-            "m_stream": 2
-        },
-        {
-            "m_time": 87.93599700927735,
-            "m_text": "your",
-            "m_points": 5,
-            "m_sprite": "",
-            "m_stream": 2
-        },
-        {
-            "m_time": 88.1760025024414,
-            "m_text": "feline",
+            "m_text": "that makes your feline",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 2
@@ -1207,14 +1179,7 @@
         },
         {
             "m_time": 99.90599822998047,
-            "m_text": "she'll",
-            "m_points": 5,
-            "m_sprite": "",
-            "m_stream": 2
-        },
-        {
-            "m_time": 100.09600067138672,
-            "m_text": "look",
+            "m_text": "she'll look",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 2
@@ -1389,28 +1354,14 @@
         },
         {
             "m_time": 115.32599639892578,
-            "m_text": "my",
-            "m_points": 5,
-            "m_sprite": "",
-            "m_stream": 1
-        },
-        {
-            "m_time": 115.6259994506836,
-            "m_text": "speech",
+            "m_text": "my speech",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
         },
         {
             "m_time": 115.82599639892578,
-            "m_text": "is",
-            "m_points": 5,
-            "m_sprite": "",
-            "m_stream": 1
-        },
-        {
-            "m_time": 116.0260009765625,
-            "m_text": "ending",
+            "m_text": "is ending",
             "m_points": 5,
             "m_sprite": "",
             "m_stream": 1
