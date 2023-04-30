@@ -19,7 +19,7 @@ public class SpeechManager : MonoBehaviour
     public GameObject m_pointLow;
     public GameObject m_highBar;
     public GameObject m_lowBar;
-
+    public GameObject m_powerPoint;
     public GameObject m_canvas;
 
     public Animator m_scoreAnimator;
@@ -179,6 +179,10 @@ public class SpeechManager : MonoBehaviour
                     activePhrase.m_gameObject.GetComponent<DestroyAfterDelay>().Commence();
                     activeStream.m_activePhrases.RemoveAt(j);
 
+                    if(activePhrase.m_phrase.m_sprite != null)
+                    {
+                        m_powerPoint.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(activePhrase.m_phrase.m_sprite);
+                    }
                 }
                 else
                 {

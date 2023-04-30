@@ -952,8 +952,248 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_currentSpeech:
-    m_visableTime: 2.5
-    m_phrases: []
+    m_visableTime: 3
+    m_phrases:
+    - m_time: 5.973
+      m_text: Allow
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 6.38
+      m_text: me
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 6.52
+      m_text: to
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 6.66
+      m_text: deliver
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 7.473
+      m_text: a
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 7.64
+      m_text: business
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 8.24
+      m_text: pitch
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 8.803
+      m_text: "I\u2019m"
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 9.1
+      m_text: purrfectly
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 9.82
+      m_text: certain
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 10.24
+      m_text: "it\u2019ll"
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 10.7
+      m_text: make
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 10.96
+      m_text: you
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 11.26
+      m_text: rich
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 11.874
+      m_text: Er
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 12.16
+      m_text: sorry
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 12.56
+      m_text: if
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 12.8
+      m_text: i'm
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 13
+      m_text: nervous
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 13.6
+      m_text: "I\u2019m"
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 13.76
+      m_text: low
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 14
+      m_text: on
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 14.28
+      m_text: cash
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 14.85
+      m_text: So
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 15.18
+      m_text: please
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 15.54
+      m_text: invest
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 16.2
+      m_text: in
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 16.36
+      m_text: Sunglasses
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 17.22
+      m_text: For
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 17.48
+      m_text: Cats
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 21.15
+      m_text: Imagine your kitty
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 22.491
+      m_text: all
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 22.8
+      m_text: cool
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 23.1
+      m_text: and
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 23.3
+      m_text: chic
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 23.876
+      m_text: Wearing these pretty shades
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 25.45
+      m_text: she'll look
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 26.15
+      m_text: unique
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 27.05
+      m_text: All sorts of styles
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 28.481
+      m_text: from
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 28.85
+      m_text: classic
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 29.35
+      m_text: to
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 29.621
+      m_text: bold
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 30.026
+      m_text: And we do prescriptions
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 31.55
+      m_text: if your cat
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 32.35
+      m_text: is old
+      m_points: 5
+      m_sprite: 
+      m_stream: 1
+    - m_time: 26.15
+      m_text: like a freak
+      m_points: -5
+      m_sprite: 
+      m_stream: 2
+    - m_time: 32.35
+      m_text: has mold
+      m_points: -5
+      m_sprite: 
+      m_stream: 2
   m_debugSpeech:
     m_visableTime: 5
     m_phrases: []
@@ -964,6 +1204,7 @@ MonoBehaviour:
   m_pointLow: {fileID: 915525808}
   m_highBar: {fileID: 2090310774}
   m_lowBar: {fileID: 2137932569}
+  m_powerPoint: {fileID: 1409227324}
   m_canvas: {fileID: 1069807707}
   m_scoreAnimator: {fileID: 1223615252}
   m_manEffects: {fileID: 141226868}
