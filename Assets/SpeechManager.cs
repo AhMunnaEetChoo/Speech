@@ -237,6 +237,16 @@ public class SpeechManager : MonoBehaviour
             }
         }
 
+        // keep video in sync with music
+        int timelinePosition;
+        m_musicEmitter.EventInstance.getTimelinePosition(out timelinePosition);
+        float musicTime = (float)timelinePosition / 1000.0f;
+        if(Mathf.Abs((float)m_videoPlayer.time - musicTime) > 0.05f)
+        {
+            Debug.Log("music / vid desync");
+            m_videoPlayer.time = (double)musicTime;
+        }
+
         // read input
         float vertical = Input.GetAxis("Vertical");
         if(vertical < 0)
