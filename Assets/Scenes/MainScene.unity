@@ -982,7 +982,7 @@ MonoBehaviour:
     - m_time: 7.64
       m_text: business
       m_points: 5
-      m_sprite: 
+      m_sprite: P2_ABusinessPitch
       m_stream: 1
     - m_time: 8.24
       m_text: pitch
@@ -2329,7 +2329,7 @@ SpriteRenderer:
   m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1423619330
@@ -2895,7 +2895,7 @@ SpriteRenderer:
   m_Size: {x: 7.86, y: 7.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1967346956
