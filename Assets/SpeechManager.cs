@@ -22,6 +22,7 @@ public class SpeechManager : MonoBehaviour
 
     public GameObject m_canvas;
 
+    public Animator m_scoreAnimator;
     public Animator m_manEffects;
     public Animator m_manBobber;
 
@@ -253,6 +254,7 @@ public class SpeechManager : MonoBehaviour
             }
             case eTrackState.Good:
             {
+                m_scoreAnimator.SetTrigger("ScoreUp");
                 break;
             }
             case eTrackState.Bad:
