@@ -30,7 +30,7 @@ public class SpeechManager : MonoBehaviour
     public class Speech
     {
         public float m_visableTime = 5.0f;
-        public List<Stream> m_streams;
+        public List<Phrase> m_phrases = new List<Phrase>();
     };
 
     [System.Serializable]
@@ -40,12 +40,7 @@ public class SpeechManager : MonoBehaviour
         public string m_text;
         public int m_points;
         public string m_sprite;
-    };
-
-    [System.Serializable]
-    public class Stream
-    {
-        public List<Phrase> m_phrases = new List<Phrase>();
+        public int m_stream;
     };
 
     private class ActivePhrase
@@ -81,14 +76,21 @@ public class SpeechManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_debugSpeech.m_streams.Add(new Stream());
         m_musicEmitter.Play();
 
         // initialise the active bar
-        float startY = 150.0f;
-        for (int i = 0; i < m_currentSpeech.m_streams.Count; ++i)
+        int maxStreamNo = 0;
+        foreach(Phrase phrase in m_currentSpeech.m_phrases)
         {
-            Stream stream = m_currentSpeech.m_streams[i];
+            if(phrase.m_stream > maxStreamNo)
+            {
+                maxStreamNo = phrase.m_stream;
+            }
+        }
+
+        float startY = 150.0f;
+        for (int i = 0; i < maxStreamNo; ++i)
+        {
             ActiveStream activeStream = new ActiveStream();
             activeStream.m_yPosition = startY;
             m_activebar.activeStreams.Add(activeStream);
@@ -118,31 +120,25 @@ public class SpeechManager : MonoBehaviour
         Vector2 startPosition = new Vector2(0, 0);
 
         // Create any new phrases
-        for(int i = 0 ; i < m_currentSpeech.m_streams.Count; ++i)
+        foreach (Phrase phrase in m_currentSpeech.m_phrases)
         {
-            Stream stream = m_currentSpeech.m_streams[i];
-            ActiveStream activeStream = m_activebar.activeStreams[i];
-
-            foreach (Phrase phrase in stream.m_phrases)
+            ActiveStream activeStream = m_activebar.activeStreams[phrase.m_stream-1];
+            if (phrase.m_time >= lastEndTime && phrase.m_time < barEndTime)
             {
-                if (phrase.m_time >= lastEndTime && phrase.m_time < barEndTime)
-                {
-                    // create a new phrase
-                    ActivePhrase activePhrase = new ActivePhrase();
-                    activePhrase.m_phrase = phrase;
-                    activePhrase.m_gameObject = GameObject.Instantiate(m_phrasePrefab, new Vector3(m_activebar.m_xRange.y, activeStream.m_yPosition), Quaternion.identity, m_canvas.transform);
-                    TMP_Text newText = activePhrase.m_gameObject.GetComponent<TMP_Text>();
-                    newText.text = phrase.m_text;
+                // create a new phrase
+                ActivePhrase activePhrase = new ActivePhrase();
+                activePhrase.m_phrase = phrase;
+                activePhrase.m_gameObject = GameObject.Instantiate(m_phrasePrefab, new Vector3(m_activebar.m_xRange.y, activeStream.m_yPosition), Quaternion.identity, m_canvas.transform);
+                TMP_Text newText = activePhrase.m_gameObject.GetComponent<TMP_Text>();
+                newText.text = phrase.m_text;
 
-                    activeStream.m_activePhrases.Add(activePhrase);
-                }
+                activeStream.m_activePhrases.Add(activePhrase);
             }
         }
 
         // Move all the phrases
-        for (int i = 0; i < m_currentSpeech.m_streams.Count; ++i)
+        for (int i = 0; i < m_activebar.activeStreams.Count; ++i)
         {
-            Stream stream = m_currentSpeech.m_streams[i];
             ActiveStream activeStream = m_activebar.activeStreams[i];
 
             for (int j = activeStream.m_activePhrases.Count - 1; j >= 0; j--)
@@ -232,7 +228,7 @@ public class SpeechManager : MonoBehaviour
         }
         else if(vertical > 0)
         {
-            if (m_selectedStream < m_currentSpeech.m_streams.Count - 1)
+            if (m_selectedStream < m_activebar.activeStreams.Count - 1)
             {
                 SetActiveStream(1);
             }

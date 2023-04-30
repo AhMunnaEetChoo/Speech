@@ -17,7 +17,7 @@ public class LogMarkers : MonoBehaviour
             UnityEngine.Debug.LogFormat("Marker: {0}", (string)parameter.name);
             SpeechManager man = GameObject.Find("SpeechManager").GetComponent<SpeechManager>();
 
-            man.m_debugSpeech.m_streams[0].m_phrases.Add(new SpeechManager.Phrase { m_time = ((float)parameter.position)/1000f, m_text = (string)parameter.name, m_points = 0 });
+            man.m_debugSpeech.m_phrases.Add(new SpeechManager.Phrase { m_time = ((float)parameter.position)/1000f, m_text = (string)parameter.name, m_points = 0 });
         }
 
         return FMOD.RESULT.OK;
