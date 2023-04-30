@@ -106,9 +106,31 @@ public class SpeechManager : MonoBehaviour
     private float m_lastResyncTime = 0.0f;
     private bool m_showingScore = false;
 
+    public GameObject[] m_destroyL1Objects;
+    public GameObject[] m_destroyL2Objects;
+
     // Start is called before the first frame update
     void Start()
     {
+        //change graphics depending on level
+
+
+        if (m_startingLevel == 0)
+        {
+            foreach (GameObject m_destroyL1Objects in m_destroyL1Objects)
+            {
+                Destroy(m_destroyL1Objects);
+            }
+        }
+
+        if (m_startingLevel == 1)
+        {
+            foreach (GameObject m_destroyL2Objects in m_destroyL2Objects)
+            {
+                Destroy(m_destroyL2Objects);
+            }
+        }
+
         StartCoroutine(GetRequest(m_jsonURL, false));
 
         // initialise the active bar
