@@ -1,10 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.IMGUI.Controls;
 using UnityEngine;
-using UnityEngine.Assertions;
 using UnityEngine.Video;
 
 public class SpeechManager : MonoBehaviour
@@ -235,6 +232,16 @@ public class SpeechManager : MonoBehaviour
             {
                 return;
             }
+        }
+
+        // keep video in sync with music
+        int timelinePosition;
+        m_musicEmitter.EventInstance.getTimelinePosition(out timelinePosition);
+        float musicTime = (float)timelinePosition / 1000.0f;
+        if(Mathf.Abs((float)m_videoPlayer.time - musicTime) > 0.05f)
+        {
+            Debug.Log("music / vid desync");
+            m_videoPlayer.time = (double)musicTime;
         }
 
         // read input
