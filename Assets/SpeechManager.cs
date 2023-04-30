@@ -20,7 +20,6 @@ public class SpeechManager : MonoBehaviour
     public GameObject m_highBar;
     public GameObject m_lowBar;
 
-    public GameObject m_scoreText;
     public GameObject m_canvas;
 
     public Animator m_manEffects;
@@ -156,7 +155,6 @@ public class SpeechManager : MonoBehaviour
                     if (thisStreamSelected)
                     {
                         m_score += activePhrase.m_phrase.m_points;
-                        m_scoreText.GetComponent<TextMeshPro>().text = m_score.ToString();
                     }
 
                     if(activePhrase.m_phrase.m_points > 0)

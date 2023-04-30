@@ -1158,7 +1158,6 @@ MonoBehaviour:
   m_pointLow: {fileID: 915525808}
   m_highBar: {fileID: 2090310774}
   m_lowBar: {fileID: 2137932569}
-  m_scoreText: {fileID: 1223615248}
   m_canvas: {fileID: 1069807707}
   m_manEffects: {fileID: 141226868}
   m_manBobber: {fileID: 809935260}
@@ -1790,6 +1789,7 @@ GameObject:
   - component: {fileID: 1223615251}
   - component: {fileID: 1223615250}
   - component: {fileID: 1223615249}
+  - component: {fileID: 1223615252}
   m_Layer: 10
   m_Name: Score
   m_TagString: Untagged
@@ -1951,6 +1951,21 @@ RectTransform:
   m_AnchoredPosition: {x: 392.2, y: -232}
   m_SizeDelta: {x: 18.0298, y: 6.9118}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1223615252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223615248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba5a69bd7f5b4010837716ad5bc83c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeechManager: {fileID: 567764207}
+  m_scoreDisplay: 0
+  m_scoreDisplayText: {fileID: 1223615249}
 --- !u!1 &1285083502
 GameObject:
   m_ObjectHideFlags: 0
