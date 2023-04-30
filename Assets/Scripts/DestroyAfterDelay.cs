@@ -24,7 +24,7 @@ public class DestroyAfterDelay : MonoBehaviour
         {
             m_time += Time.deltaTime;
             transform.localScale = m_startingScale * (1f + ((maxSize-1f) * (m_time / lifetime)));
-            gameObject.GetComponent<TextMeshPro>().color = new Color(0f, 1f, 0f, 1f);
+            gameObject.GetComponent<TextMeshPro>().color = new Color(m_time / lifetime, m_time / lifetime, m_time / lifetime, m_time / lifetime);
 
             if (m_time > lifetime)
             {
