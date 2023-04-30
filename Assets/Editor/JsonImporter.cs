@@ -2,15 +2,19 @@ using UnityEngine;
 using System.Collections;
 using UnityEditor;
 using System.IO;
+using Codice.Client.Common.GameUI;
 
 [CustomEditor(typeof(SpeechManager))]
 public class LevelScriptEditor : Editor
 {
+    private float newTime = 0.0f;
+
     public override void OnInspectorGUI()
     {
+
         DrawDefaultInspector();
         SpeechManager myTarget = (SpeechManager)target;
-        
+
         if (GUILayout.Button("Export to JSON"))
         {
             string jsonString = JsonUtility.ToJson(myTarget.m_currentSpeech, true);
@@ -30,6 +34,13 @@ public class LevelScriptEditor : Editor
         {
             string jsonString = System.IO.File.ReadAllText(EditorUtility.OpenFilePanel("select JSON file", Application.dataPath, "json"));
             myTarget.m_currentSpeech = JsonUtility.FromJson<SpeechManager.Speech>(jsonString);
+        }
+
+        newTime = EditorGUILayout.FloatField("Set Time To:", newTime);
+
+        if (GUILayout.Button("Go!"))
+        {
+            myTarget.SetTime(newTime);
         }
     }
 }
