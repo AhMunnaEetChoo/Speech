@@ -73,6 +73,7 @@ public class SpeechManager : MonoBehaviour
     public int m_selectedStream = 0;
     public int m_score = 0;
     public bool m_hasStarted = false;
+    private float m_lastResyncTime = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -238,11 +239,13 @@ public class SpeechManager : MonoBehaviour
         int timelinePosition;
         m_musicEmitter.EventInstance.getTimelinePosition(out timelinePosition);
         float musicTime = (float)timelinePosition / 1000.0f;
-        if(Mathf.Abs((float)m_videoPlayer.time - musicTime) > 0.05f)
+        if(m_lastResyncTime > 3f && Mathf.Abs((float)m_videoPlayer.time - musicTime) > 0.2f)
         {
             Debug.Log("music / vid desync");
             m_videoPlayer.time = (double)musicTime;
+            m_lastResyncTime = 0f;
         }
+        m_lastResyncTime += Time.deltaTime;
 
         // read input
         float vertical = Input.GetAxis("Vertical");
