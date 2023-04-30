@@ -317,4 +317,4 @@ MonoBehaviour:
   Banks:
   - Master
   - Master.strings
-  Scene: MainScene
+  Scene: IntroScene
