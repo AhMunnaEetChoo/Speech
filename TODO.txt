@@ -1,4 +1,5 @@
 TODO Speech
 
-- extract new markers into json
+
+- hook up video transitions
 - trigger high score section
