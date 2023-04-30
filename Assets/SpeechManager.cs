@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using UnityEngine.Assertions;
@@ -179,9 +180,9 @@ public class SpeechManager : MonoBehaviour
                     activePhrase.m_gameObject.GetComponent<DestroyAfterDelay>().Commence();
                     activeStream.m_activePhrases.RemoveAt(j);
 
-                    if(activePhrase.m_phrase.m_sprite != null)
+                    if(activePhrase.m_phrase.m_sprite.Length > 0)
                     {
-                        m_powerPoint.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(activePhrase.m_phrase.m_sprite);
+                        m_powerPoint.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/" + activePhrase.m_phrase.m_sprite);
                     }
                 }
                 else
