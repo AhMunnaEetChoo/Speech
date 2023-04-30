@@ -1576,63 +1576,49 @@
                     "m_text": "When it",
                     "m_points": 5,
                     "m_sprite": "P22_WhenItComes",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 9.065999984741211,
-                    "m_text": "comes",
-                    "m_points": 5,
-                    "m_sprite": "",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 9.35099983215332,
-                    "m_text": "to",
+                    "m_text": "comes to",
                     "m_points": 5,
                     "m_sprite": "",
                     "m_stream": 1
                 },
                 {
                     "m_time": 9.446000099182129,
-                    "m_text": "the",
+                    "m_text": "the truth",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 9.730999946594239,
-                    "m_text": "truth",
-                    "m_points": 5,
-                    "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 10.347999572753907,
                     "m_text": "I'm",
                     "m_points": 5,
                     "m_sprite": "P27_WouldntEnjoy",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 10.680000305175782,
                     "m_text": "at",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 10.96500015258789,
                     "m_text": "your",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream":2
                 },
                 {
                     "m_time": 11.20199966430664,
                     "m_text": "service",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 11.913999557495118,
@@ -1660,14 +1646,14 @@
                     "m_text": "despite",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 13.527999877929688,
                     "m_text": "the",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 13.670000076293946,
@@ -1695,49 +1681,42 @@
                     "m_text": "I",
                     "m_points": 5,
                     "m_sprite": "P23_DidntDo",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 15.237000465393067,
                     "m_text": "absolutely",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 15.925999641418457,
                     "m_text": "didn't",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 15.925999641418457,
-                    "m_text": "did",
-                    "m_points": 5,
-                    "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 16.731000900268556,
                     "m_text": "do",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 16.993000030517579,
                     "m_text": "those",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 17.325000762939454,
                     "m_text": "murders",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 20.743000030517579,
@@ -1772,14 +1751,14 @@
                     "m_text": "a",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 22.024999618530275,
                     "m_text": "knife,",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 22.642000198364259,
@@ -1800,14 +1779,14 @@
                     "m_text": "or a",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 23.400999069213868,
                     "m_text": "gun",
                     "m_points": 5,
                     "m_sprite": "P26_Gun",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 23.97100067138672,
@@ -1815,13 +1794,6 @@
                     "m_points": 5,
                     "m_sprite": "P27_WouldntEnjoy",
                     "m_stream": 1
-                },
-                {
-                    "m_time": 23.97100067138672,
-                    "m_text": "Though I would've enjoyed it",
-                    "m_points": -50,
-                    "m_sprite": "",
-                    "m_stream": 2
                 },
                 {
                     "m_time": 25.726999282836915,
@@ -1856,14 +1828,14 @@
                     "m_text": "I'm just",
                     "m_points": 5,
                     "m_sprite": "P27b_JustLittle",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 27.625999450683595,
                     "m_text": "a",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 27.76799964904785,
@@ -1919,7 +1891,7 @@
                     "m_text": "I",
                     "m_points": 5,
                     "m_sprite": "P28_Truck",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 30.332000732421876,
@@ -1933,7 +1905,7 @@
                     "m_text": "know",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 30.805999755859376,
@@ -1944,17 +1916,45 @@
                 },
                 {
                     "m_time": 30.972999572753908,
-                    "m_text": "that blood got on my truck",
+                    "m_text": "that",
+                    "m_points": 5,
+                    "m_sprite": "",
+                    "m_stream": 2
+                },
+                {
+                    "m_time": 31.165000915527345,
+                    "m_text": "blood",
                     "m_points": 5,
                     "m_sprite": "",
                     "m_stream": 1
                 },
                 {
-                    "m_time": 30.972999572753908,
-                    "m_text": "I cleaned blood off my truck",
-                    "m_points": -50,
+                    "m_time": 31.485000610351564,
+                    "m_text": "got",
+                    "m_points": 5,
                     "m_sprite": "",
                     "m_stream": 2
+                },
+                {
+                    "m_time": 31.87700080871582,
+                    "m_text": "on",
+                    "m_points": 5,
+                    "m_sprite": "",
+                    "m_stream": 1
+                },
+                {
+                    "m_time": 32.13600158691406,
+                    "m_text": "my",
+                    "m_points": 5,
+                    "m_sprite": "",
+                    "m_stream": 2
+                },
+                {
+                    "m_time": 32.409000396728519,
+                    "m_text": "truck",
+                    "m_points": 5,
+                    "m_sprite": "",
+                    "m_stream": 1
                 },
                 {
                     "m_time": 39.35100173950195,
@@ -1989,7 +1989,7 @@
                     "m_text": "monster,",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 41.582000732421878,
@@ -2003,7 +2003,7 @@
                     "m_text": "killer,",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 42.340999603271487,
@@ -2025,35 +2025,35 @@
                     "m_text": "that",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 43.52799987792969,
-                    "m_text": "This ain't",
+                    "m_text": "This ain't a",
                     "m_points": 5,
                     "m_sprite": "P30_TrueCrime",
                     "m_stream": 1
                 },
                 {
-                    "m_time": 43.895999908447269,
-                    "m_text": "a true",
+                    "m_time": 44.0260009765625,
+                    "m_text": "true",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 44.31100082397461,
                     "m_text": "crime",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 44.619998931884769,
                     "m_text": "thriller",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 45.09400177001953,
@@ -2071,14 +2071,14 @@
                 },
                 {
                     "m_time": 46.090999603271487,
-                    "m_text": "joe",
+                    "m_text": "Joe",
                     "m_points": 5,
                     "m_sprite": "",
                     "m_stream": 1
                 },
                 {
                     "m_time": 46.090999603271487,
-                    "m_text": "psycho,",
+                    "m_text": "Psycho,",
                     "m_points": -50,
                     "m_sprite": "",
                     "m_stream": 2
@@ -2095,49 +2095,35 @@
                     "m_text": "business pitch",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 47.06100082397461,
                     "m_text": "thirst for blood",
                     "m_points": -50,
                     "m_sprite": "",
-                    "m_stream": 2
+                    "m_stream": 1
                 },
                 {
                     "m_time": 48.22700119018555,
-                    "m_text": "Did",
+                    "m_text": "Did I",
                     "m_points": 5,
                     "m_sprite": "P3_PurrfectlyCertain",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 48.369998931884769,
-                    "m_text": "I",
-                    "m_points": 5,
-                    "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 48.58300018310547,
                     "m_text": "mention",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 49.12900161743164,
-                    "m_text": "that",
+                    "m_text": "that I",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 49.24399948120117,
-                    "m_text": "I",
-                    "m_points": 5,
-                    "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 49.555999755859378,
@@ -2151,35 +2137,35 @@
                     "m_text": "make you rich?",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 50.03099822998047,
                     "m_text": "dump you in a ditch?",
                     "m_points": -50,
                     "m_sprite": "",
-                    "m_stream": 2
+                    "m_stream": 1
                 },
                 {
                     "m_time": 57.48400115966797,
-                    "m_text": "SUNGLASSES",
+                    "m_text": "Sunglasses",
                     "m_points": 5,
                     "m_sprite": "P16_SunglassesForCats",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 58.2380012512207,
-                    "m_text": "FOR",
+                    "m_text": "For",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 58.48099899291992,
-                    "m_text": "CATS",
+                    "m_text": "Cats",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 58.8129997253418,
@@ -2200,7 +2186,7 @@
                     "m_text": "business",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 59.71500015258789,
@@ -2214,7 +2200,7 @@
                     "m_text": "in",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 60.332000732421878,
@@ -2260,24 +2246,17 @@
                 },
                 {
                     "m_time": 61.803001403808597,
-                    "m_text": "then",
+                    "m_text": "then I'm",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 61.94599914550781,
-                    "m_text": "I'm",
-                    "m_points": 5,
-                    "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 62.308998107910159,
                     "m_text": "guilty",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 62.72200012207031,
@@ -2298,35 +2277,35 @@
                     "m_text": "All",
                     "m_points": 5,
                     "m_sprite": "PAlt_CatBike",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 64.03399658203125,
                     "m_text": "sorts",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 64.36699676513672,
                     "m_text": "of",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 64.6510009765625,
                     "m_text": "styles,",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 65.22100067138672,
                     "m_text": "from",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 65.36299896240235,
@@ -2340,7 +2319,7 @@
                     "m_text": "to",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 66.02799987792969,
@@ -2354,28 +2333,28 @@
                     "m_text": "And",
                     "m_points": 5,
                     "m_sprite": "P10_Prescriptions",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 66.73999786376953,
                     "m_text": "we",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 66.91300201416016,
                     "m_text": "do",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 67.26200103759766,
                     "m_text": "prescriptions",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 67.9739990234375,
@@ -2386,17 +2365,10 @@
                 },
                 {
                     "m_time": 68.19000244140625,
-                    "m_text": "your",
+                    "m_text": "your cat",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 68.38500213623047,
-                    "m_text": "cat",
-                    "m_points": 5,
-                    "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 68.78099822998047,
@@ -2414,44 +2386,9 @@
                 },
                 {
                     "m_time": 75.52200317382813,
-                    "m_text": "Ladies",
+                    "m_text": "Ladies and Gentlemen of the jury",
                     "m_points": 5,
                     "m_sprite": "P31_Jury1",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 75.9010009765625,
-                    "m_text": "and",
-                    "m_points": 5,
-                    "m_sprite": "",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 76.04399871826172,
-                    "m_text": "Gentlemen",
-                    "m_points": 5,
-                    "m_sprite": "",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 76.42400360107422,
-                    "m_text": "of",
-                    "m_points": 5,
-                    "m_sprite": "",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 76.56600189208985,
-                    "m_text": "the",
-                    "m_points": 5,
-                    "m_sprite": "",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 76.69499969482422,
-                    "m_text": "jury,",
-                    "m_points": 5,
-                    "m_sprite": "",
                     "m_stream": 1
                 },
                 {
@@ -2487,7 +2424,7 @@
                     "m_text": "With some",
                     "m_points": 5,
                     "m_sprite": "P32_WithShades",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 78.93900299072266,
@@ -2501,7 +2438,7 @@
                     "m_text": "on",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 79.55599975585938,
@@ -2515,7 +2452,7 @@
                     "m_text": "head",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 80.1259994506836,
@@ -2529,7 +2466,7 @@
                     "m_text": "would",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 80.45800018310547,
@@ -2543,7 +2480,7 @@
                     "m_text": "so",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 81.07499694824219,
@@ -2554,16 +2491,9 @@
                 },
                 {
                     "m_time": 81.76300048828125,
-                    "m_text": "Some",
+                    "m_text": "Some say",
                     "m_points": 5,
                     "m_sprite": "P33_Niche",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 81.93000030517578,
-                    "m_text": "say",
-                    "m_points": 5,
-                    "m_sprite": "",
                     "m_stream": 1
                 },
                 {
@@ -2585,7 +2515,7 @@
                     "m_text": "niche",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 82.80899810791016,
@@ -2595,15 +2525,8 @@
                     "m_stream": 1
                 },
                 {
-                    "m_time": 83.4489974975586,
-                    "m_text": "but",
-                    "m_points": 5,
-                    "m_sprite": "",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 83.59100341796875,
-                    "m_text": "I",
+                    "m_time": 83.49100341796875,
+                    "m_text": "But I",
                     "m_points": 5,
                     "m_sprite": "",
                     "m_stream": 1
@@ -2627,14 +2550,14 @@
                     "m_text": "If",
                     "m_points": 5,
                     "m_sprite": "P34_Complimentary",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 84.60299682617188,
                     "m_text": "you'd",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 84.74099731445313,
@@ -2648,21 +2571,21 @@
                     "m_text": "a",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 85.06300354003906,
                     "m_text": "complimentary",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 85.7750015258789,
                     "m_text": "pair,",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 86.12999725341797,
@@ -2697,7 +2620,7 @@
                     "m_text": "free",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 94.052001953125,
@@ -2732,7 +2655,7 @@
                     "m_text": "be",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 94.9540023803711,
@@ -2746,7 +2669,7 @@
                     "m_text": "I'm",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 95.74299621582031,
@@ -2760,7 +2683,7 @@
                     "m_text": "a",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 96.09300231933594,
@@ -2778,16 +2701,9 @@
                 },
                 {
                     "m_time": 96.93000030517578,
-                    "m_text": "And",
+                    "m_text": "And I",
                     "m_points": 5,
                     "m_sprite": "P36_MakesUpFor",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 97.0719985961914,
-                    "m_text": "I",
-                    "m_points": 5,
-                    "m_sprite": "",
                     "m_stream": 1
                 },
                 {
@@ -2795,7 +2711,7 @@
                     "m_text": "hope",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 97.5,
@@ -2844,7 +2760,7 @@
                     "m_text": "lack",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 99.0,
@@ -2858,35 +2774,35 @@
                     "m_text": "alibi",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 100.15799713134766,
                     "m_text": "I",
                     "m_points": 5,
                     "m_sprite": "PAlt_CatSunny",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 100.31600189208985,
                     "m_text": "don't",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 100.58499908447266,
                     "m_text": "have",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 100.88500213623047,
                     "m_text": "a",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 101.05999755859375,
@@ -2904,17 +2820,10 @@
                 },
                 {
                     "m_time": 101.62899780273438,
-                    "m_text": "or",
+                    "m_text": "or a",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
-                },
-                {
-                    "m_time": 101.7239990234375,
-                    "m_text": "a",
-                    "m_points": 5,
-                    "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 101.81900024414063,
@@ -2928,21 +2837,21 @@
                     "m_text": "to",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 102.34100341796875,
                     "m_text": "my",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 102.50700378417969,
                     "m_text": "name",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 103.08799743652344,
@@ -2963,7 +2872,7 @@
                     "m_text": "ask",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 103.70099639892578,
@@ -2991,42 +2900,42 @@
                     "m_text": "I'd",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 104.80999755859375,
                     "m_text": "say",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 105.22699737548828,
                     "m_text": "\"that's lame\"",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 105.22699737548828,
                     "m_text": "\"I'm game\"",
                     "m_points": -50,
                     "m_sprite": "",
-                    "m_stream": 2
+                    "m_stream": 1
                 },
                 {
                     "m_time": 107.51499938964844,
                     "m_text": "Thank you",
                     "m_points": 5,
                     "m_sprite": "P23_DidntDo",
-                    "m_stream": 1
+                    "m_stream": 2
                 },
                 {
                     "m_time": 107.51499938964844,
                     "m_text": "Fuck you",
                     "m_points": -50,
                     "m_sprite": "",
-                    "m_stream": 2
+                    "m_stream": 1
                 }
             ]
         }
