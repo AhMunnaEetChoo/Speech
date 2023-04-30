@@ -180,7 +180,6 @@ public class SpeechManager : MonoBehaviour
                             SetTrackState(eTrackState.Good);
                         }
                     }
-                    activePhrase.m_gameObject.GetComponent<TextMeshPro>().color = Color.white;
                     activePhrase.m_gameObject.GetComponent<DestroyAfterDelay>().Commence();
                     activeStream.m_activePhrases.RemoveAt(j);
 

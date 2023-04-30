@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 224275097}
   - component: {fileID: 224275096}
   m_Layer: 10
-  m_Name: EmailMessage_Rank
+  m_Name: EmailMessage_BadRank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_scoreAnimator: {fileID: 1223615252}
   m_manEffects: {fileID: 141226868}
   m_manBobber: {fileID: 809935260}
-  m_trackSTate: 2
+  m_trackState: 2
   m_selectedStream: 0
   m_score: 0
 --- !u!4 &567764209
@@ -1427,7 +1427,7 @@ GameObject:
   - component: {fileID: 912574326}
   - component: {fileID: 912574325}
   m_Layer: 10
-  m_Name: EmailMessage_Rank
+  m_Name: EmailMessage_GoodRank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1721,7 +1721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 0.83
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -2090,6 +2090,18 @@ MonoBehaviour:
   m_scoreDisplay: 0
   m_scoreDisplayText: {fileID: 1223615249}
   m_scoreChangeSpeed: 30
+  m_gameEnd: 0
+  m_manEffects: {fileID: 141226868}
+  m_goodMessage: {fileID: 1475677401}
+  m_badMessage: {fileID: 583417320}
+  m_finalScore: 0
+  m_goodRankText: {fileID: 912574325}
+  m_badRankText: {fileID: 224275096}
+  m_gradeAplus: 100
+  m_gradeA: 90
+  m_gradeB: 80
+  m_gradeC: 70
+  m_gradeD: 60
 --- !u!4 &1303083939
 Transform:
   m_ObjectHideFlags: 0
