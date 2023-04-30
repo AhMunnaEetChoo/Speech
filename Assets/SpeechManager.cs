@@ -1,10 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.IMGUI.Controls;
 using UnityEngine;
-using UnityEngine.Assertions;
 using UnityEngine.Video;
 
 public class SpeechManager : MonoBehaviour
