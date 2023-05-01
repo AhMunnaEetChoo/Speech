@@ -44,6 +44,15 @@ public class SpeechManager : MonoBehaviour
 
     public static float s_bufferTime = 0.15f;
 
+    [System.Serializable]
+    public class ScoreData
+    {
+        public int scored = 300;
+        public int scorec = 400;
+        public int scoreb = 500;
+        public int scorea = 700;
+        public int scoreaplus = 800;
+    }
 
     [System.Serializable]
     public class GameData
@@ -57,6 +66,7 @@ public class SpeechManager : MonoBehaviour
         public float m_visableTime = 5.0f;
         public string m_trackName = "event:/Music Stage 1";
         public List<Phrase> m_phrases = new List<Phrase>();
+        public ScoreData m_scoreData = new ScoreData();
     };
 
     [System.Serializable]
@@ -143,14 +153,14 @@ public class SpeechManager : MonoBehaviour
             }
         }
 
-        float startY = 150.0f;
+        float startY = m_lowBar.transform.localPosition.y + 5f;
         for (int i = 0; i < maxStreamNo; ++i)
         {
             ActiveStream activeStream = new ActiveStream();
             activeStream.m_yPosition = startY;
             m_activebar.activeStreams.Add(activeStream);
 
-            startY += 70.0f;
+            startY = m_highBar.transform.localPosition.y + 5f;
         }
         m_activebar.m_currentTime = 0;
 
@@ -194,6 +204,7 @@ public class SpeechManager : MonoBehaviour
 
         // Move all the phrases
         List<ActivePhrase> toTriggerThisFrame = new List<ActivePhrase>();
+        List<ActivePhrase> toSwitchAudioThisFrame = new List<ActivePhrase>();
         for (int i = 0; i < m_activebar.activeStreams.Count; ++i)
         {
             ActiveStream activeStream = m_activebar.activeStreams[i];
@@ -202,7 +213,13 @@ public class SpeechManager : MonoBehaviour
             {
                 ActivePhrase activePhrase = activeStream.m_activePhrases[j];
                 float timeDiff = activePhrase.m_phrase.GetTime() - m_activebar.m_currentTime;
-                if(timeDiff < 0.0f)
+                float audioTimeDiff = activePhrase.m_phrase.m_time - m_activebar.m_currentTime;
+                if(audioTimeDiff < 0.0f)
+                {
+                    toSwitchAudioThisFrame.Add(activePhrase);
+                }
+
+                if (timeDiff < 0.0f)
                 {
                     toTriggerThisFrame.Add(activePhrase);
                 }
@@ -263,8 +280,7 @@ public class SpeechManager : MonoBehaviour
                 m_powerPoint.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/" + activePhrase.m_phrase.m_sprite);
             }
         }
-
-        if(toTriggerThisFrame.Count > 0)
+        if (toTriggerThisFrame.Count > 0)
         {
             if (hitGood || missedBad)
             {
@@ -280,6 +296,52 @@ public class SpeechManager : MonoBehaviour
             }
         }
 
+        bool aboutToHitBad = false;
+        bool aboutToHitGood = false;
+        bool aboutToMissedBad = false;
+        bool aboutToMissedGood = false;
+        foreach (ActivePhrase activePhrase in toSwitchAudioThisFrame)
+        {
+            bool thisStreamSelected = activePhrase.m_phrase.m_stream - 1 == m_selectedStream;
+            if (activePhrase.m_phrase.m_points > 0)
+            {
+                if (thisStreamSelected)
+                {
+                    aboutToHitGood = true;
+                }
+                else
+                {
+                    aboutToMissedGood = true;
+                }
+            }
+            else
+            {
+                if (thisStreamSelected)
+                {
+                    aboutToHitBad = true;
+                }
+                else
+                {
+                    aboutToMissedBad = true;
+                }
+            }
+        }
+
+        if (toSwitchAudioThisFrame.Count > 0)
+        {
+            if (aboutToHitGood || aboutToMissedBad)
+            {
+                SetAudioTrackState(eTrackState.Good);
+            }
+            else if (aboutToHitBad)
+            {
+                SetAudioTrackState(eTrackState.Bad);
+            }
+            else if (aboutToMissedGood)
+            {
+                SetAudioTrackState(eTrackState.None);
+            }
+        }
     }
 
 
@@ -337,6 +399,15 @@ public class SpeechManager : MonoBehaviour
                 m_gameData = JsonUtility.FromJson<GameData>(m_jsonData);
 #endif
                 SetSpeech(m_gameData.m_speechs[m_startingLevel]);
+
+                // initialise this level's score targets
+                ScoreModule scoreModule = m_scoreObject.GetComponent<ScoreModule>();
+                scoreModule.m_gradeD = m_currentSpeech.m_scoreData.scored;
+                scoreModule.m_gradeC = m_currentSpeech.m_scoreData.scorec;
+                scoreModule.m_gradeB = m_currentSpeech.m_scoreData.scoreb;
+                scoreModule.m_gradeA = m_currentSpeech.m_scoreData.scorea;
+                scoreModule.m_gradeAplus = m_currentSpeech.m_scoreData.scoreaplus;
+
                 m_hasStarted = true;
             }
             else
@@ -345,17 +416,30 @@ public class SpeechManager : MonoBehaviour
             }
         }
 
-        // keep video in sync with music
+        // keep videos in sync with music
         int timelinePosition;
         m_musicEventInstance.getTimelinePosition(out timelinePosition);
         float musicTime = (float)timelinePosition / 1000.0f;
-        if(m_lastResyncTime > 3f && Mathf.Abs((float)m_videoPlayer.time - musicTime) > 0.2f)
+        if(m_lastResyncTime > 2f)
         {
-            Debug.Log("music / vid desync");
-            m_videoPlayer.time = (double)musicTime;
-            m_videoPlayerBad.time = (double)musicTime;
-            m_videoPlayerBlank.time = (double)musicTime;
-            m_lastResyncTime = 0f;
+            if(Mathf.Abs((float)m_videoPlayer.time - musicTime) > 0.2f)
+            {
+                m_videoPlayer.time = (double)musicTime;
+                m_lastResyncTime = 0f;
+                Debug.Log("music / vid desync");
+            }
+            if (Mathf.Abs((float)m_videoPlayerBad.time - musicTime) > 0.2f)
+            {
+                m_videoPlayerBad.time = (double)musicTime;
+                m_lastResyncTime = 0f;
+                Debug.Log("music / vid desync");
+            }
+            if (Mathf.Abs((float)m_videoPlayerBlank.time - musicTime) > 0.2f)
+            {
+                m_videoPlayerBlank.time = (double)musicTime;
+                m_lastResyncTime = 0f;
+                Debug.Log("music / vid desync");
+            }
         }
         m_lastResyncTime += Time.deltaTime;
 
@@ -414,6 +498,11 @@ public class SpeechManager : MonoBehaviour
         }
         m_trackState = _state;
 
+        SetAudioTrackState(m_trackState);
+    }
+
+    void SetAudioTrackState(eTrackState _state)
+    {
         FMOD.Studio.EventDescription eventDesc;
         m_musicEventInstance.getDescription(out eventDesc);
         if (eventDesc.isValid())
@@ -421,7 +510,7 @@ public class SpeechManager : MonoBehaviour
             FMOD.Studio.PARAMETER_DESCRIPTION param;
             string paramNane = "DialogGoodBad";
             eventDesc.getParameterDescriptionByName(paramNane, out param);
-            m_musicEventInstance.setParameterByID(param.id, (int)m_trackState);
+            m_musicEventInstance.setParameterByID(param.id, (int)_state);
         }
     }
 

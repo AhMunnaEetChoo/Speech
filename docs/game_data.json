@@ -1,8 +1,8 @@
 {
-    "m_speechs" : [
+    "m_speechs": [
         {
-            "m_visableTime": 2.3,
-            "m_trackName" : "event:/Music Stage 1",
+            "m_visableTime": 2.299999952316284,
+            "m_trackName": "event:/Music Stage 1",
             "m_phrases": [
                 {
                     "m_time": 7.502999782562256,
@@ -866,7 +866,7 @@
                     "m_stream": 2
                 },
                 {
-                    "m_time": 77.1059994506836,
+                    "m_time": 77.10600280761719,
                     "m_text": "Ninety",
                     "m_points": 5,
                     "m_sprite": "P11_P13_91Percent",
@@ -980,7 +980,7 @@
                 {
                     "m_time": 82.8759994506836,
                     "m_text": "thighs",
-                    "m_points": 5,
+                    "m_points": -50,
                     "m_sprite": "",
                     "m_stream": 1
                 },
@@ -1523,10 +1523,17 @@
                     "m_sprite": "",
                     "m_stream": 1
                 }
-            ]
+            ],
+            "m_scoreData": {
+                "scored": 300,
+                "scorec": 400,
+                "scoreb": 500,
+                "scorea": 700,
+                "scoreaplus": 800
+            }
         },
         {
-            "m_visableTime": 2.3,
+            "m_visableTime": 2.299999952316284,
             "m_trackName": "event:/Music Stage 2",
             "m_phrases": [
                 {
@@ -1611,7 +1618,7 @@
                     "m_text": "your",
                     "m_points": 5,
                     "m_sprite": "",
-                    "m_stream":2
+                    "m_stream": 2
                 },
                 {
                     "m_time": 11.20199966430664,
@@ -2019,7 +2026,6 @@
                     "m_sprite": "",
                     "m_stream": 2
                 },
-
                 {
                     "m_time": 43.3380012512207,
                     "m_text": "that",
@@ -2154,7 +2160,7 @@
                     "m_stream": 2
                 },
                 {
-                    "m_time": 58.2380012512207,
+                    "m_time": 58.23800277709961,
                     "m_text": "For",
                     "m_points": 5,
                     "m_sprite": "",
@@ -2525,7 +2531,7 @@
                     "m_stream": 1
                 },
                 {
-                    "m_time": 83.49100341796875,
+                    "m_time": 83.49100494384766,
                     "m_text": "But I",
                     "m_points": 5,
                     "m_sprite": "",
@@ -2868,7 +2874,7 @@
                     "m_stream": 1
                 },
                 {
-                    "m_time": 103.5219985961914,
+                    "m_time": 103.5219955444336,
                     "m_text": "ask",
                     "m_points": 5,
                     "m_sprite": "",
@@ -2937,7 +2943,14 @@
                     "m_sprite": "",
                     "m_stream": 1
                 }
-            ]
+            ],
+            "m_scoreData": {
+                "scored": 300,
+                "scorec": 400,
+                "scoreb": 500,
+                "scorea": 700,
+                "scoreaplus": 800
+            }
         }
     ]
 }
