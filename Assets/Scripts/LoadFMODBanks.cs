@@ -19,7 +19,7 @@ public class LoadFMODBanks : MonoBehaviour
 
     void Update()
     {
-        if (FMODUnity.RuntimeManager.HasBankLoaded(Banks[0]))
+        if (FMODUnity.RuntimeManager.HasBankLoaded(Banks[0]) && Application.isFocused && Input.GetMouseButtonDown(0))
         {
             Debug.Log("Master Bank Loaded");
             SceneManager.LoadScene(Scene, LoadSceneMode.Single);
