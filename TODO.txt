@@ -1,7 +1,6 @@
 TODO Speech
 
 - continue score from first level into start of next level
-- audio track phrase trigger separation
 - janky video load
 - fix explosion bug
 - revist text judder

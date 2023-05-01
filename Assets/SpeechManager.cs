@@ -397,17 +397,30 @@ public class SpeechManager : MonoBehaviour
             }
         }
 
-        // keep video in sync with music
+        // keep videos in sync with music
         int timelinePosition;
         m_musicEventInstance.getTimelinePosition(out timelinePosition);
         float musicTime = (float)timelinePosition / 1000.0f;
-        if(m_lastResyncTime > 3f && Mathf.Abs((float)m_videoPlayer.time - musicTime) > 0.2f)
+        if(m_lastResyncTime > 2f)
         {
-            Debug.Log("music / vid desync");
-            m_videoPlayer.time = (double)musicTime;
-            m_videoPlayerBad.time = (double)musicTime;
-            m_videoPlayerBlank.time = (double)musicTime;
-            m_lastResyncTime = 0f;
+            if(Mathf.Abs((float)m_videoPlayer.time - musicTime) > 0.2f)
+            {
+                m_videoPlayer.time = (double)musicTime;
+                m_lastResyncTime = 0f;
+                Debug.Log("music / vid desync");
+            }
+            if (Mathf.Abs((float)m_videoPlayerBad.time - musicTime) > 0.2f)
+            {
+                m_videoPlayerBad.time = (double)musicTime;
+                m_lastResyncTime = 0f;
+                Debug.Log("music / vid desync");
+            }
+            if (Mathf.Abs((float)m_videoPlayerBlank.time - musicTime) > 0.2f)
+            {
+                m_videoPlayerBlank.time = (double)musicTime;
+                m_lastResyncTime = 0f;
+                Debug.Log("music / vid desync");
+            }
         }
         m_lastResyncTime += Time.deltaTime;
 
