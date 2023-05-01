@@ -11,6 +11,7 @@ public class ScoreModule : MonoBehaviour
     public float m_scoreChangeSpeed;
 
     public bool m_gameEnd;
+    public bool m_hasTriggered = false;
     public Animator m_manEffects;
     public GameObject m_goodMessageL1;
     public GameObject m_goodMessageL2;
@@ -29,6 +30,8 @@ public class ScoreModule : MonoBehaviour
     public int m_gradeC;
     public int m_gradeD;
 
+    private FMOD.Studio.EventInstance m_shuffleEventInstance;
+    private FMOD.Studio.EventInstance m_scoreScreenEventInstance;
 
     void Update()
     {
@@ -78,15 +81,27 @@ public class ScoreModule : MonoBehaviour
 
         //Game End anim
 
-        if (m_gameEnd == true)
+        if (m_gameEnd == true && !m_finalScore)
         {
+            if (!m_hasTriggered)
+            {
+                FMOD.Studio.EventDescription desc = FMODUnity.RuntimeManager.GetEventDescription("event:/Shuffling off");
+                desc.createInstance(out m_shuffleEventInstance);
+                m_shuffleEventInstance.start();
+            }
+
             m_manEffects.SetBool("WalkOff", true);
 
             if (m_manEffects.GetCurrentAnimatorStateInfo(0).IsName("WalkedOff"))
             {
+                FMOD.Studio.EventDescription desc = FMODUnity.RuntimeManager.GetEventDescription("event:/Score Screen");
+                desc.createInstance(out m_scoreScreenEventInstance);
+                m_scoreScreenEventInstance.start();
+
                 m_finalScore = true;
             }
 
+            m_hasTriggered = true;
         }
 
         //Final score display
