@@ -200,9 +200,9 @@ public class ScoreModule : MonoBehaviour
             {
                 case eFinalRank.F:
                 case eFinalRank.D:
-                case eFinalRank.C:
                     audioScoreParam = 0;
                     break;
+                case eFinalRank.C:
                 case eFinalRank.B:
                 case eFinalRank.A:
                     audioScoreParam = 1;
