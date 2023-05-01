@@ -234,10 +234,12 @@ public class SpeechManager : MonoBehaviour
                 if (thisStreamSelected)
                 {
                     hitGood = true;
+                    activePhrase.m_gameObject.GetComponent<DestroyAfterDelay>().Commence();
                 }
                 else
                 {
                     missedGood = true;
+                    GameObject.Destroy(activePhrase.m_gameObject);
                 }
             }
             else
@@ -245,14 +247,15 @@ public class SpeechManager : MonoBehaviour
                 if (thisStreamSelected)
                 {
                     hitBad = true;
+                    activePhrase.m_gameObject.GetComponent<DestroyAfterDelay>().Commence();
                 }
                 else
                 {
                     missedBad = true;
+                    GameObject.Destroy(activePhrase.m_gameObject);
                 }
             }
 
-            activePhrase.m_gameObject.GetComponent<DestroyAfterDelay>().Commence();
             m_activebar.activeStreams[activePhrase.m_phrase.m_stream - 1].m_activePhrases.Remove(activePhrase);
 
             if (activePhrase.m_phrase.m_sprite.Length > 0)
