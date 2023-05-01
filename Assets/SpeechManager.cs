@@ -120,6 +120,7 @@ public class SpeechManager : MonoBehaviour
     public bool m_hasStarted = false;
     private float m_lastResyncTime = 0.0f;
     private bool m_showingScore = false;
+    private float m_timeSinceScore = 0.0f;
 
     public GameObject[] m_destroyL1Objects;
     public GameObject[] m_destroyL2Objects;
@@ -408,7 +409,9 @@ public class SpeechManager : MonoBehaviour
     {
         if(m_showingScore)
         {
-            if (Mathf.Abs(Input.GetAxis("Vertical")) > 0f)
+            m_timeSinceScore += Time.deltaTime;
+            if ((m_timeSinceScore > 10.0f && Mathf.Abs(Input.GetAxis("Vertical")) > 0f)
+                || m_timeSinceScore > 25.0f)
             {
                 if(SpeechManager.m_startingLevel == 0)
                 {
@@ -421,7 +424,6 @@ public class SpeechManager : MonoBehaviour
                     SceneManager.LoadScene("IntroScene", LoadSceneMode.Single);
                 }
             }
-
             // wait for score to be shown
             return;
         }
@@ -581,6 +583,14 @@ public class SpeechManager : MonoBehaviour
                     m_jsonData = webRequest.downloadHandler.text;
                     break;
             }
+        }
+    }
+
+    void OnDestroy()
+    {
+        if (m_musicEventInstance.isValid())
+        {
+            m_musicEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
     }
 }

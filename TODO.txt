@@ -1,7 +1,5 @@
 TODO Speech
 
-- make the reactions interupt
-- add the bob
-- janky video load
-- fix explosion bug
+- timer and prompt before next level
 - revist text judder
+- publish to itch
