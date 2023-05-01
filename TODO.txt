@@ -3,5 +3,3 @@ TODO Speech
 - janky video load
 - fix explosion bug
 - revist text judder
-
-- 
