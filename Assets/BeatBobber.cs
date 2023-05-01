@@ -10,6 +10,7 @@ public class BeatBobber : MonoBehaviour
 {
     FMOD.Studio.EVENT_CALLBACK _musicFmodCallback;
     FMOD.Studio.EventInstance _musicEventInstance;
+    private GCHandle handleStored;
 
     [AOT.MonoPInvokeCallback(typeof(FMOD.Studio.EVENT_CALLBACK))]
     static FMOD.RESULT FMODEventCallback(FMOD.Studio.EVENT_CALLBACK_TYPE type, System.IntPtr instance, System.IntPtr parameterPtr)
@@ -33,8 +34,15 @@ public class BeatBobber : MonoBehaviour
 
         _musicEventInstance.setCallback(_musicFmodCallback, FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_BEAT);
 
-        GCHandle handle = GCHandle.Alloc(GetComponent<Animator>());
-        IntPtr pointer = GCHandle.ToIntPtr(handle);
+        GCHandle handleStored = GCHandle.Alloc(GetComponent<Animator>());
+        IntPtr pointer = GCHandle.ToIntPtr(handleStored);
         _musicEventInstance.setUserData(pointer);
+    }
+    private void OnDestroy()
+    {
+        if (handleStored.IsAllocated)
+        {
+            handleStored.Free();
+        }
     }
 }
