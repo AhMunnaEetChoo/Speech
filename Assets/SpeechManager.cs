@@ -194,6 +194,7 @@ public class SpeechManager : MonoBehaviour
 
         // Move all the phrases
         List<ActivePhrase> toTriggerThisFrame = new List<ActivePhrase>();
+        List<ActivePhrase> toSwitchAudioThisFrame = new List<ActivePhrase>();
         for (int i = 0; i < m_activebar.activeStreams.Count; ++i)
         {
             ActiveStream activeStream = m_activebar.activeStreams[i];
@@ -202,7 +203,13 @@ public class SpeechManager : MonoBehaviour
             {
                 ActivePhrase activePhrase = activeStream.m_activePhrases[j];
                 float timeDiff = activePhrase.m_phrase.GetTime() - m_activebar.m_currentTime;
-                if(timeDiff < 0.0f)
+                float audioTimeDiff = activePhrase.m_phrase.m_time - m_activebar.m_currentTime;
+                if(audioTimeDiff < 0.0f)
+                {
+                    toSwitchAudioThisFrame.Add(activePhrase);
+                }
+
+                if (timeDiff < 0.0f)
                 {
                     toTriggerThisFrame.Add(activePhrase);
                 }
@@ -263,8 +270,7 @@ public class SpeechManager : MonoBehaviour
                 m_powerPoint.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/" + activePhrase.m_phrase.m_sprite);
             }
         }
-
-        if(toTriggerThisFrame.Count > 0)
+        if (toTriggerThisFrame.Count > 0)
         {
             if (hitGood || missedBad)
             {
@@ -280,6 +286,52 @@ public class SpeechManager : MonoBehaviour
             }
         }
 
+        bool aboutToHitBad = false;
+        bool aboutToHitGood = false;
+        bool aboutToMissedBad = false;
+        bool aboutToMissedGood = false;
+        foreach (ActivePhrase activePhrase in toSwitchAudioThisFrame)
+        {
+            bool thisStreamSelected = activePhrase.m_phrase.m_stream - 1 == m_selectedStream;
+            if (activePhrase.m_phrase.m_points > 0)
+            {
+                if (thisStreamSelected)
+                {
+                    aboutToHitGood = true;
+                }
+                else
+                {
+                    aboutToMissedGood = true;
+                }
+            }
+            else
+            {
+                if (thisStreamSelected)
+                {
+                    aboutToHitBad = true;
+                }
+                else
+                {
+                    aboutToMissedBad = true;
+                }
+            }
+        }
+
+        if (toSwitchAudioThisFrame.Count > 0)
+        {
+            if (aboutToHitGood || aboutToMissedBad)
+            {
+                SetAudioTrackState(eTrackState.Good);
+            }
+            else if (aboutToHitBad)
+            {
+                SetAudioTrackState(eTrackState.Bad);
+            }
+            else if (aboutToMissedGood)
+            {
+                SetAudioTrackState(eTrackState.None);
+            }
+        }
     }
 
 
@@ -414,6 +466,11 @@ public class SpeechManager : MonoBehaviour
         }
         m_trackState = _state;
 
+        SetAudioTrackState(m_trackState);
+    }
+
+    void SetAudioTrackState(eTrackState _state)
+    {
         FMOD.Studio.EventDescription eventDesc;
         m_musicEventInstance.getDescription(out eventDesc);
         if (eventDesc.isValid())
@@ -421,7 +478,7 @@ public class SpeechManager : MonoBehaviour
             FMOD.Studio.PARAMETER_DESCRIPTION param;
             string paramNane = "DialogGoodBad";
             eventDesc.getParameterDescriptionByName(paramNane, out param);
-            m_musicEventInstance.setParameterByID(param.id, (int)m_trackState);
+            m_musicEventInstance.setParameterByID(param.id, (int)_state);
         }
     }
 
