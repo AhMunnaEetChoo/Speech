@@ -1,7 +1,7 @@
 TODO Speech
 
-- continue score from first level into start of next level
-- audio for score rankings
 - janky video load
 - fix explosion bug
 - revist text judder
+
+- 

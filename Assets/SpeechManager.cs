@@ -409,8 +409,16 @@ public class SpeechManager : MonoBehaviour
         {
             if (Mathf.Abs(Input.GetAxis("Vertical")) > 0f)
             {
-                SpeechManager.m_startingLevel = 1;
-                SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+                if(SpeechManager.m_startingLevel == 0)
+                {
+                    SpeechManager.m_startingLevel = 1;
+                    SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+                }
+                else
+                {
+                    SpeechManager.m_startingLevel = 0;
+                    SceneManager.LoadScene("IntroScene", LoadSceneMode.Single);
+                }
             }
 
             // wait for score to be shown
@@ -484,7 +492,8 @@ public class SpeechManager : MonoBehaviour
         m_musicEventInstance.getDescription(out musicEventDescription);
         int songLength;
         musicEventDescription.getLength(out songLength);
-        if(songLength - timelinePosition < (int)(1000f * 3.0f))
+        float scoreTriggerEarlySecs = SpeechManager.m_startingLevel == 0 ? 4.0f : 20.0f;
+        if(songLength - timelinePosition < (int)(1000f * scoreTriggerEarlySecs))
         {
             // we have reached the end of the song
             m_scoreObject.GetComponent<ScoreModule>().m_gameEnd = true;

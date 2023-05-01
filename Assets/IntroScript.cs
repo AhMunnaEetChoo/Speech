@@ -21,6 +21,7 @@ public class IntroScript : MonoBehaviour
         if(m_timer > 1.5f && Mathf.Abs(Input.GetAxis("Vertical")) > 0f)
         {
             SceneManager.LoadScene(m_nextScene, LoadSceneMode.Single);
+            SpeechManager.m_startingLevel = 0;
         }
     }
 }
