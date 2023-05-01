@@ -143,14 +143,14 @@ public class SpeechManager : MonoBehaviour
             }
         }
 
-        float startY = 150.0f;
+        float startY = m_lowBar.transform.localPosition.y + 5f;
         for (int i = 0; i < maxStreamNo; ++i)
         {
             ActiveStream activeStream = new ActiveStream();
             activeStream.m_yPosition = startY;
             m_activebar.activeStreams.Add(activeStream);
 
-            startY += 70.0f;
+            startY = m_highBar.transform.localPosition.y + 5f;
         }
         m_activebar.m_currentTime = 0;
 
