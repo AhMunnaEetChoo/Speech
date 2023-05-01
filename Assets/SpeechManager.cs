@@ -37,6 +37,7 @@ public class SpeechManager : MonoBehaviour
     public Animator m_scoreAnimator;
     public Animator m_manEffects;
     public Animator m_manBobber;
+    private bool m_isBobbin = false;
 
     public VideoPlayer m_videoPlayer;
     public VideoPlayer m_videoPlayerBad;
@@ -397,7 +398,7 @@ public class SpeechManager : MonoBehaviour
         desc.createInstance(out m_musicEventInstance);
         m_musicEventInstance.start();
         SetTrackState(eTrackState.Good);
-        
+
         m_hasStarted = true;
         m_showingScore = false;
     }
@@ -468,6 +469,14 @@ public class SpeechManager : MonoBehaviour
             }
         }
         m_lastResyncTime += Time.deltaTime;
+
+        // make him bob after 20 seconds
+        if(!m_isBobbin && timelinePosition > 20000)
+        {
+            m_manBobber.gameObject.GetComponent<BeatBobber>().SetMusic(m_musicEventInstance);
+            m_isBobbin = true;
+        }
+        
 
         // read input
         float vertical = Input.GetAxis("Vertical");

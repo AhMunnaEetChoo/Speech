@@ -2204,9 +2204,9 @@ MonoBehaviour:
       m_scoreData:
         scored: 300
         scorec: 400
-        scoreb: 500
-        scorea: 700
-        scoreaplus: 800
+        scoreb: 550
+        scorea: 750
+        scoreaplus: 900
     - m_visableTime: 2.3
       m_trackName: event:/Music Stage 2
       m_phrases:
@@ -3205,12 +3205,12 @@ MonoBehaviour:
         m_points: -50
         m_sprite: 
         m_stream: 1
-      - m_time: 107.515
+      - m_time: 107.2
         m_text: Thank you
         m_points: 5
         m_sprite: P23_DidntDo
         m_stream: 2
-      - m_time: 107.515
+      - m_time: 107.2
         m_text: Fuck you
         m_points: -50
         m_sprite: 
@@ -3218,9 +3218,9 @@ MonoBehaviour:
       m_scoreData:
         scored: 300
         scorec: 400
-        scoreb: 500
+        scoreb: 550
         scorea: 700
-        scoreaplus: 800
+        scoreaplus: 850
   m_currentSpeech:
     m_visableTime: 2.3
     m_trackName: Music Stage 1
@@ -4625,6 +4625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 809935259}
   - component: {fileID: 809935260}
+  - component: {fileID: 809935261}
   m_Layer: 5
   m_Name: ManBobber
   m_TagString: Untagged
@@ -4674,6 +4675,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &809935261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809935258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8b120cc2d1b4b47946d7da52b376b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &912574323
 GameObject:
   m_ObjectHideFlags: 0

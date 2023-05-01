@@ -1527,9 +1527,9 @@
             "m_scoreData": {
                 "scored": 300,
                 "scorec": 400,
-                "scoreb": 500,
-                "scorea": 700,
-                "scoreaplus": 800
+                "scoreb": 550,
+                "scorea": 750,
+                "scoreaplus": 900
             }
         },
         {
@@ -2947,9 +2947,9 @@
             "m_scoreData": {
                 "scored": 300,
                 "scorec": 400,
-                "scoreb": 500,
+                "scoreb": 550,
                 "scorea": 700,
-                "scoreaplus": 800
+                "scoreaplus": 850
             }
         }
     ]
