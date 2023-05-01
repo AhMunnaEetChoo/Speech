@@ -2930,14 +2930,14 @@
                     "m_stream": 1
                 },
                 {
-                    "m_time": 107.51499938964844,
+                    "m_time": 107.2,
                     "m_text": "Thank you",
                     "m_points": 5,
                     "m_sprite": "P23_DidntDo",
                     "m_stream": 2
                 },
                 {
-                    "m_time": 107.51499938964844,
+                    "m_time": 107.2,
                     "m_text": "Fuck you",
                     "m_points": -50,
                     "m_sprite": "",

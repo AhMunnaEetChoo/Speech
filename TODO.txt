@@ -1,5 +1,7 @@
 TODO Speech
 
+- make the reactions interupt
+- add the bob
 - janky video load
 - fix explosion bug
 - revist text judder
