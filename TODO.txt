@@ -1,7 +1,7 @@
 TODO Speech
 
-- be able to set song 2
-- pull out markers from song 2 track
+- continue score from first level into start of next level
+- test compressed video
 - audio track phrase trigger separation
 - janky video load
 - fix explosion bug
