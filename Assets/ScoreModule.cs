@@ -156,7 +156,7 @@ public class ScoreModule : MonoBehaviour
 
             if (m_scoreDisplay >= m_gradeC && m_scoreDisplay < m_gradeB)
             {
-                m_goodRankTextL1.text = string.Format("AC");
+                m_goodRankTextL1.text = string.Format("C");
                 m_badRankTextL1.text = string.Format("C");
                 m_goodRankTextL2.text = string.Format("C");
                 m_badRankTextL2.text = string.Format("C");

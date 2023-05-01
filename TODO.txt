@@ -1,8 +1,6 @@
 TODO Speech
 
-- score settings in game json
 - audio for score rankings
-- centre the text in the streams
 - continue score from first level into start of next level
 - janky video load
 - fix explosion bug

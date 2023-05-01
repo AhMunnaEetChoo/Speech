@@ -44,6 +44,15 @@ public class SpeechManager : MonoBehaviour
 
     public static float s_bufferTime = 0.15f;
 
+    [System.Serializable]
+    public class ScoreData
+    {
+        public int scored = 300;
+        public int scorec = 400;
+        public int scoreb = 500;
+        public int scorea = 700;
+        public int scoreaplus = 800;
+    }
 
     [System.Serializable]
     public class GameData
@@ -57,6 +66,7 @@ public class SpeechManager : MonoBehaviour
         public float m_visableTime = 5.0f;
         public string m_trackName = "event:/Music Stage 1";
         public List<Phrase> m_phrases = new List<Phrase>();
+        public ScoreData m_scoreData = new ScoreData();
     };
 
     [System.Serializable]
@@ -389,6 +399,15 @@ public class SpeechManager : MonoBehaviour
                 m_gameData = JsonUtility.FromJson<GameData>(m_jsonData);
 #endif
                 SetSpeech(m_gameData.m_speechs[m_startingLevel]);
+
+                // initialise this level's score targets
+                ScoreModule scoreModule = m_scoreObject.GetComponent<ScoreModule>();
+                scoreModule.m_gradeD = m_currentSpeech.m_scoreData.scored;
+                scoreModule.m_gradeC = m_currentSpeech.m_scoreData.scorec;
+                scoreModule.m_gradeB = m_currentSpeech.m_scoreData.scoreb;
+                scoreModule.m_gradeA = m_currentSpeech.m_scoreData.scorea;
+                scoreModule.m_gradeAplus = m_currentSpeech.m_scoreData.scoreaplus;
+
                 m_hasStarted = true;
             }
             else
