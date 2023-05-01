@@ -1111,7 +1111,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_jsonURL: https://ahmunnaeetchoo.github.io/Speech/game_data.json
-  m_startingLevel: 0
   m_gameData:
     m_speechs:
     - m_visableTime: 2.3
@@ -2202,6 +2201,12 @@ MonoBehaviour:
         m_points: 5
         m_sprite: 
         m_stream: 1
+      m_scoreData:
+        scored: 300
+        scorec: 400
+        scoreb: 500
+        scorea: 700
+        scoreaplus: 800
     - m_visableTime: 2.3
       m_trackName: event:/Music Stage 2
       m_phrases:
@@ -3210,6 +3215,12 @@ MonoBehaviour:
         m_points: -50
         m_sprite: 
         m_stream: 1
+      m_scoreData:
+        scored: 300
+        scorec: 400
+        scoreb: 500
+        scorea: 700
+        scoreaplus: 800
   m_currentSpeech:
     m_visableTime: 2.3
     m_trackName: Music Stage 1
@@ -4299,10 +4310,22 @@ MonoBehaviour:
       m_points: 5
       m_sprite: 
       m_stream: 1
+    m_scoreData:
+      scored: 300
+      scorec: 400
+      scoreb: 500
+      scorea: 700
+      scoreaplus: 800
   m_debugSpeech:
     m_visableTime: 5
     m_trackName: Music Stage 1
     m_phrases: []
+    m_scoreData:
+      scored: 300
+      scorec: 400
+      scoreb: 500
+      scorea: 700
+      scoreaplus: 800
   m_phrasePrefab: {fileID: 53485659254808310, guid: e4e9944a29966314bb7f9b5873e6f33b, type: 3}
   m_eughEmitter: {fileID: 1813628751}
   m_pointHigh: {fileID: 1285083502}
@@ -5324,7 +5347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba5a69bd7f5b4010837716ad5bc83c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeechManager: {fileID: 567764207}
+  speechManager: {fileID: 567764207}
   m_scoreDisplay: 0
   m_scoreDisplayText: {fileID: 1223615249}
   m_scoreChangeSpeed: 30
@@ -6133,7 +6156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680058784}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 2.1}
   m_LocalScale: {x: 72.719604, y: 72.719604, z: 72.719604}
   m_ConstrainProportionsScale: 1
   m_Children: []

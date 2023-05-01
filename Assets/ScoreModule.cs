@@ -5,7 +5,7 @@ using TMPro;
 
 public class ScoreModule : MonoBehaviour
 {
-    public GameObject SpeechManager;
+    public GameObject speechManager;
     public float m_scoreDisplay;
     public TMP_Text m_scoreDisplayText;
     public float m_scoreChangeSpeed;
@@ -33,15 +33,26 @@ public class ScoreModule : MonoBehaviour
     private FMOD.Studio.EventInstance m_shuffleEventInstance;
     private FMOD.Studio.EventInstance m_scoreScreenEventInstance;
 
+    private enum eFinalRank
+    {
+        F,
+        D,
+        C,
+        B,
+        A,
+        Aplus
+    };
+    private eFinalRank m_finalRank;
+
     void Update()
     {
 
-        if (SpeechManager.GetComponent<SpeechManager>().m_score < m_scoreDisplay)
+        if (speechManager.GetComponent<SpeechManager>().m_score < m_scoreDisplay)
         {
             m_scoreDisplay -= 1 * (Time.deltaTime * m_scoreChangeSpeed);
         }
 
-        if (SpeechManager.GetComponent<SpeechManager>().m_score > m_scoreDisplay)
+        if (speechManager.GetComponent<SpeechManager>().m_score > m_scoreDisplay)
         {
             m_scoreDisplay += 1 * (Time.deltaTime * m_scoreChangeSpeed);
         }
@@ -108,22 +119,22 @@ public class ScoreModule : MonoBehaviour
 
         if (m_finalScore == true)
         {
-            if (m_scoreDisplay > m_gradeC && SpeechManager.GetComponent<SpeechManager>().m_startingLevel == 0)
+            if (m_scoreDisplay > m_gradeC && SpeechManager.m_startingLevel == 0)
             {
                 m_goodMessageL1.SetActive(true);
             }
 
-            if (m_scoreDisplay <= m_gradeC && SpeechManager.GetComponent<SpeechManager>().m_startingLevel == 0)
+            if (m_scoreDisplay <= m_gradeC && SpeechManager.m_startingLevel == 0)
             {
                 m_badMessageL1.SetActive(true);
             }
 
-            if (m_scoreDisplay > m_gradeC && SpeechManager.GetComponent<SpeechManager>().m_startingLevel == 1)
+            if (m_scoreDisplay > m_gradeC && SpeechManager.m_startingLevel == 1)
             {
                 m_goodMessageL2.SetActive(true);
             }
 
-            if (m_scoreDisplay <= m_gradeC && SpeechManager.GetComponent<SpeechManager>().m_startingLevel == 1)
+            if (m_scoreDisplay <= m_gradeC && SpeechManager.m_startingLevel == 1)
             {
                 m_badMessageL2.SetActive(true);
             }
@@ -132,6 +143,7 @@ public class ScoreModule : MonoBehaviour
 
             if (m_scoreDisplay >= m_gradeAplus)
             {
+                m_finalRank = eFinalRank.Aplus;
                 m_goodRankTextL1.text = string.Format("A+");
                 m_badRankTextL1.text = string.Format("A+");
                 m_goodRankTextL2.text = string.Format("A+");
@@ -140,6 +152,7 @@ public class ScoreModule : MonoBehaviour
 
             if (m_scoreDisplay >= m_gradeA && m_scoreDisplay < m_gradeAplus)
             {
+                m_finalRank = eFinalRank.A;
                 m_goodRankTextL1.text = string.Format("A");
                 m_badRankTextL1.text = string.Format("A");
                 m_goodRankTextL2.text = string.Format("A");
@@ -148,6 +161,7 @@ public class ScoreModule : MonoBehaviour
 
             if (m_scoreDisplay >= m_gradeB && m_scoreDisplay < m_gradeA)
             {
+                m_finalRank = eFinalRank.B;
                 m_goodRankTextL1.text = string.Format("B");
                 m_badRankTextL1.text = string.Format("B");
                 m_goodRankTextL2.text = string.Format("B");
@@ -156,6 +170,7 @@ public class ScoreModule : MonoBehaviour
 
             if (m_scoreDisplay >= m_gradeC && m_scoreDisplay < m_gradeB)
             {
+                m_finalRank = eFinalRank.C;
                 m_goodRankTextL1.text = string.Format("C");
                 m_badRankTextL1.text = string.Format("C");
                 m_goodRankTextL2.text = string.Format("C");
@@ -164,6 +179,7 @@ public class ScoreModule : MonoBehaviour
 
             if (m_scoreDisplay >= m_gradeD && m_scoreDisplay < m_gradeC)
             {
+                m_finalRank = eFinalRank.D;
                 m_goodRankTextL1.text = string.Format("D");
                 m_badRankTextL1.text = string.Format("D");
                 m_goodRankTextL2.text = string.Format("D");
@@ -172,16 +188,47 @@ public class ScoreModule : MonoBehaviour
 
             if (m_scoreDisplay < m_gradeD)
             {
+                m_finalRank = eFinalRank.F;
                 m_goodRankTextL1.text = string.Format("F");
                 m_badRankTextL1.text = string.Format("F");
                 m_goodRankTextL2.text = string.Format("F");
                 m_badRankTextL2.text = string.Format("F");
             }
 
+            int audioScoreParam = 0;
+            switch(m_finalRank)
+            {
+                case eFinalRank.F:
+                case eFinalRank.D:
+                case eFinalRank.C:
+                    audioScoreParam = 0;
+                    break;
+                case eFinalRank.B:
+                case eFinalRank.A:
+                    audioScoreParam = 1;
+                    break;
+                case eFinalRank.Aplus:
+                    audioScoreParam = 2;
+                    break;
+            }
 
+            FMOD.Studio.EventDescription eventDesc;
+            m_scoreScreenEventInstance.getDescription(out eventDesc);
+            FMOD.Studio.PARAMETER_DESCRIPTION param;
+            string paramNane = "ScoreBadOkGood";
+            eventDesc.getParameterDescriptionByName(paramNane, out param);
+            m_scoreScreenEventInstance.setParameterByID(param.id, audioScoreParam);
         }
-
-
-
+    }
+    void OnDestroy()
+    {
+        if(m_scoreScreenEventInstance.isValid())
+        {
+            m_scoreScreenEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+        if(m_shuffleEventInstance.isValid())
+        {
+            m_shuffleEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
     }
 }

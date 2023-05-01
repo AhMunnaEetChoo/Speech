@@ -2,17 +2,21 @@ using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 using UnityEngine.Video;
+using static System.Net.WebRequestMethods;
 
 public class SpeechManager : MonoBehaviour
 {
     public string m_jsonURL = "";
     private string m_jsonData = "";
 
-    public int m_startingLevel = 0;
+    public static int m_startingLevel = 0;
     public GameData m_gameData = new GameData();
     public Speech m_currentSpeech = new Speech();
     public Speech m_debugSpeech = new Speech();
@@ -42,7 +46,7 @@ public class SpeechManager : MonoBehaviour
     public Material m_manMaterialBad;
     public Material m_manMaterialBlank;
 
-    public static float s_bufferTime = 0.15f;
+    public static float s_bufferTime = 0.10f;
 
     [System.Serializable]
     public class ScoreData
@@ -123,22 +127,29 @@ public class SpeechManager : MonoBehaviour
     void Start()
     {
         //change graphics depending on level
-
-
-        if (m_startingLevel == 0)
+        GameObject[] hideThese = m_destroyL1Objects;
+        GameObject[] showThese = m_destroyL2Objects;
+        if (SpeechManager.m_startingLevel == 0)
         {
-            foreach (GameObject m_destroyL1Objects in m_destroyL1Objects)
-            {
-                Destroy(m_destroyL1Objects);
-            }
+            hideThese = m_destroyL1Objects;
+            showThese = m_destroyL2Objects;
+        }
+        if (SpeechManager.m_startingLevel == 1)
+        {
+            m_videoPlayer.url = "https://ahmunnaeetchoo.github.io/Speech/Video/ManHead_Court_Good.mp4";
+            m_videoPlayerBad.url = "https://ahmunnaeetchoo.github.io/Speech/Video/ManHead_Court_Bad.mp4";
+            m_videoPlayerBlank.url = "https://ahmunnaeetchoo.github.io/Speech/Video/ManHead_Business_Blank.mp4";
+            hideThese = m_destroyL2Objects;
+            showThese = m_destroyL1Objects;
         }
 
-        if (m_startingLevel == 1)
+        foreach (GameObject hideObject in hideThese)
         {
-            foreach (GameObject m_destroyL2Objects in m_destroyL2Objects)
-            {
-                Destroy(m_destroyL2Objects);
-            }
+            hideObject.SetActive(false);
+        }
+        foreach (GameObject showObject in showThese)
+        {
+            showObject.SetActive(true);
         }
 
         StartCoroutine(GetRequest(m_jsonURL, false));
@@ -225,7 +236,7 @@ public class SpeechManager : MonoBehaviour
                 }
                 else
                 {
-                    float x = Mathf.Lerp(m_activebar.m_xRange.x, m_activebar.m_xRange.y, timeDiff / m_currentSpeech.m_visableTime);
+                    float x = Mathf.LerpUnclamped(m_activebar.m_xRange.x, m_activebar.m_xRange.y, audioTimeDiff / m_currentSpeech.m_visableTime);
 
                     activePhrase.m_gameObject.transform.localPosition = new Vector3(x, activeStream.m_yPosition, -1);
                 }
@@ -370,14 +381,25 @@ public class SpeechManager : MonoBehaviour
     }
 
 
-    void SetSpeech(Speech _speech)
+    void StartSpeech(Speech _speech)
     {
         m_currentSpeech = _speech;
+
+        // initialise this level's score targets
+        ScoreModule scoreModule = m_scoreObject.GetComponent<ScoreModule>();
+        scoreModule.m_gradeD = _speech.m_scoreData.scored;
+        scoreModule.m_gradeC = _speech.m_scoreData.scorec;
+        scoreModule.m_gradeB = _speech.m_scoreData.scoreb;
+        scoreModule.m_gradeA = _speech.m_scoreData.scorea;
+        scoreModule.m_gradeAplus = _speech.m_scoreData.scoreaplus;
 
         FMOD.Studio.EventDescription desc = FMODUnity.RuntimeManager.GetEventDescription(m_currentSpeech.m_trackName);
         desc.createInstance(out m_musicEventInstance);
         m_musicEventInstance.start();
         SetTrackState(eTrackState.Good);
+        
+        m_hasStarted = true;
+        m_showingScore = false;
     }
 
     // Update is called once per frame
@@ -385,6 +407,12 @@ public class SpeechManager : MonoBehaviour
     {
         if(m_showingScore)
         {
+            if (Mathf.Abs(Input.GetAxis("Vertical")) > 0f)
+            {
+                SpeechManager.m_startingLevel = 1;
+                SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+            }
+
             // wait for score to be shown
             return;
         }
@@ -398,17 +426,7 @@ public class SpeechManager : MonoBehaviour
 #if !UNITY_EDITOR
                 m_gameData = JsonUtility.FromJson<GameData>(m_jsonData);
 #endif
-                SetSpeech(m_gameData.m_speechs[m_startingLevel]);
-
-                // initialise this level's score targets
-                ScoreModule scoreModule = m_scoreObject.GetComponent<ScoreModule>();
-                scoreModule.m_gradeD = m_currentSpeech.m_scoreData.scored;
-                scoreModule.m_gradeC = m_currentSpeech.m_scoreData.scorec;
-                scoreModule.m_gradeB = m_currentSpeech.m_scoreData.scoreb;
-                scoreModule.m_gradeA = m_currentSpeech.m_scoreData.scorea;
-                scoreModule.m_gradeAplus = m_currentSpeech.m_scoreData.scoreaplus;
-
-                m_hasStarted = true;
+                StartSpeech(m_gameData.m_speechs[SpeechManager.m_startingLevel]);
             }
             else
             {
@@ -462,9 +480,11 @@ public class SpeechManager : MonoBehaviour
 
         AdvanceBar();
 
-        PLAYBACK_STATE state;
-        m_musicEventInstance.getPlaybackState(out state);
-        if(state == PLAYBACK_STATE.STOPPED)
+        FMOD.Studio.EventDescription musicEventDescription;
+        m_musicEventInstance.getDescription(out musicEventDescription);
+        int songLength;
+        musicEventDescription.getLength(out songLength);
+        if(songLength - timelinePosition < (int)(1000f * 3.0f))
         {
             // we have reached the end of the song
             m_scoreObject.GetComponent<ScoreModule>().m_gameEnd = true;
